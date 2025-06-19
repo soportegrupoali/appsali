@@ -1,5 +1,4 @@
 from django.db import models
-from workorder.models import Project
 
 # Create your models here.
 class Project(models.Model):

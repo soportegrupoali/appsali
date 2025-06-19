@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'menu',
     'users',
+    'alitools.workorder',
 ]
 
 MIDDLEWARE = [
