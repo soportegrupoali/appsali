@@ -1,1 +1,626 @@
-<h1>Dashboard</h1>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Dashboard - SOTALI{% endblock %}
+
+{% block content %}
+<!-- Welcome Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="bg-primary text-white rounded-3 p-4 shadow">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-2 fw-bold">
+                        <i class="fas fa-chart-line me-2"></i>
+                        Dashboard Principal
+                    </h2>
+                    <p class="mb-0 fs-5 opacity-75">
+                        Bienvenido {{ user.first_name|default:user.username }} al sistema de gestión de órdenes de trabajo y solicitudes de pago
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="bg-white bg-opacity-20 rounded-3 p-3 d-inline-block">
+                        <i class="fas fa-building fa-3x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stats Cards -->
+<div class="row mb-5 g-3">
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center p-4">
+                <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <i class="fas fa-clipboard-check fa-2x text-success"></i>
+                </div>
+                <h3 class="text-success mb-1 fw-bold">{{ stats.completed_orders|default:0 }}</h3>
+                <p class="text-muted mb-0 small">Órdenes Completadas</p>
+                <small class="text-success fw-semibold">
+                    <i class="fas fa-arrow-up me-1"></i>{{ stats.completed_percentage|default:0 }}%
+                </small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center p-4">
+                <div class="bg-warning bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <i class="fas fa-clock fa-2x text-warning"></i>
+                </div>
+                <h3 class="text-warning mb-1 fw-bold">{{ stats.pending_orders|default:0 }}</h3>
+                <p class="text-muted mb-0 small">Órdenes Pendientes</p>
+                <small class="text-warning fw-semibold">
+                    <i class="fas fa-clock me-1"></i>En proceso
+                </small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center p-4">
+                <div class="bg-info bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <i class="fas fa-money-bill-wave fa-2x text-info"></i>
+                </div>
+                <h3 class="text-info mb-1 fw-bold">${{ stats.approved_payments|default:0|floatformat:0 }}</h3>
+                <p class="text-muted mb-0 small">Pagos Aprobados</p>
+                <small class="text-info fw-semibold">
+                    <i class="fas fa-check-circle me-1"></i>Este mes
+                </small>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body text-center p-4">
+                <div class="bg-danger bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 70px; height: 70px;">
+                    <i class="fas fa-exclamation-triangle fa-2x text-danger"></i>
+                </div>
+                <h3 class="text-danger mb-1 fw-bold">{{ stats.pending_payments|default:0 }}</h3>
+                <p class="text-muted mb-0 small">Pagos Pendientes</p>
+                <small class="text-danger fw-semibold">
+                    <i class="fas fa-exclamation-circle me-1"></i>Requiere atención
+                </small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Action Cards -->
+<div class="row mb-5 g-4">
+    <!-- Formulario de Nuevo Proyecto -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-plus-circle me-2"></i>Nuevo Proyecto
+                </h5>
+            </div>
+            <div class="card-body">
+                <form id="projectForm" method="POST" action="{% url 'dashboard:index' %}" novalidate>
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="project_name" class="form-label fw-semibold">Nombre del Proyecto</label>
+                        <input type="text" class="form-control" id="project_name" name="project_name" 
+                               placeholder="Ingrese el nombre del proyecto" required>
+                        <div class="invalid-feedback">
+                            Por favor ingrese el nombre del proyecto.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="project_description" class="form-label fw-semibold">Descripción</label>
+                        <textarea class="form-control" id="project_description" name="project_description" rows="3" 
+                                  placeholder="Describa los detalles del proyecto" required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor ingrese una descripción.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="project_provider" class="form-label fw-semibold">Proveedor</label>
+                        <select class="form-select" id="project_provider" name="project_provider" required>
+                            <option value="">Seleccione un proveedor...</option>
+                            <option value="TechSolutions SA">TechSolutions SA</option>
+                            <option value="InfraCorp Ltd">InfraCorp Ltd</option>
+                            <option value="SysAdmin Pro">SysAdmin Pro</option>
+                            <option value="DataCenter Solutions">DataCenter Solutions</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor seleccione un proveedor.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="project_cost" class="form-label fw-semibold">Costo del Proyecto ($)</label>
+                        <div class="input-group">
+                            <span class="input-group-text">$</span>
+                            <input type="number" class="form-control" id="project_cost" name="project_cost" 
+                                   placeholder="0.00" step="0.01" min="0" required>
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese un costo válido.
+                        </div>
+                        <div class="form-text">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Montos ≥ $200,000 requieren contrato formal
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="evaluateProject()">
+                            <i class="fas fa-calculator me-2"></i>Evaluar Proyecto
+                        </button>
+                        <button type="submit" class="btn btn-success btn-lg" id="submitProject" style="display: none;">
+                            <i class="fas fa-save me-2"></i>Guardar y Continuar
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" onclick="clearForm()">
+                            <i class="fas fa-times me-2"></i>Limpiar Formulario
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Panel de Evaluación -->
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-header bg-success text-white">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-search me-2"></i>Evaluación Automática
+                </h5>
+            </div>
+            <div class="card-body d-flex align-items-center justify-content-center">
+                <div id="evaluationResult" class="w-100">
+                    <div class="text-center py-5">
+                        <i class="fas fa-clipboard-list fa-4x text-muted mb-3 opacity-50"></i>
+                        <h6 class="text-muted">Evaluación de Proyecto</h6>
+                        <p class="text-muted small mb-0">
+                            Complete el formulario y presione "Evaluar Proyecto" para ver el resultado automático
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Access Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-bolt me-2 text-warning"></i>
+                    Acceso Rápido
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-primary btn-lg py-3" onclick="searchOrders()">
+                                <i class="fas fa-search fa-2x mb-2 d-block"></i>
+                                <span class="fw-semibold">Buscar Órdenes</span>
+                                <small class="d-block text-muted mt-1">Busqueda avanzada</small>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-success btn-lg py-3" onclick="generateReports()">
+                                <i class="fas fa-chart-bar fa-2x mb-2 d-block"></i>
+                                <span class="fw-semibold">Generar Reportes</span>
+                                <small class="d-block text-muted mt-1">Informes detallados</small>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-grid">
+                            <button class="btn btn-outline-info btn-lg py-3" onclick="exportData()">
+                                <i class="fas fa-download fa-2x mb-2 d-block"></i>
+                                <span class="fw-semibold">Exportar Datos</span>
+                                <small class="d-block text-muted mt-1">Excel, PDF, CSV</small>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-grid">
+                            <a href="{% url 'users:list' %}" class="btn btn-outline-secondary btn-lg py-3 text-decoration-none">
+                                <i class="fas fa-cogs fa-2x mb-2 d-block"></i>
+                                <span class="fw-semibold">Configuración</span>
+                                <small class="d-block text-muted mt-1">Ajustes del sistema</small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Activity -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0 fw-semibold">
+                        <i class="fas fa-history me-2 text-primary"></i>
+                        Actividad Reciente
+                    </h5>
+                    <button class="btn btn-sm btn-outline-primary" onclick="refreshActivity()">
+                        <i class="fas fa-sync-alt me-1"></i>Actualizar
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+                {% if recent_activity %}
+                    <div class="row">
+                        {% for activity in recent_activity %}
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <div class="border-start border-4 border-{{ activity.type_class }} ps-3 py-2">
+                                    <div class="d-flex justify-content-between align-items-start">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1 fw-semibold">{{ activity.title }}</h6>
+                                            <p class="text-muted small mb-1">{{ activity.description }}</p>
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-{{ activity.type_class }} fw-semibold me-2">
+                                                    {{ activity.time_ago }}
+                                                </small>
+                                                <span class="badge bg-{{ activity.type_class }} bg-opacity-10 text-{{ activity.type_class }}">
+                                                    {{ activity.type|default:"Info" }}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <i class="fas fa-{{ activity.icon|default:'info-circle' }} text-{{ activity.type_class }} ms-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <div class="border-start border-4 border-success ps-3 py-2">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-semibold">Sistema iniciado</h6>
+                                        <p class="text-muted small mb-1">Bienvenido al sistema SOTALI</p>
+                                        <small class="text-success fw-semibold">Ahora</small>
+                                    </div>
+                                    <i class="fas fa-power-off text-success ms-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <div class="border-start border-4 border-info ps-3 py-2">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-semibold">Base de datos lista</h6>
+                                        <p class="text-muted small mb-1">Todas las funciones disponibles</p>
+                                        <small class="text-info fw-semibold">Hace unos momentos</small>
+                                    </div>
+                                    <i class="fas fa-database text-info ms-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-3">
+                            <div class="border-start border-4 border-warning ps-3 py-2">
+                                <div class="d-flex justify-content-between align-items-start">
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1 fw-semibold">Configuración inicial</h6>
+                                        <p class="text-muted small mb-1">Sistema listo para usar</p>
+                                        <small class="text-warning fw-semibold">Recién</small>
+                                    </div>
+                                    <i class="fas fa-cog text-warning ms-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal para detalles de proyecto -->
+<div class="modal fade" id="projectDetailsModal" tabindex="-1" aria-labelledby="projectDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectDetailsModalLabel">
+                    <i class="fas fa-info-circle me-2"></i>Detalles del Proyecto
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modalContent">
+                <!-- Contenido dinámico -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Configuration
+    const CONFIG = {
+        LIMITE_CONTRATO: 200000,
+        CURRENCY_FORMAT: 'es-US'
+    };
+
+    // Utility functions
+    function formatCurrency(amount) {
+        return new Intl.NumberFormat(CONFIG.CURRENCY_FORMAT, {
+            style: 'currency',
+            currency: 'USD',
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 0
+        }).format(amount);
+    }
+
+    function showToast(message, type = 'info') {
+        // Usar el sistema de alertas existente de SOTALI
+        if (typeof SOTALI !== 'undefined' && SOTALI.showAlert) {
+            SOTALI.showAlert(message, type);
+        } else {
+            alert(message);
+        }
+    }
+
+    function validateForm() {
+        const form = document.getElementById('projectForm');
+        const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+        let isValid = true;
+
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                input.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                input.classList.remove('is-invalid');
+                input.classList.add('is-valid');
+            }
+        });
+
+        return isValid;
+    }
+
+    function clearForm() {
+        const form = document.getElementById('projectForm');
+        form.reset();
+        form.querySelectorAll('.is-valid, .is-invalid').forEach(input => {
+            input.classList.remove('is-valid', 'is-invalid');
+        });
+        
+        // Ocultar el botón de guardar
+        document.getElementById('submitProject').style.display = 'none';
+        
+        // Reset evaluation result
+        document.getElementById('evaluationResult').innerHTML = `
+            <div class="text-center py-5">
+                <i class="fas fa-clipboard-list fa-4x text-muted mb-3 opacity-50"></i>
+                <h6 class="text-muted">Evaluación de Proyecto</h6>
+                <p class="text-muted small mb-0">
+                    Complete el formulario y presione "Evaluar Proyecto" para ver el resultado automático
+                </p>
+            </div>
+        `;
+        showToast('Formulario limpiado correctamente', 'success');
+    }
+
+    function evaluateProject() {
+        if (!validateForm()) {
+            showToast('Por favor complete todos los campos requeridos', 'warning');
+            return;
+        }
+
+        const cost = parseFloat(document.getElementById('project_cost').value);
+        const projectName = document.getElementById('project_name').value.trim();
+        const provider = document.getElementById('project_provider').value;
+        const description = document.getElementById('project_description').value.trim();
+        
+        if (isNaN(cost) || cost <= 0) {
+            showToast('Por favor ingrese un costo válido', 'error');
+            return;
+        }
+        
+        // Mostrar el botón de guardar después de la evaluación
+        document.getElementById('submitProject').style.display = 'block';
+
+        let resultHtml = '';
+        
+        if (cost >= CONFIG.LIMITE_CONTRATO) {
+            resultHtml = `
+                <div class="alert alert-warning border-0 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-file-contract fa-2x text-warning me-3"></i>
+                        <div>
+                            <h5 class="mb-1 fw-bold">SE REQUIERE CONTRATO</h5>
+                            <small class="text-muted">Monto superior al límite establecido</small>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <strong class="text-muted small">PROYECTO:</strong>
+                            <p class="mb-1 fw-semibold">${projectName}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted small">COSTO:</strong>
+                            <p class="mb-1 fw-bold text-danger">${formatCurrency(cost)}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted small">PROVEEDOR:</strong>
+                            <p class="mb-1">${provider}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted small">LÍMITE:</strong>
+                            <p class="mb-1">${formatCurrency(CONFIG.LIMITE_CONTRATO)}</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-warning bg-opacity-10 rounded p-3 mb-3">
+                        <small class="text-warning">
+                            <i class="fas fa-exclamation-triangle me-1"></i>
+                            <strong>Atención:</strong> El monto supera los ${formatCurrency(CONFIG.LIMITE_CONTRATO)}, se debe generar un contrato formal antes de proceder.
+                        </small>
+                    </div>
+                    
+                    <div class="d-flex gap-2 flex-wrap">
+                        <button class="btn btn-success" onclick="generateContract()">
+                            <i class="fas fa-file-contract me-1"></i>Generar Contrato
+                        </button>
+                        <button class="btn btn-outline-primary" onclick="editProject()">
+                            <i class="fas fa-edit me-1"></i>Editar Proyecto
+                        </button>
+                        <button class="btn btn-outline-info" onclick="saveProject()">
+                            <i class="fas fa-save me-1"></i>Guardar Borrador
+                        </button>
+                    </div>
+                </div>
+            `;
+        } else {
+            resultHtml = `
+                <div class="alert alert-success border-0 shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-clipboard-check fa-2x text-success me-3"></i>
+                        <div>
+                            <h5 class="mb-1 fw-bold">ORDEN DE TRABAJO</h5>
+                            <small class="text-muted">Proyecto aprobado para orden de trabajo</small>
+                        </div>
+                    </div>
+                    
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <strong class="text-muted small">PROYECTO:</strong>
+                            <p class="mb-1 fw-semibold">${projectName}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted small">COSTO:</strong>
+                            <p class="mb-1 fw-bold text-success">${formatCurrency(cost)}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted small">PROVEEDOR:</strong>
+                            <p class="mb-1">${provider}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <strong class="text-muted small">TIPO:</strong>
+                            <p class="mb-1"><span class="badge bg-success">Orden de Trabajo</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-success bg-opacity-10 rounded p-3 mb-3">
+                        <small class="text-success">
+                            <i class="fas fa-check-circle me-1"></i>
+                            <strong>Aprobado:</strong> El monto es menor a ${formatCurrency(CONFIG.LIMITE_CONTRATO)}, se puede proceder con orden de trabajo.
+                        </small>
+                    </div>
+                    
+                    <div class="d-flex gap-2 flex-wrap">
+                        <a href="{% url 'workorder:create' %}" class="btn btn-primary">
+                            <i class="fas fa-clipboard-list me-1"></i>Crear Orden
+                        </a>
+                        <button class="btn btn-outline-success" onclick="editProject()">
+                            <i class="fas fa-edit me-1"></i>Editar Proyecto
+                        </button>
+                        <button class="btn btn-outline-info" onclick="saveProject()">
+                            <i class="fas fa-save me-1"></i>Guardar Proyecto
+                        </button>
+                    </div>
+                </div>
+            `;
+        }
+        
+        document.getElementById('evaluationResult').innerHTML = resultHtml;
+        showToast('Evaluación completada', 'success');
+    }
+
+    // Additional functions
+    function generateContract() {
+        showToast('Redirigiendo al módulo de contratos...', 'info');
+        // Implementar redirección al módulo de contratos
+    }
+
+    function editProject() {
+        showToast('Modo edición activado', 'info');
+        // Mantener los datos en el formulario para edición
+    }
+
+    function saveProject() {
+        if (!validateForm()) {
+            showToast('Complete todos los campos antes de guardar', 'warning');
+            return;
+        }
+        // Enviar el formulario directamente
+        document.getElementById('projectForm').submit();
+    }
+
+    // Quick access functions
+    function searchOrders() {
+        showToast('Abriendo búsqueda avanzada de órdenes...', 'info');
+    }
+
+    function generateReports() {
+        showToast('Accediendo al módulo de reportes...', 'info');
+    }
+
+    function exportData() {
+        showToast('Preparando exportación de datos...', 'info');
+    }
+
+    function refreshActivity() {
+        showToast('Actualizando actividad reciente...', 'info');
+        // Implementar actualización de actividad via AJAX
+    }
+
+    // Initialize dashboard
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Dashboard SOTALI cargado correctamente');
+        
+        // Add real-time validation
+        const form = document.getElementById('projectForm');
+        const inputs = form.querySelectorAll('input, select, textarea');
+        
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.hasAttribute('required')) {
+                    if (this.value.trim()) {
+                        this.classList.remove('is-invalid');
+                        this.classList.add('is-valid');
+                    } else {
+                        this.classList.remove('is-valid');
+                        this.classList.add('is-invalid');
+                    }
+                }
+            });
+        });
+
+        // Format currency input
+        const costInput = document.getElementById('project_cost');
+        costInput.addEventListener('input', function() {
+            const value = parseFloat(this.value);
+            if (!isNaN(value) && value >= CONFIG.LIMITE_CONTRATO) {
+                this.classList.add('border-warning');
+                this.nextElementSibling.innerHTML = `
+                    <i class="fas fa-exclamation-triangle text-warning me-1"></i>
+                    Este monto requerirá contrato formal (≥ ${formatCurrency(CONFIG.LIMITE_CONTRATO)})
+                `;
+            } else {
+                this.classList.remove('border-warning');
+                this.nextElementSibling.innerHTML = `
+                    <i class="fas fa-info-circle me-1"></i>
+                    Montos ≥ ${formatCurrency(CONFIG.LIMITE_CONTRATO)} requieren contrato formal
+                `;
+            }
+        });
+    });
+</script>
+{% endblock %}

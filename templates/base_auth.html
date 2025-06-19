@@ -1,20 +1,21 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}SOTALI - Sistema de Órdenes de Trabajo{% endblock %}</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href=" {% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
-    <link href="{% static 'css/all.min.css' %}" rel="stylesheet">
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
     <!-- CSS personalizado -->
     <link href="{% static 'css/custom.css' %}" rel="stylesheet">
-    
+
     <style>
         body {
             background-color: #f8f9fa;
@@ -23,37 +24,42 @@
             display: flex;
             flex-direction: column;
         }
+
         .auth-container {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .card {
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
+
         .rounded-4 {
-            border-radius: 0.8rem!important;
+            border-radius: 0.8rem !important;
         }
     </style>
-    
+
     <!-- Bloques adicionales para CSS -->
     {% block extra_css %}{% endblock %}
 </head>
+
 <body>
     <!-- Main content area for auth pages -->
     <div class="auth-container py-5">
         {% block content %}
         {% endblock %}
     </div>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- JavaScript personalizado global -->
     <script src="{% static 'js/main.js' %}"></script>
-    
+
     <!-- JavaScript específico de página -->
     {% block extra_js %}{% endblock %}
 </body>
+
 </html>

@@ -1,1 +1,283 @@
-<h1>Menu</h1>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Menú Principal - Apps ALI{% endblock %}
+
+{% block content %}
+<!-- Welcome Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="bg-primary text-white rounded-3 p-4 shadow">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-2 fw-bold">
+                        <i class="fas fa-th-large me-2"></i>
+                        Menú Principal
+                    </h2>
+                    <p class="mb-0 fs-5 opacity-75">
+                        Bienvenido {{ user.first_name|default:user.username }} al portal de aplicaciones de ALI
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="bg-white bg-opacity-20 rounded-3 p-3 d-inline-block">
+                        <i class="fas fa-building fa-3x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Apps Section -->
+<div class="row mb-5 g-4">
+    <!-- SOTALI -->
+    <div class="col-lg-6 col-md-6">
+        <div class="card border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+            <div class="card-body p-0">
+                <div class="bg-success p-4 text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold mb-0">SOTALI</h3>
+                        <i class="fas fa-clipboard-list fa-2x"></i>
+                    </div>
+                    <p class="mb-0 mt-2 opacity-75">Sistema de Órdenes de Trabajo</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-muted mb-4">
+                        Gestione órdenes de trabajo, solicitudes de pago y seguimiento de proyectos de manera eficiente.
+                    </p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>Control de órdenes de trabajo</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>Seguimiento de proyectos</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-success me-3"></i>
+                            <span>Reportes y estadísticas</span>
+                        </li>
+                    </ul>
+                    <div class="d-grid">
+                        <a href="/workorder/" class="btn btn-success btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>Acceder a SOTALI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ALICASH -->
+    <div class="col-lg-6 col-md-6">
+        <div class="card border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+            <div class="card-body p-0">
+                <div class="bg-primary p-4 text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold mb-0">ALICASH</h3>
+                        <i class="fas fa-money-bill-wave fa-2x"></i>
+                    </div>
+                    <p class="mb-0 mt-2 opacity-75">Sistema de Solicitudes de Pago</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-muted mb-4">
+                        Administre solicitudes de pago para tierras, seguimiento de flujos de aprobación y control de presupuestos.
+                    </p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Solicitudes de pago</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Flujos de aprobación</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-primary me-3"></i>
+                            <span>Control de presupuestos</span>
+                        </li>
+                    </ul>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>Acceder a ALICASH
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- DALI -->
+    <div class="col-lg-6 col-md-6">
+        <div class="card border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+            <div class="card-body p-0">
+                <div class="bg-info p-4 text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold mb-0">DALI</h3>
+                        <i class="fas fa-chart-line fa-2x"></i>
+                    </div>
+                    <p class="mb-0 mt-2 opacity-75">Dashboard Operaciones ALI</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-muted mb-4">
+                        Visualice métricas clave de operaciones, indicadores de desempeño y tendencias en tiempo real.
+                    </p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-info me-3"></i>
+                            <span>Indicadores en tiempo real</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-info me-3"></i>
+                            <span>Análisis de tendencias</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-info me-3"></i>
+                            <span>Reportes personalizados</span>
+                        </li>
+                    </ul>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-info btn-lg text-white">
+                            <i class="fas fa-sign-in-alt me-2"></i>Acceder a DALI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- CotizaALI -->
+    <div class="col-lg-6 col-md-6">
+        <div class="card border-0 shadow-lg h-100 rounded-4 overflow-hidden">
+            <div class="card-body p-0">
+                <div class="bg-warning p-4 text-white">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold mb-0">CotizaALI</h3>
+                        <i class="fas fa-calculator fa-2x"></i>
+                    </div>
+                    <p class="mb-0 mt-2 opacity-75">Cotizadores Personalizados</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-muted mb-4">
+                        Genere cotizaciones personalizadas para clientes, con herramientas de cálculo específicas para el departamento de ventas.
+                    </p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-warning me-3"></i>
+                            <span>Cotizaciones personalizadas</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-warning me-3"></i>
+                            <span>Cálculos automáticos</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center px-0">
+                            <i class="fas fa-check-circle text-warning me-3"></i>
+                            <span>Generación de PDF</span>
+                        </li>
+                    </ul>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-warning btn-lg text-white">
+                            <i class="fas fa-sign-in-alt me-2"></i>Acceder a CotizaALI
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- System Information -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-info-circle me-2 text-primary"></i>
+                    Información del Sistema
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-3 p-3 bg-primary bg-opacity-10 me-3">
+                                <i class="fas fa-server text-primary"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Estado</h6>
+                                <p class="mb-0 small text-success fw-semibold">
+                                    <i class="fas fa-circle me-1 small"></i>
+                                    En línea
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-3 p-3 bg-success bg-opacity-10 me-3">
+                                <i class="fas fa-user-shield text-success"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Sesión</h6>
+                                <p class="mb-0 small text-muted">
+                                    {{ user.username }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-3 p-3 bg-info bg-opacity-10 me-3">
+                                <i class="fas fa-code-branch text-info"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Versión</h6>
+                                <p class="mb-0 small text-muted">
+                                    1.0.0
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="d-flex align-items-center">
+                            <div class="rounded-3 p-3 bg-warning bg-opacity-10 me-3">
+                                <i class="fas fa-cogs text-warning"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-1 fw-semibold">Configuración</h6>
+                                <p class="mb-0 small">
+                                    <a href="{% url 'users:list' %}" class="text-decoration-none">
+                                        Administrar
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Menu principal cargado correctamente');
+        
+        // Animar las tarjetas al cargar
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.4s ease-out, transform 0.4s ease-out';
+            
+            setTimeout(() => {
+                card.style.opacity = 1;
+                card.style.transform = 'translateY(0)';
+            }, 100 * index);
+        });
+    });
+</script>
+{% endblock %}

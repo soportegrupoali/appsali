@@ -1,0 +1,351 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Orden de Trabajo - SOTALI{% endblock %}
+
+{% block content %}
+    {% if messages %}
+    <div class="container mt-3">
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="container-fluid px-4 py-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+                <div class="card shadow-lg border-0 rounded-3">
+                    <!-- Header -->
+                    <div class="card-header bg-dark text-white text-center py-4">
+                        <div class="row align-items-center">
+                            <div class="col-md-2 text-center">
+                                <div class="bg-white text-dark rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                                    <i class="fas fa-building fs-2"></i>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h2 class="mb-1">ELSY LILY ACOSTA BAEZA</h2>
+                                <p class="mb-2 fs-5">AOBE-590302-7DA</p>
+                                <h4 class="mb-0"><i class="fas fa-clipboard-list me-2"></i>ORDEN DE TRABAJO</h4>
+                            </div>
+                            <div class="col-md-2 text-center">
+                                <i class="fas fa-calendar-alt fa-3x opacity-50"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body p-4">
+                        {% if project_data %}
+                        <div class="alert alert-success mb-4">
+                            <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Datos del Proyecto Importados</h5>
+                            <p class="mb-0">Se han cargado automáticamente los datos del proyecto: <strong>{{ project_data.name }}</strong></p>
+                        </div>
+                        {% endif %}
+                        
+                        <form id="workOrderForm">
+                            <!-- Basic Information -->
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="orderNumber" class="form-label fw-semibold">
+                                        <i class="fas fa-hashtag me-2 text-primary"></i>No. de Orden de Trabajo
+                                    </label>
+                                    <input type="text" class="form-control" id="orderNumber" name="orderNumber">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="orderDate" class="form-label fw-semibold">
+                                        <i class="fas fa-calendar me-2 text-primary"></i>Fecha de Orden de Trabajo
+                                    </label>
+                                    <input type="date" class="form-control" id="orderDate" name="orderDate">
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="workDescription" class="form-label fw-semibold">
+                                    <i class="fas fa-file-alt me-2 text-primary"></i>Descripción del Trabajo y/o Servicio
+                                </label>
+                                <textarea class="form-control" id="workDescription" name="workDescription" rows="3"></textarea>
+                            </div>
+
+                            <!-- Contractor Information -->
+                            <div class="bg-light p-3 rounded mb-3 border-start border-5 border-primary">
+                                <h5 class="mb-0 text-primary">
+                                    <i class="fas fa-user-tie me-2"></i>1.- INFORMACIÓN DEL CONTRATISTA
+                                </h5>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="companyName" class="form-label">Razón Social del Contratista</label>
+                                <input type="text" class="form-control" id="companyName" name="companyName">
+                            </div>
+
+                            <div class="bg-light p-3 rounded mb-3 border-start border-5 border-primary">
+                                <h5 class="mb-0 text-primary">
+                                    <i class="fas fa-user me-2"></i>2.- REPRESENTANTE LEGAL
+                                </h5>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="legalRepresentative" class="form-label">Nombre del Representante Legal</label>
+                                    <input type="text" class="form-control" id="legalRepresentative" name="legalRepresentative">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="rfc" class="form-label">RFC</label>
+                                    <input type="text" class="form-control" id="rfc" name="rfc" placeholder="RFC-000000-000">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="imssRegistry" class="form-label">Registro Patronal IMSS</label>
+                                    <input type="text" class="form-control" id="imssRegistry" name="imssRegistry">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">
+                                        <i class="fas fa-phone me-2 text-success"></i>Teléfono
+                                    </label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="address" class="form-label">
+                                    <i class="fas fa-map-marker-alt me-2 text-danger"></i>Dirección
+                                </label>
+                                <textarea class="form-control" id="address" name="address" rows="2"></textarea>
+                            </div>
+
+                            <!-- Work Details -->
+                            <div class="bg-light p-3 rounded mb-3 border-start border-5 border-primary">
+                                <h5 class="mb-0 text-primary">
+                                    <i class="fas fa-tools me-2"></i>3.- TRABAJOS A REALIZAR
+                                </h5>
+                            </div>
+
+                            <div class="mb-4">
+                                <textarea class="form-control" id="workDetails" name="workDetails" rows="6" placeholder="Detalle completo de los trabajos a realizar..."></textarea>
+                            </div>
+
+                            <!-- Cost Information -->
+                            <div class="bg-light p-3 rounded mb-3 border-start border-5 border-primary">
+                                <h5 class="mb-0 text-primary">
+                                    <i class="fas fa-dollar-sign me-2"></i>4.- IMPORTE DE LOS TRABAJOS
+                                </h5>
+                            </div>
+
+                            <div class="bg-info bg-opacity-10 p-4 rounded mb-4 border border-info border-opacity-25">
+                                <div class="row">
+                                    <div class="col-md-8 mb-3">
+                                        <label for="workAmount" class="form-label fw-semibold">Importe de los Trabajos</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-primary text-white">$</span>
+                                            <input type="number" class="form-control" id="workAmount" name="workAmount" step="0.01" oninput="calculateTotals()">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3 d-flex align-items-end">
+                                        <button type="button" class="btn btn-success w-100" onclick="calculateTotals()">
+                                            <i class="fas fa-calculator me-2"></i>Calcular
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="iva" class="form-label">16% I.V.A.</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="iva" name="iva" step="0.01" readonly>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="total" class="form-label fw-bold">TOTAL</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-success text-white">$</span>
+                                            <input type="number" class="form-control fw-bold" id="total" name="total" step="0.01" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-0">
+                                    <label for="totalInWords" class="form-label">Total en Letra</label>
+                                    <input type="text" class="form-control" id="totalInWords" name="totalInWords" placeholder="Son: _____ pesos 00/100 M.N.">
+                                </div>
+                            </div>
+
+                            <!-- Declaration -->
+                            <div class="alert alert-warning text-center fw-semibold mb-4" role="alert">
+                                <h6 class="alert-heading mb-2">EL CONTRATISTA DECLARA:</h6>
+                                ME COMPROMETO A REALIZAR LOS TRABAJOS SOLICITADOS CON CALIDAD<br>
+                                Y ENTREGAR CORRECTAMENTE EN TIEMPO Y FORMA.
+                            </div>
+
+                            <!-- Signatures -->
+                            <div class="bg-light p-4 rounded mb-4">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="manager" class="form-label fw-semibold">
+                                            <i class="fas fa-user-tie me-2 text-primary"></i>Autoriza (Gerente):
+                                        </label>
+                                        <select class="form-select" id="manager" name="manager" required>
+                                            <option value="">Seleccionar Gerente...</option>
+                                            <option value="Carlos García">Carlos García</option>
+                                            <option value="Vladimir Sagredo">Vladimir Sagredo</option>
+                                            <option value="Johnny Bench">Johnny Bench</option>
+                                        </select>
+                                        <p class="text-muted small mt-2">Gerencia de Área que autoriza</p>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="contractor" class="form-label fw-semibold">
+                                            <i class="fas fa-user-check me-2 text-success"></i>Prestador de Servicio:
+                                        </label>
+                                        <select class="form-select" id="contractor" name="contractor" required>
+                                            <option value="">Seleccionar Contratista...</option>
+                                            <option value="Aaron Cauchi">Aaron Cauchi</option>
+                                            <option value="Israel Dominguez">Israel Dominguez</option>
+                                            <option value="Ricardo Gonzalez">Ricardo Gonzalez</option>
+                                        </select>
+                                        <p class="text-muted small mt-2">Prestador de Servicio</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Annexes -->
+                            <div class="bg-light p-3 rounded mb-3 border-start border-5 border-primary">
+                                <h5 class="mb-0 text-primary">
+                                    <i class="fas fa-paperclip me-2"></i>ANEXOS
+                                </h5>
+                            </div>
+
+                            <div class="bg-secondary bg-opacity-10 p-3 rounded mb-4">
+                                <div class="row">
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="budget" name="annexes[]" value="presupuesto">
+                                            <label class="form-check-label" for="budget">
+                                                <i class="fas fa-calculator me-2 text-info"></i>Presupuesto
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="guarantees" name="annexes[]" value="garantias">
+                                            <label class="form-check-label" for="guarantees">
+                                                <i class="fas fa-shield-alt me-2 text-success"></i>Garantías
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="locationMap" name="annexes[]" value="croquis">
+                                            <label class="form-check-label" for="locationMap">
+                                                <i class="fas fa-map me-2 text-warning"></i>Croquis de Ubicación
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="photos" name="annexes[]" value="fotos">
+                                            <label class="form-check-label" for="photos">
+                                                <i class="fas fa-camera me-2 text-danger"></i>Fotos
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-12">
+                                        <label for="otherAnnexes" class="form-label">Otros (Especificar):</label>
+                                        <input type="text" class="form-control" id="otherAnnexes" name="otherAnnexes">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Observations -->
+                            <div class="mb-4">
+                                <label for="observations" class="form-label fw-semibold">
+                                    <i class="fas fa-sticky-note me-2 text-info"></i>OBSERVACIONES
+                                </label>
+                                <textarea class="form-control" id="observations" name="observations" rows="4"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-dark btn-lg px-5">
+                                    <i class="fas fa-save me-2"></i>Generar Orden de Trabajo
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    function calculateTotals() {
+        const workAmount = parseFloat(document.getElementById('workAmount').value) || 0;
+        const iva = workAmount * 0.16;
+        const total = workAmount + iva;
+        
+        document.getElementById('iva').value = iva.toFixed(2);
+        document.getElementById('total').value = total.toFixed(2);
+    }
+
+    // Form submission handler
+    document.getElementById('workOrderForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Basic validation
+        const requiredFields = ['orderNumber', 'orderDate', 'workDescription', 'companyName', 'manager', 'contractor'];
+        let isValid = true;
+        
+        requiredFields.forEach(field => {
+            const element = document.getElementById(field);
+            if (!element.value.trim()) {
+                element.classList.add('is-invalid');
+                isValid = false;
+            } else {
+                element.classList.remove('is-invalid');
+            }
+        });
+        
+        if (isValid) {
+            alert('Orden de trabajo generada exitosamente. En un sistema real, esta información se enviaría al servidor.');
+            console.log('Form data:', new FormData(this));
+        } else {
+            alert('Por favor, complete todos los campos obligatorios.');
+        }
+    });
+
+    // Set current date as default
+    document.getElementById('orderDate').value = new Date().toISOString().split('T')[0];
+    
+    // Auto-generate order number
+    document.getElementById('orderNumber').value = 'OT-' + new Date().getFullYear() + '-' + 
+                                                String(Date.now()).slice(-6);
+
+    // Update footer timestamp
+    document.getElementById('lastUpdate').textContent = new Date().toLocaleString('es-ES');
+    
+    // Pre-cargar datos del proyecto si están disponibles
+    {% if project_data %}
+        // Cargar datos del proyecto en el formulario
+        document.getElementById('workDescription').value = "{{ project_data.description|escapejs }}";
+        document.getElementById('companyName').value = "{{ project_data.provider|escapejs }}";
+        document.getElementById('workAmount').value = "{{ project_data.cost }}";
+        
+        // Calcular totales automáticamente
+        calculateTotals();
+        
+        // Agregar nombre del proyecto en detalles del trabajo
+        const workDetails = document.getElementById('workDetails');
+        workDetails.value = `PROYECTO: {{ project_data.name|escapejs }}\n\n${workDetails.value || ''}`;
+    {% endif %})
+</script>
+{% endblock %}
