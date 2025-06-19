@@ -20,14 +20,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.namespace == 'workorder' %}active{% endif %}"
-                        href="/workorder/">
+                    <a class="nav-link {% if request.path == '/workorder/' %}active{% endif %}"
+                        href="{% url 'workorder_dashboard' %}">
                         <i class="fas fa-tachometer-alt me-1"></i>Dashboard
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {% if request.resolver_match.namespace == 'workorder' %}active{% endif %}"
-                        href="/workorder/">
+                    <a class="nav-link {% if request.path == '/workorder/' %}active{% endif %}"
+                        href="{% url 'workorder_dashboard' %}">
                         <i class="fas fa-clipboard-list me-1"></i>Órdenes
                     </a>
                 </li>
