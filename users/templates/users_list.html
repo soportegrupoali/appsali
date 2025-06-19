@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Lista de Usuarios - SOTALI{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="bg-primary text-white rounded-3 p-4 shadow-sm">
+                <h2 class="mb-0">
+                    <i class="fas fa-users me-2"></i>
+                    Gestión de Usuarios
+                </h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <i class="fas fa-user-friends text-primary me-2"></i>
+                            Usuarios Registrados
+                        </h5>
+                        {% if user.is_superuser %}
+                        <a href="{% url 'users:signup' %}" class="btn btn-primary btn-sm">
+                            <i class="fas fa-user-plus me-1"></i>
+                            Nuevo Usuario
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Usuario</th>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                    <th>Último Acceso</th>
+                                    <th>Tipo</th>
+                                    <th>Estado</th>
+                                    {% if user.is_superuser %}
+                                    <th>Acciones</th>
+                                    {% endif %}
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for u in users %}
+                                <tr>
+                                    <td>
+                                        {{ u.username }}
+                                        {% if u.username == user.username %}
+                                            <span class="badge bg-info ms-1">Tú</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ u.first_name }} {{ u.last_name }}</td>
+                                    <td>{{ u.email }}</td>
+                                    <td>{{ u.last_login|date:"d/m/Y H:i"|default:"Nunca" }}</td>
+                                    <td>
+                                        {% if u.is_superuser %}
+                                            <span class="badge bg-danger">Superadmin</span>
+                                        {% elif u.is_staff %}
+                                            <span class="badge bg-info">Staff</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Normal</span>
+                                        {% endif %}
+                                    </td>
+                                    <td>
+                                        {% if u.is_active %}
+                                            <span class="badge bg-success">Activo</span>
+                                        {% else %}
+                                            <span class="badge bg-danger">Inactivo</span>
+                                        {% endif %}
+                                    </td>
+                                    {% if user.is_superuser %}
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="#" class="btn btn-outline-primary" title="Editar usuario">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            {% if u.username != user.username %}
+                                            <a href="#" class="btn btn-outline-danger" title="Eliminar usuario">
+                                                <i class="fas fa-trash-alt"></i>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                    {% endif %}
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="{% if user.is_superuser %}7{% else %}6{% endif %}" class="text-center py-3">
+                                        <div class="alert alert-info mb-0">
+                                            <i class="fas fa-info-circle me-2"></i>
+                                            No hay usuarios registrados en el sistema
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

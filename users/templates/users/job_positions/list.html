@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Puestos de Trabajo - SOTALI{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="bg-success text-white rounded-3 p-4 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">
+                        <i class="fas fa-briefcase me-2"></i>
+                        Gestión de Puestos de Trabajo
+                    </h2>
+                    <div>
+                        <a href="{% url 'users:job_position_create' %}" class="btn btn-light">
+                            <i class="fas fa-plus-circle me-2"></i>Nuevo Puesto
+                        </a>
+                        <a href="{% url 'users:list' %}" class="btn btn-outline-light ms-2">
+                            <i class="fas fa-arrow-left me-2"></i>Volver a Usuarios
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0">
+                            <i class="fas fa-list text-success me-2"></i>
+                            Puestos de Trabajo Registrados
+                        </h5>
+                        <span class="badge bg-success rounded-pill">{{ positions|length }} puesto(s)</span>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover align-middle">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Departamento</th>
+                                    <th>Descripción</th>
+                                    <th>Empleados</th>
+                                    <th>Fecha de Creación</th>
+                                    <th class="text-end">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for position in positions %}
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-success rounded-circle text-white d-flex align-items-center justify-content-center me-2" style="width: 36px; height: 36px;">
+                                                <i class="fas fa-briefcase"></i>
+                                            </div>
+                                            <div>
+                                                <strong>{{ position.name }}</strong>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="badge bg-primary">{{ position.department.name }}</span>
+                                    </td>
+                                    <td>{{ position.description|default:"No disponible"|truncatechars:80 }}</td>
+                                    <td>
+                                        <span class="badge bg-info">{{ position.employees.count }} empleado(s)</span>
+                                    </td>
+                                    <td>{{ position.created_at|date:"d/m/Y H:i" }}</td>
+                                    <td class="text-end">
+                                        <a href="{% url 'users:job_position_detail' position.id %}" class="btn btn-sm btn-info" title="Ver detalles">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="{% url 'users:job_position_edit' position.id %}" class="btn btn-sm btn-primary" title="Editar puesto">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                        <a href="{% url 'users:job_position_delete' position.id %}" class="btn btn-sm btn-danger" title="Eliminar puesto">
+                                            <i class="fas fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="6" class="text-center py-4">
+                                        <div class="alert alert-info mb-0">
+                                            <i class="fas fa-info-circle me-2"></i>
+                                            No hay puestos de trabajo registrados en el sistema.
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                {% if positions %}
+                <div class="card-footer">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <small class="text-muted">Mostrando {{ positions|length }} puesto(s)</small>
+                        <a href="{% url 'users:job_position_create' %}" class="btn btn-success btn-sm">
+                            <i class="fas fa-plus-circle me-1"></i>Crear Nuevo Puesto
+                        </a>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
