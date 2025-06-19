@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Eliminar Usuario - {{ user_obj.username }} - SOTALI{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="bg-danger text-white rounded-3 p-4 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">
+                        <i class="fas fa-user-slash me-2"></i>
+                        Eliminar Usuario
+                    </h2>
+                    <a href="{% url 'users:list' %}" class="btn btn-outline-light">
+                        <i class="fas fa-arrow-left me-2"></i>Volver a la Lista
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-6 mx-auto">
+            <div class="card border-danger shadow-lg">
+                <div class="card-header bg-danger text-white py-3">
+                    <h5 class="mb-0">
+                        <i class="fas fa-exclamation-triangle me-2"></i>Confirmación de Eliminación
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    <div class="text-center mb-4">
+                        {% if user_obj.is_superuser %}
+                            <div class="bg-danger rounded-circle text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="fas fa-user-shield fa-3x"></i>
+                            </div>
+                        {% elif user_obj.is_staff %}
+                            <div class="bg-info rounded-circle text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="fas fa-user-tie fa-3x"></i>
+                            </div>
+                        {% else %}
+                            <div class="bg-secondary rounded-circle text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 80px; height: 80px;">
+                                <i class="fas fa-user fa-3x"></i>
+                            </div>
+                        {% endif %}
+                        
+                        <h4 class="fw-bold">{{ user_obj.first_name }} {{ user_obj.last_name }}</h4>
+                        <p class="text-muted mb-0">@{{ user_obj.username }}</p>
+                        
+                        {% if user_obj.email %}
+                        <p class="mb-3">{{ user_obj.email }}</p>
+                        {% endif %}
+                        
+                        {% if user_obj.is_superuser %}
+                            <span class="badge bg-danger mb-3">Administrador</span>
+                        {% elif user_obj.is_staff %}
+                            <span class="badge bg-info mb-3">Supervisor</span>
+                        {% else %}
+                            <span class="badge bg-secondary mb-3">Operador/Invitado</span>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="alert alert-danger">
+                        <h5 class="alert-heading mb-3"><i class="fas fa-exclamation-circle me-2"></i>¡Advertencia!</h5>
+                        <p>Está a punto de <strong>eliminar permanentemente</strong> al usuario <strong>{{ user_obj.username }}</strong>.</p>
+                        <hr>
+                        <ul class="mb-0">
+                            <li>Esta acción <strong>no se puede deshacer</strong>.</li>
+                            <li>Se eliminarán todos los datos asociados al usuario.</li>
+                            <li>Se perderán todos los permisos y configuraciones del usuario.</li>
+                        </ul>
+                    </div>
+                    
+                    <form method="POST" class="mt-4">
+                        {% csrf_token %}
+                        <div class="d-flex justify-content-between">
+                            <a href="{% url 'users:detail' user_obj.id %}" class="btn btn-outline-secondary">
+                                <i class="fas fa-times me-2"></i>Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-trash-alt me-2"></i>Eliminar Usuario Permanentemente
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

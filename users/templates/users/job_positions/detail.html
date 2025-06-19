@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Detalle de Puesto - {{ position.name }} - SOTALI{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col-12">
+            <div class="bg-success text-white rounded-3 p-4 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="mb-0">
+                        <i class="fas fa-briefcase me-2"></i>
+                        Detalle de Puesto de Trabajo
+                    </h2>
+                    <div>
+                        <a href="{% url 'users:job_position_edit' position.id %}" class="btn btn-light me-2">
+                            <i class="fas fa-edit me-2"></i>Editar
+                        </a>
+                        <a href="{% url 'users:job_position_list' %}" class="btn btn-outline-light">
+                            <i class="fas fa-arrow-left me-2"></i>Volver
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-light py-3">
+                    <h5 class="mb-0 text-success">
+                        <i class="fas fa-info-circle me-2"></i>Información del Puesto
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <div class="bg-success rounded-circle text-white d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 100px; height: 100px;">
+                            <i class="fas fa-briefcase fa-3x"></i>
+                        </div>
+                        <h4 class="fw-bold">{{ position.name }}</h4>
+                        <span class="badge bg-primary mb-2">{{ position.department.name }}</span>
+                        <p class="text-muted mb-0">Creado el {{ position.created_at|date:"d/m/Y" }}</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h6 class="fw-bold mb-3">Descripción:</h6>
+                        <p>{{ position.description|default:"No hay descripción disponible." }}</p>
+                    </div>
+                </div>
+                <div class="card-footer bg-light">
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'users:job_position_edit' position.id %}" class="btn btn-success">
+                            <i class="fas fa-edit me-2"></i>Editar Puesto
+                        </a>
+                        {% if not employees %}
+                        <a href="{% url 'users:job_position_delete' position.id %}" class="btn btn-outline-danger">
+                            <i class="fas fa-trash-alt me-2"></i>Eliminar Puesto
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-light py-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="mb-0 text-success">
+                            <i class="fas fa-users me-2"></i>Empleados Asignados
+                        </h5>
+                        <a href="{% url 'users:create' %}" class="btn btn-primary btn-sm">
+                            <i class="fas fa-user-plus me-1"></i>Nuevo Usuario
+                        </a>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Usuario</th>
+                                    <th>Nombre</th>
+                                    <th>Email</th>
+                                    <th>Perfil</th>
+                                    <th class="text-end">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for employee in employees %}
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="bg-primary rounded-circle text-white d-flex align-items-center justify-content-center me-2" style="width: 36px; height: 36px;">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <strong>{{ employee.user.username }}</strong>
+                                        </div>
+                                    </td>
+                                    <td>{{ employee.user.first_name }} {{ employee.user.last_name }}</td>
+                                    <td>{{ employee.user.email|default:"No disponible" }}</td>
+                                    <td>
+                                        {% if employee.user.is_superuser %}
+                                            <span class="badge bg-danger">Administrador</span>
+                                        {% elif employee.user.is_staff %}
+                                            <span class="badge bg-info">Supervisor</span>
+                                        {% else %}
+                                            <span class="badge bg-secondary">Regular</span>
+                                        {% endif %}
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="{% url 'users:detail' employee.user.id %}" class="btn btn-sm btn-info" title="Ver detalles">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        <a href="{% url 'users:edit' employee.user.id %}" class="btn btn-sm btn-primary" title="Editar usuario">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% empty %}
+                                <tr>
+                                    <td colspan="5" class="text-center py-4">
+                                        <div class="alert alert-info mb-0">
+                                            <i class="fas fa-info-circle me-2"></i>
+                                            No hay empleados asignados a este puesto de trabajo.
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
