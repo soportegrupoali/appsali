@@ -17,7 +17,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from users import views as users_views
-from workorder import views as workorder_views
 from menu import views as menu_views
 
 urlpatterns = [
@@ -25,5 +24,4 @@ urlpatterns = [
     path('', users_views.login, name='home_login'),  # Ruta raíz apunta directamente al login
     path('users/', include('users.urls')),
     path('menu/', include('menu.urls')),
-    path('workorder/', include('workorder.urls')),
 ]
