@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Eliminar Empresa - SOTALI{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="bg-danger text-white rounded-3 p-4 shadow">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-2 fw-bold">
+                        <i class="fas fa-trash me-2"></i>
+                        Eliminar Empresa
+                    </h2>
+                    <p class="mb-0 fs-5 opacity-75">
+                        {{ empresa.nombre_comercial }}
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="bg-white bg-opacity-20 rounded-3 p-3 d-inline-block">
+                        <i class="fas fa-exclamation-triangle fa-3x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmation Card -->
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-exclamation-triangle me-2 text-danger"></i>
+                    Confirmación de Eliminación
+                </h5>
+            </div>
+            <div class="card-body p-4">
+                <div class="alert alert-danger mb-4">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    <strong>¡Advertencia!</strong> Esta acción no se puede deshacer. Se eliminará permanentemente la empresa del sistema.
+                </div>
+                
+                <h5 class="fw-bold mb-3">¿Está seguro que desea eliminar la siguiente empresa?</h5>
+                
+                <div class="row g-3 mb-4 bg-light p-3 rounded">
+                    <div class="col-md-6">
+                        <strong class="text-muted small">RAZÓN SOCIAL:</strong>
+                        <p class="mb-1 fw-bold">{{ empresa.razon_social }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <strong class="text-muted small">NOMBRE COMERCIAL:</strong>
+                        <p class="mb-1">{{ empresa.nombre_comercial }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <strong class="text-muted small">RFC:</strong>
+                        <p class="mb-1">{{ empresa.rfc }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <strong class="text-muted small">ID EN ERP:</strong>
+                        <p class="mb-1">{{ empresa.erp_id }}</p>
+                    </div>
+                </div>
+                
+                <form method="POST" action="{% url 'empresas:delete' empresa.id %}">
+                    {% csrf_token %}
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a href="{% url 'empresas:detail' empresa.id %}" class="btn btn-outline-secondary">
+                            <i class="fas fa-arrow-left me-1"></i>Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash me-1"></i>Eliminar Definitivamente
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

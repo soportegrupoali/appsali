@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Nuevo Proveedor - SOTALI{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="bg-primary text-white rounded-3 p-4 shadow">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-2 fw-bold">
+                        <i class="fas fa-plus-circle me-2"></i>
+                        Nuevo Proveedor
+                    </h2>
+                    <p class="mb-0 fs-5 opacity-75">
+                        Crear un nuevo proveedor en el sistema
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="bg-white bg-opacity-20 rounded-3 p-3 d-inline-block">
+                        <i class="fas fa-truck fa-3x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Form Card -->
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-truck me-2 text-primary"></i>
+                    Información del Proveedor
+                </h5>
+            </div>
+            <div class="card-body p-4">
+                {% if error %}
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    {{ error }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endif %}
+                
+                <form method="POST" action="{% url 'proveedores:create' %}" id="proveedorForm" novalidate>
+                    {% csrf_token %}
+                    
+                    <div class="mb-4">
+                        <label for="razon_social" class="form-label fw-semibold">Razón Social <span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-building"></i></span>
+                            <input type="text" class="form-control" id="razon_social" name="razon_social" 
+                                placeholder="Razón Social del proveedor" required>
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese la razón social del proveedor.
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="nombre_comercial" class="form-label fw-semibold">Nombre Comercial</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fas fa-store"></i></span>
+                            <input type="text" class="form-control" id="nombre_comercial" name="nombre_comercial" 
+                                placeholder="Nombre comercial (si es diferente a la razón social)">
+                        </div>
+                        <div class="form-text">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Si se deja en blanco, se usará la razón social.
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label for="rfc" class="form-label fw-semibold">RFC <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-id-card"></i></span>
+                                <input type="text" class="form-control" id="rfc" name="rfc" 
+                                    placeholder="RFC del proveedor" required>
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor ingrese el RFC del proveedor.
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <label for="codigo_erp" class="form-label fw-semibold">Código ERP</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-database"></i></span>
+                                <input type="text" class="form-control" id="codigo_erp" name="codigo_erp" 
+                                    placeholder="Código del proveedor en CONTPAQ i®">
+                            </div>
+                            <div class="form-text">
+                                <i class="fas fa-info-circle me-1"></i>
+                                Campo opcional. Si se deja en blanco, se guardará como vacío.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a href="{% url 'proveedores:list' %}" class="btn btn-outline-secondary">
+                            <i class="fas fa-times me-1"></i>Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-1"></i>Guardar Proveedor
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Validación de formulario en tiempo real
+        const form = document.getElementById('proveedorForm');
+        const inputs = form.querySelectorAll('input[required], select[required], textarea[required]');
+        
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim()) {
+                    this.classList.remove('is-invalid');
+                    this.classList.add('is-valid');
+                } else {
+                    this.classList.remove('is-valid');
+                    this.classList.add('is-invalid');
+                }
+            });
+        });
+        
+        // Validación al enviar el formulario
+        form.addEventListener('submit', function(event) {
+            let valid = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    input.classList.add('is-invalid');
+                    valid = false;
+                } else {
+                    input.classList.add('is-valid');
+                }
+            });
+            
+            if (!valid) {
+                event.preventDefault();
+                event.stopPropagation();
+                
+                // Scroll al primer campo inválido
+                const firstInvalid = form.querySelector('.is-invalid');
+                if (firstInvalid) {
+                    firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    firstInvalid.focus();
+                }
+            }
+        });
+        
+        // RFC a mayúsculas automáticamente
+        const rfcInput = document.getElementById('rfc');
+        rfcInput.addEventListener('input', function() {
+            this.value = this.value.toUpperCase();
+        });
+        
+        // Código ERP a mayúsculas automáticamente
+        const codigoErpInput = document.getElementById('codigo_erp');
+        codigoErpInput.addEventListener('input', function() {
+            this.value = this.value.toUpperCase();
+        });
+    });
+</script>
+{% endblock %} 

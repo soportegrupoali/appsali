@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Detalle de Proveedor - SOTALI{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="bg-primary text-white rounded-3 p-4 shadow">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-2 fw-bold">
+                        <i class="fas fa-truck me-2"></i>
+                        Detalle de Proveedor
+                    </h2>
+                    <p class="mb-0 fs-5 opacity-75">
+                        {{ proveedor.nombre_comercial }}
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="bg-white bg-opacity-20 rounded-3 p-3 d-inline-block">
+                        <i class="fas fa-info-circle fa-3x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Detail Card -->
+<div class="row mb-4">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-info-circle me-2 text-primary"></i>
+                    Información del Proveedor
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-muted mb-2">Razón Social</h6>
+                        <p class="fs-5">{{ proveedor.razon_social }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-muted mb-2">Nombre Comercial</h6>
+                        <p class="fs-5">{{ proveedor.nombre_comercial }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-muted mb-2">RFC</h6>
+                        <p class="fs-5">
+                            <span class="badge bg-info text-white fs-6 p-2">{{ proveedor.rfc }}</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-muted mb-2">Código ERP</h6>
+                        <p class="fs-5">
+                            <span class="badge bg-secondary text-white fs-6 p-2">{{ proveedor.codigo_erp }}</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-muted mb-2">Fecha de Creación</h6>
+                        <p class="fs-6">{{ proveedor.created_at|date:"d/m/Y H:i" }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-bold text-muted mb-2">Última Actualización</h6>
+                        <p class="fs-6">{{ proveedor.updated_at|date:"d/m/Y H:i" }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-cogs me-2 text-primary"></i>
+                    Acciones
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="d-grid gap-2">
+                    <a href="{% url 'proveedores:edit' proveedor.id %}" class="btn btn-warning text-white">
+                        <i class="fas fa-edit me-2"></i>Editar Proveedor
+                    </a>
+                    <a href="{% url 'proveedores:delete' proveedor.id %}" class="btn btn-danger">
+                        <i class="fas fa-trash me-2"></i>Eliminar Proveedor
+                    </a>
+                    <a href="{% url 'proveedores:list' %}" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i>Volver a la Lista
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-info-circle me-2 text-primary"></i>
+                    Información Adicional
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-info mb-0">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Este proveedor está registrado en el sistema CONTPAQ i® con el código <strong>{{ proveedor.codigo_erp }}</strong>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Empresas - SOTALI{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="bg-primary text-white rounded-3 p-4 shadow">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-2 fw-bold">
+                        <i class="fas fa-building me-2"></i>
+                        Empresas
+                    </h2>
+                    <p class="mb-0 fs-5 opacity-75">
+                        Gestión de empresas del grupo ALI
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="bg-white bg-opacity-20 rounded-3 p-3 d-inline-block">
+                        <i class="fas fa-building fa-3x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Search and Actions -->
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-3">
+                <form method="GET" action="{% url 'empresas:list' %}" class="row g-2 align-items-center">
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <span class="input-group-text bg-light">
+                                <i class="fas fa-search text-muted"></i>
+                            </span>
+                            <input type="text" class="form-control" name="search" value="{{ search_query }}" 
+                                placeholder="Buscar por nombre, razón social o RFC">
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-grid d-md-flex justify-content-md-end">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search me-1"></i>Buscar
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary ms-md-2" 
+                            onclick="window.location.href='{% url 'empresas:list' %}'">
+                            <i class="fas fa-times me-1"></i>Limpiar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mt-3 mt-md-0">
+        <div class="card border-0 shadow-sm">
+            <div class="card-body p-3">
+                <div class="d-grid gap-2">
+                    <a href="{% url 'empresas:create' %}" class="btn btn-success">
+                        <i class="fas fa-plus-circle me-1"></i>Nueva Empresa
+                    </a>
+                    <a href="{% url 'empresas:import' %}" class="btn btn-info text-white">
+                        <i class="fas fa-file-import me-1"></i>Importar desde JSON
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Empresas List -->
+<div class="row">
+    <div class="col-12">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0 fw-semibold">
+                        <i class="fas fa-list me-2 text-primary"></i>
+                        Lista de Empresas
+                    </h5>
+                    <span class="badge bg-primary">{{ empresa_count }} empresa{{ empresa_count|pluralize }}</span>
+                </div>
+            </div>
+            
+            {% if empresas %}
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Razón Social</th>
+                                <th scope="col">Nombre Comercial</th>
+                                <th scope="col">RFC</th>
+                                <th scope="col">ID ERP</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for empresa in empresas %}
+                                <tr>
+                                    <td>{{ empresa.id }}</td>
+                                    <td>{{ empresa.razon_social }}</td>
+                                    <td>{{ empresa.nombre_comercial }}</td>
+                                    <td><span class="badge bg-info text-white">{{ empresa.rfc }}</span></td>
+                                    <td>{{ empresa.erp_id }}</td>
+                                    <td>
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="{% url 'empresas:detail' empresa.id %}" class="btn btn-info text-white">
+                                                <i class="fas fa-eye"></i>
+                                            </a>
+                                            <a href="{% url 'empresas:edit' empresa.id %}" class="btn btn-warning text-white">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a href="{% url 'empresas:delete' empresa.id %}" class="btn btn-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            {% else %}
+                <div class="card-body text-center py-5">
+                    <i class="fas fa-building fa-4x text-muted mb-3 opacity-50"></i>
+                    <h5 class="text-muted mb-3">No hay empresas registradas</h5>
+                    <p class="text-muted mb-4">
+                        No se encontraron empresas en el sistema.
+                        {% if search_query %}
+                            Intenta con otra búsqueda o 
+                            <a href="{% url 'empresas:list' %}">ver todas las empresas</a>.
+                        {% else %}
+                            Puedes crear una nueva empresa o importarlas desde un archivo JSON.
+                        {% endif %}
+                    </p>
+                    <div class="d-flex gap-2 justify-content-center">
+                        <a href="{% url 'empresas:create' %}" class="btn btn-primary">
+                            <i class="fas fa-plus-circle me-1"></i>Nueva Empresa
+                        </a>
+                        <a href="{% url 'empresas:import' %}" class="btn btn-info text-white">
+                            <i class="fas fa-file-import me-1"></i>Importar JSON
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('Módulo de Empresas cargado correctamente');
+        
+        // Animar las tarjetas al cargar
+        const cards = document.querySelectorAll('.card');
+        cards.forEach((card, index) => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.4s ease-out, transform 0.4s ease-out';
+            
+            setTimeout(() => {
+                card.style.opacity = 1;
+                card.style.transform = 'translateY(0)';
+            }, 100 * index);
+        });
+    });
+</script>
+{% endblock %}
