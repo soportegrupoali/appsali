@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Importar Proveedores - SOTALI{% endblock %}
+
+{% block content %}
+<!-- Header Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="bg-info text-white rounded-3 p-4 shadow">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h2 class="mb-2 fw-bold">
+                        <i class="fas fa-file-import me-2"></i>
+                        Importar Proveedores
+                    </h2>
+                    <p class="mb-0 fs-5 opacity-75">
+                        Importar proveedores desde archivo JSON
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <div class="bg-white bg-opacity-20 rounded-3 p-3 d-inline-block">
+                        <i class="fas fa-upload fa-3x opacity-75"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Import Card -->
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="card border-0 shadow-sm">
+            <div class="card-header bg-light border-bottom">
+                <h5 class="mb-0 fw-semibold">
+                    <i class="fas fa-info-circle me-2 text-primary"></i>
+                    Importar Proveedores desde JSON
+                </h5>
+            </div>
+            <div class="card-body p-4">
+                <div class="alert alert-info mb-4">
+                    <i class="fas fa-info-circle me-2"></i>
+                    Se importarán los proveedores desde el archivo <strong>ALI_Proveedores.json</strong> ubicado en <strong>/static/datacontpaqi/</strong>. 
+                    Los proveedores que ya existan en la base de datos (mismo RFC o código ERP) serán omitidos.
+                </div>
+                
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h6 class="fw-bold mb-3">El archivo JSON debe tener la siguiente estructura:</h6>
+                        <pre class="bg-dark text-light p-3 rounded"><code>{
+    "error": false,
+    "proveedores": [
+        {
+            "id": 1,
+            "razon_social": "NOMBRE DEL PROVEEDOR S.A. DE C.V.",
+            "nombre_comercial": "NOMBRE COMERCIAL",
+            "rfc": "RFC123456XXX",
+            "codigo_erp": "RFC123456XXX"
+        },
+        ...
+    ]
+}</code></pre>
+                    </div>
+                </div>
+                
+                <form method="POST" action="{% url 'proveedores:import' %}">
+                    {% csrf_token %}
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a href="{% url 'proveedores:list' %}" class="btn btn-outline-secondary">
+                            <i class="fas fa-times me-1"></i>Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-file-import me-1"></i>Importar Proveedores
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 

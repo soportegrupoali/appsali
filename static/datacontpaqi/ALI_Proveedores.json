@@ -1,0 +1,3701 @@
+{
+    "error": false,
+    "proveedores": [
+        {
+            "id": 2,
+            "razon_social": "CFE SUMINISTRADOR DE SERVICIOS BASICOS",
+            "nombre_comercial": "CFE SUMINISTRADOR DE SERVICIOS BASICOS",
+            "rfc": "CSS160330CP7",
+            "codigo_erp": "CSS160330CP7"
+        },
+        {
+            "id": 3,
+            "razon_social": "GRUPO INURBA DEL SURESTE SA DE CV",
+            "nombre_comercial": "GRUPO INURBA DEL SURESTE SA DE CV",
+            "rfc": "GIS160422D69",
+            "codigo_erp": "GIS160422D69"
+        },
+        {
+            "id": 5,
+            "razon_social": "ESPACIOS PUBLICOS Y PARQUES DE MEXICO S.C.",
+            "nombre_comercial": "ESPACIOS PUBLICOS Y PARQUES DE MEXICO S.C.",
+            "rfc": "EPP131004CL2",
+            "codigo_erp": "EPP131004CL2"
+        },
+        {
+            "id": 6,
+            "razon_social": "CM LINNOS",
+            "nombre_comercial": "CM LINNOS",
+            "rfc": "CLI201020GH2",
+            "codigo_erp": "CLI201020GH2"
+        },
+        {
+            "id": 7,
+            "razon_social": "COPYJET DIGITAL S.A. DE C.V.",
+            "nombre_comercial": "COPYJET DIGITAL S.A. DE C.V.",
+            "rfc": "CDI150120RA5",
+            "codigo_erp": "CDI150120RA5"
+        },
+        {
+            "id": 8,
+            "razon_social": "CERVANTES PEREZ CONTADORES PUBLICOS",
+            "nombre_comercial": "CERVANTES PEREZ CONTADORES PUBLICOS",
+            "rfc": "CPC190821PQ3",
+            "codigo_erp": "CPC190821PQ3"
+        },
+        {
+            "id": 9,
+            "razon_social": "SYP MEXICO SOLUCIONES Y PROYECTOS",
+            "nombre_comercial": "SYP MEXICO SOLUCIONES Y PROYECTOS",
+            "rfc": "SMS180219IV1",
+            "codigo_erp": "SMS180219IV1"
+        },
+        {
+            "id": 10,
+            "razon_social": "JULIO CESAR ALCOCER RODRIGUEZ",
+            "nombre_comercial": "JULIO CESAR ALCOCER RODRIGUEZ",
+            "rfc": "AORJ8810192Z9",
+            "codigo_erp": "AORJ8810192Z9"
+        },
+        {
+            "id": 11,
+            "razon_social": "PROYECTOS Y CONSTRUCCIONES J IBARRA",
+            "nombre_comercial": "PROYECTOS Y CONSTRUCCIONES J IBARRA",
+            "rfc": "PYC080423NK1",
+            "codigo_erp": "PYC080423NK1"
+        },
+        {
+            "id": 12,
+            "razon_social": "GRUPO TECNOLOGICO INNOVAGOING",
+            "nombre_comercial": "GRUPO TECNOLOGICO INNOVAGOING",
+            "rfc": "GTI210601V32",
+            "codigo_erp": "GTI210601V32"
+        },
+        {
+            "id": 13,
+            "razon_social": "ADT PRIVATE SECURITY SERVICES DE MEXICO",
+            "nombre_comercial": "ADT PRIVATE SECURITY SERVICES DE MEXICO",
+            "rfc": "APS080728RT5",
+            "codigo_erp": "APS080728RT5"
+        },
+        {
+            "id": 14,
+            "razon_social": "FORD CREDIT DE MEXICO",
+            "nombre_comercial": "FORD CREDIT DE MEXICO",
+            "rfc": "FCM950703D3A",
+            "codigo_erp": "FCM950703D3A"
+        },
+        {
+            "id": 15,
+            "razon_social": "MATERIALES E INSTALACIONES DEL SURESTE MEXICANO",
+            "nombre_comercial": "MATERIALES E INSTALACIONES DEL SURESTE MEXICANO",
+            "rfc": "MIS180620TZ4",
+            "codigo_erp": "MIS180620TZ4"
+        },
+        {
+            "id": 16,
+            "razon_social": "COMASU DE LA PENINSULA",
+            "nombre_comercial": "COMASU DE LA PENINSULA",
+            "rfc": "CPE180510R19",
+            "codigo_erp": "CPE180510R19"
+        },
+        {
+            "id": 17,
+            "razon_social": "RODRIGO ALEJANDRO SALAZAR PADRON",
+            "nombre_comercial": "RODRIGO ALEJANDRO SALAZAR PADRON",
+            "rfc": "SAPR831128DP4",
+            "codigo_erp": "SAPR831128DP4"
+        },
+        {
+            "id": 18,
+            "razon_social": "FERNANDO JOSE ALCOCER AVILA",
+            "nombre_comercial": "FERNANDO JOSE ALCOCER AVILA",
+            "rfc": "AOAF641124MF2",
+            "codigo_erp": "AOAF641124MF2"
+        },
+        {
+            "id": 19,
+            "razon_social": "INGNOVAR",
+            "nombre_comercial": "INGNOVAR",
+            "rfc": "ING150923S84",
+            "codigo_erp": "ING150923S84"
+        },
+        {
+            "id": 20,
+            "razon_social": "MUNICIPIO DE MERIDA YUCATAN",
+            "nombre_comercial": "MUNICIPIO DE MERIDA YUCATAN",
+            "rfc": "MMY981020E69",
+            "codigo_erp": "MMY981020E69"
+        },
+        {
+            "id": 21,
+            "razon_social": "SALVADOR BROCA FERNANDEZ",
+            "nombre_comercial": "SALVADOR BROCA FERNANDEZ",
+            "rfc": "BOFS450404S69",
+            "codigo_erp": "BOFS450404S69"
+        },
+        {
+            "id": 22,
+            "razon_social": "ANGEL FRANCISCO BALAM EUAN",
+            "nombre_comercial": "ANGEL FRANCISCO BALAM EUAN",
+            "rfc": "BAEA9006196D7",
+            "codigo_erp": "BAEA9006196D7"
+        },
+        {
+            "id": 23,
+            "razon_social": "BELEN ROSALES QUIROZ",
+            "nombre_comercial": "BELEN ROSALES QUIROZ",
+            "rfc": "ROQB8505173P2",
+            "codigo_erp": "ROQB8505173P2"
+        },
+        {
+            "id": 24,
+            "razon_social": "ADMINISTRACION GERENCIA ARQUITECTONICA",
+            "nombre_comercial": "ADMINISTRACION GERENCIA ARQUITECTONICA",
+            "rfc": "AGA190123535",
+            "codigo_erp": "AGA190123535"
+        },
+        {
+            "id": 25,
+            "razon_social": "COMBUSTIBLES DE YUCATAN",
+            "nombre_comercial": "COMBUSTIBLES DE YUCATAN",
+            "rfc": "CYU941027P30",
+            "codigo_erp": "CYU941027P30"
+        },
+        {
+            "id": 26,
+            "razon_social": "VALES CONSORCIO CREATIVO",
+            "nombre_comercial": "VALES CONSORCIO CREATIVO",
+            "rfc": "VCC990329DV4",
+            "codigo_erp": "VCC990329DV4"
+        },
+        {
+            "id": 27,
+            "razon_social": "SERVICIOS PROFECIONALES DE LIMPIEZA E HIGIENE",
+            "nombre_comercial": "SERVICIOS PROFECIONALES DE LIMPIEZA E HIGIENE",
+            "rfc": "SPL031206AK1",
+            "codigo_erp": "SPL031206AK1"
+        },
+        {
+            "id": 28,
+            "razon_social": "EXPERTS SENSORIELS",
+            "nombre_comercial": "EXPERTS SENSORIELS",
+            "rfc": "ESE201125QZ9",
+            "codigo_erp": "ESE201125QZ9"
+        },
+        {
+            "id": 29,
+            "razon_social": "RADIOMOVIL DIPSA",
+            "nombre_comercial": "RADIOMOVIL DIPSA",
+            "rfc": "RDI841003QJ4",
+            "codigo_erp": "RDI841003QJ4"
+        },
+        {
+            "id": 30,
+            "razon_social": "DIEGO ALBERTO BUENFIL GOMEZ",
+            "nombre_comercial": "DIEGO ALBERTO BUENFIL GOMEZ",
+            "rfc": "BUGD880901IK2",
+            "codigo_erp": "BUGD880901IK2"
+        },
+        {
+            "id": 31,
+            "razon_social": "RICARDO GONZALEZ GAMBOA",
+            "nombre_comercial": "RICARDO GONZALEZ GAMBOA",
+            "rfc": "GOGR8309131L1",
+            "codigo_erp": "GOGR8309131L1"
+        },
+        {
+            "id": 32,
+            "razon_social": "HERRAMIENTAS Y MAQUINARIA BURGOS",
+            "nombre_comercial": "HERRAMIENTAS Y MAQUINARIA BURGOS",
+            "rfc": "HMB1909271C6",
+            "codigo_erp": "HMB1909271C6"
+        },
+        {
+            "id": 33,
+            "razon_social": "FLORENCIO GONZALEZ SOLIS",
+            "nombre_comercial": "FLORENCIO GONZALEZ SOLIS",
+            "rfc": "GOSF721121T63",
+            "codigo_erp": "GOSF721121T63"
+        },
+        {
+            "id": 34,
+            "razon_social": "TIENDAS DE AUTOSERVICIO FERRETEROS DE LA PENINSULA",
+            "nombre_comercial": "TIENDAS DE AUTOSERVICIO FERRETEROS DE LA PENINSULA",
+            "rfc": "TAF170929C58",
+            "codigo_erp": "TAF170929C58"
+        },
+        {
+            "id": 35,
+            "razon_social": "ELECTROMAX",
+            "nombre_comercial": "ELECTROMAX",
+            "rfc": "ELE080912RU1",
+            "codigo_erp": "ELE080912RU1"
+        },
+        {
+            "id": 36,
+            "razon_social": "CENTRAL DE PROYECTOS",
+            "nombre_comercial": "CENTRAL DE PROYECTOS",
+            "rfc": "CPR090217KU0",
+            "codigo_erp": "CPR090217KU0"
+        },
+        {
+            "id": 37,
+            "razon_social": "GRUPO BOXITO",
+            "nombre_comercial": "GRUPO BOXITO",
+            "rfc": "GBO1310311S2",
+            "codigo_erp": "GBO1310311S2"
+        },
+        {
+            "id": 38,
+            "razon_social": "HOME DEPOT MEXICO",
+            "nombre_comercial": "HOME DEPOT MEXICO",
+            "rfc": "HDM001017AS1",
+            "codigo_erp": "HDM001017AS1"
+        },
+        {
+            "id": 39,
+            "razon_social": "EMBOTELLADORAS BEPENSA",
+            "nombre_comercial": "EMBOTELLADORAS BEPENSA",
+            "rfc": "EBE7711037Y5",
+            "codigo_erp": "EBE7711037Y5"
+        },
+        {
+            "id": 40,
+            "razon_social": "COSTCO DE MEXICO",
+            "nombre_comercial": "COSTCO DE MEXICO",
+            "rfc": "CME910715UB9",
+            "codigo_erp": "CME910715UB9"
+        },
+        {
+            "id": 41,
+            "razon_social": "MAGPI ASESORES EN SEGURIDAD PRIVADA",
+            "nombre_comercial": "MAGPI ASESORES EN SEGURIDAD PRIVADA",
+            "rfc": "MAS160216JL0",
+            "codigo_erp": "MAS160216JL0"
+        },
+        {
+            "id": 42,
+            "razon_social": "AISA COMPUTO Y PAPELERIA",
+            "nombre_comercial": "AISA COMPUTO Y PAPELERIA",
+            "rfc": "ACP0706213DA",
+            "codigo_erp": "ACP0706213DA"
+        },
+        {
+            "id": 43,
+            "razon_social": "GLOBAL INNOVATION TECHNOLOGIES",
+            "nombre_comercial": "GLOBAL INNOVATION TECHNOLOGIES",
+            "rfc": "GIT130827B16",
+            "codigo_erp": "GIT130827B16"
+        },
+        {
+            "id": 44,
+            "razon_social": "MULTIOBRAS TUCAN",
+            "nombre_comercial": "MULTIOBRAS TUCAN",
+            "rfc": "MTU9211132RA",
+            "codigo_erp": "MTU9211132RA"
+        },
+        {
+            "id": 45,
+            "razon_social": "NUEVA WAL MART DE MEXICO",
+            "nombre_comercial": "NUEVA WAL MART DE MEXICO",
+            "rfc": "NWM9709244W4",
+            "codigo_erp": "NWM9709244W4"
+        },
+        {
+            "id": 46,
+            "razon_social": "PROVEEDORA DEL PANADERO",
+            "nombre_comercial": "PROVEEDORA DEL PANADERO",
+            "rfc": "PPA831231GI0",
+            "codigo_erp": "PPA831231GI0"
+        },
+        {
+            "id": 47,
+            "razon_social": "JUAVAN",
+            "nombre_comercial": "JUAVAN",
+            "rfc": "JUA181220KX6",
+            "codigo_erp": "JUA181220KX6"
+        },
+        {
+            "id": 48,
+            "razon_social": "NOVEDADES DE MERIDA",
+            "nombre_comercial": "NOVEDADES DE MERIDA",
+            "rfc": "NME7911063B0",
+            "codigo_erp": "NME7911063B0"
+        },
+        {
+            "id": 49,
+            "razon_social": "SECRETARÍA DE ADMINISTRACIÓN Y FINANZAS",
+            "nombre_comercial": "SECRETARÍA DE ADMINISTRACIÓN Y FINANZAS",
+            "rfc": "SHA840512SX1",
+            "codigo_erp": "SHA840512SX1"
+        },
+        {
+            "id": 50,
+            "razon_social": "EQUIPO CONSULTOR ELECTRICO DEL SURESTE",
+            "nombre_comercial": "EQUIPO CONSULTOR ELECTRICO DEL SURESTE",
+            "rfc": "ECE140806NX6",
+            "codigo_erp": "ECE140806NX6"
+        },
+        {
+            "id": 51,
+            "razon_social": "SUSET VIRGINIA PECH GAMBOA",
+            "nombre_comercial": "SUSET VIRGINIA PECH GAMBOA",
+            "rfc": "PEGS7101301Q1",
+            "codigo_erp": "PEGS7101301Q1"
+        },
+        {
+            "id": 52,
+            "razon_social": "CONSTRUCTORA DESING ARQ PENINSULAR",
+            "nombre_comercial": "CONSTRUCTORA DESING ARQ PENINSULAR",
+            "rfc": "CDA220701CW6",
+            "codigo_erp": "CDA220701CW6"
+        },
+        {
+            "id": 53,
+            "razon_social": "JORGE LUIS PEREZ CURMINA",
+            "nombre_comercial": "JORGE LUIS PEREZ CURMINA",
+            "rfc": "PECJ660105KS4",
+            "codigo_erp": "PECJ660105KS4"
+        },
+        {
+            "id": 54,
+            "razon_social": "TONY TIENDAS",
+            "nombre_comercial": "TONY TIENDAS",
+            "rfc": "TTI961202IM1",
+            "codigo_erp": "TTI961202IM1"
+        },
+        {
+            "id": 55,
+            "razon_social": "FARMACIA GUADALAJARA",
+            "nombre_comercial": "FARMACIA GUADALAJARA",
+            "rfc": "FGU830930PD3",
+            "codigo_erp": "FGU830930PD3"
+        },
+        {
+            "id": 56,
+            "razon_social": "PROMOTORA MUSICAL",
+            "nombre_comercial": "PROMOTORA MUSICAL",
+            "rfc": "PMU940317114",
+            "codigo_erp": "PMU940317114"
+        },
+        {
+            "id": 57,
+            "razon_social": "LIBRERIAS GANDHI",
+            "nombre_comercial": "LIBRERIAS GANDHI",
+            "rfc": "LGA0111296B6",
+            "codigo_erp": "LGA0111296B6"
+        },
+        {
+            "id": 58,
+            "razon_social": "FARMACON",
+            "nombre_comercial": "FARMACON",
+            "rfc": "FAR970429SE2",
+            "codigo_erp": "FAR970429SE2"
+        },
+        {
+            "id": 59,
+            "razon_social": "JORGE YSIDRO EUAN CEN",
+            "nombre_comercial": "JORGE YSIDRO EUAN CEN",
+            "rfc": "EUCJ800515GZA",
+            "codigo_erp": "EUCJ800515GZA"
+        },
+        {
+            "id": 60,
+            "razon_social": "TIENDAS CHEDRAUI",
+            "nombre_comercial": "TIENDAS CHEDRAUI",
+            "rfc": "TCH850701RM1",
+            "codigo_erp": "TCH850701RM1"
+        },
+        {
+            "id": 61,
+            "razon_social": "DISTRIBUIDORA AGROQUIMICA DE LA PENINSULA",
+            "nombre_comercial": "DISTRIBUIDORA AGROQUIMICA DE LA PENINSULA",
+            "rfc": "DAP050319RM9",
+            "codigo_erp": "DAP050319RM9"
+        },
+        {
+            "id": 62,
+            "razon_social": "GO MART YUC",
+            "nombre_comercial": "GO MART YUC",
+            "rfc": "GMY2110131E7",
+            "codigo_erp": "GMY2110131E7"
+        },
+        {
+            "id": 63,
+            "razon_social": "QUALIUM SOLUCIONES DIGITALES",
+            "nombre_comercial": "QUALIUM SOLUCIONES DIGITALES",
+            "rfc": "QSD200812262",
+            "codigo_erp": "QSD200812262"
+        },
+        {
+            "id": 64,
+            "razon_social": "ROBERTO MANUEL RIOS GALVAN",
+            "nombre_comercial": "ROBERTO MANUEL RIOS GALVAN",
+            "rfc": "RIGR560416GQ3",
+            "codigo_erp": "RIGR560416GQ3"
+        },
+        {
+            "id": 65,
+            "razon_social": "UNIVERSIDAD MARISTA DE MERIDA",
+            "nombre_comercial": "UNIVERSIDAD MARISTA DE MERIDA",
+            "rfc": "UMM960521R28",
+            "codigo_erp": "UMM960521R28"
+        },
+        {
+            "id": 66,
+            "razon_social": "AXTEL",
+            "nombre_comercial": "AXTEL",
+            "rfc": "AXT940727FP8",
+            "codigo_erp": "AXT940727FP8"
+        },
+        {
+            "id": 67,
+            "razon_social": "ARMIN JACOBO PAT AVILA",
+            "nombre_comercial": "ARMIN JACOBO PAT AVILA",
+            "rfc": "PAAA801026R71",
+            "codigo_erp": "PAAA801026R71"
+        },
+        {
+            "id": 68,
+            "razon_social": "COMPUTO CONTABLE SOFT",
+            "nombre_comercial": "COMPUTO CONTABLE SOFT",
+            "rfc": "CCS230403AX9",
+            "codigo_erp": "CCS230403AX9"
+        },
+        {
+            "id": 69,
+            "razon_social": "AXA SEGUROS",
+            "nombre_comercial": "AXA SEGUROS",
+            "rfc": "ASE931116231",
+            "codigo_erp": "ASE931116231"
+        },
+        {
+            "id": 70,
+            "razon_social": "LA FERRE COMERCIALIZADORA",
+            "nombre_comercial": "LA FERRE COMERCIALIZADORA",
+            "rfc": "FCO0310234W3",
+            "codigo_erp": "FCO0310234W3"
+        },
+        {
+            "id": 71,
+            "razon_social": "JORGE CARLOS BOLIO CASTELLANOS Y ASOCIADOS",
+            "nombre_comercial": "JORGE CARLOS BOLIO CASTELLANOS Y ASOCIADOS",
+            "rfc": "JCB8101266P3",
+            "codigo_erp": "JCB8101266P3"
+        },
+        {
+            "id": 72,
+            "razon_social": "LUIS ANTONIO NOH LIZAMA",
+            "nombre_comercial": "LUIS ANTONIO NOH LIZAMA",
+            "rfc": "NOLL7306203J1",
+            "codigo_erp": "NOLL7306203J1"
+        },
+        {
+            "id": 73,
+            "razon_social": "RAFAEL IVAN SANCHEZ BUENFIL",
+            "nombre_comercial": "RAFAEL IVAN SANCHEZ BUENFIL",
+            "rfc": "SABR660912213",
+            "codigo_erp": "SABR660912213"
+        },
+        {
+            "id": 74,
+            "razon_social": "GERARDO MOLINA LOPEZ",
+            "nombre_comercial": "GERARDO MOLINA LOPEZ",
+            "rfc": "MOLG770418NR5",
+            "codigo_erp": "MOLG770418NR5"
+        },
+        {
+            "id": 75,
+            "razon_social": "MODELADO Y ASESORIA DE PROYECTOS DE INGENIERIA",
+            "nombre_comercial": "MODELADO Y ASESORIA DE PROYECTOS DE INGENIERIA",
+            "rfc": "MAP231204JH4",
+            "codigo_erp": "MAP231204JH4"
+        },
+        {
+            "id": 76,
+            "razon_social": "ASFALTERA DE LA PENINSULA",
+            "nombre_comercial": "ASFALTERA DE LA PENINSULA",
+            "rfc": "APE201109693",
+            "codigo_erp": "APE201109693"
+        },
+        {
+            "id": 77,
+            "razon_social": "AARON DANIEL VEGA VILLA",
+            "nombre_comercial": "AARON DANIEL VEGA VILLA",
+            "rfc": "VEVA7407014MA",
+            "codigo_erp": "VEVA7407014MA"
+        },
+        {
+            "id": 78,
+            "razon_social": "EDUARDO GASPAR GONZALEZ LOPEZ",
+            "nombre_comercial": "EDUARDO GASPAR GONZALEZ LOPEZ",
+            "rfc": "GOLE901103AP0",
+            "codigo_erp": "GOLE901103AP0"
+        },
+        {
+            "id": 79,
+            "razon_social": "ROBERTO DE JESUS LOPEZ SEGURA",
+            "nombre_comercial": "ROBERTO DE JESUS LOPEZ SEGURA",
+            "rfc": "LOSR8703282P1",
+            "codigo_erp": "LOSR8703282P1"
+        },
+        {
+            "id": 80,
+            "razon_social": "DIGITAL SOLUTIONS AMERICAS",
+            "nombre_comercial": "DIGITAL SOLUTIONS AMERICAS",
+            "rfc": "DSA130408AM2",
+            "codigo_erp": "DSA130408AM2"
+        },
+        {
+            "id": 81,
+            "razon_social": "RAFAEL DOMINGUEZ SANTOS",
+            "nombre_comercial": "RAFAEL DOMINGUEZ SANTOS",
+            "rfc": "DOSR860423UTA",
+            "codigo_erp": "DOSR860423UTA"
+        },
+        {
+            "id": 82,
+            "razon_social": "MAHOMRI ABRAHAM CUBAS ROMERO",
+            "nombre_comercial": "MAHOMRI ABRAHAM CUBAS ROMERO",
+            "rfc": "CURM890218CN0",
+            "codigo_erp": "CURM890218CN0"
+        },
+        {
+            "id": 83,
+            "razon_social": "EDENRED MEXICO",
+            "nombre_comercial": "EDENRED MEXICO",
+            "rfc": "ASE930924SS7",
+            "codigo_erp": "ASE930924SS7"
+        },
+        {
+            "id": 84,
+            "razon_social": "BANCO MERCANTIL DEL NORTE SA INSTITUCION DE BANCA",
+            "nombre_comercial": "BANCO MERCANTIL DEL NORTE SA INSTITUCION DE BANCA",
+            "rfc": "BMN930209927",
+            "codigo_erp": "BMN930209927"
+        },
+        {
+            "id": 85,
+            "razon_social": "MARIANA DEL SOCORRO CHAN CASTILLO",
+            "nombre_comercial": "MARIANA DEL SOCORRO CHAN CASTILLO",
+            "rfc": "CACM790718MQ6",
+            "codigo_erp": "CACM790718MQ6"
+        },
+        {
+            "id": 86,
+            "razon_social": "CORMOCON",
+            "nombre_comercial": "CORMOCON",
+            "rfc": "COR150424MLA",
+            "codigo_erp": "COR150424MLA"
+        },
+        {
+            "id": 87,
+            "razon_social": "CONSULTORES EN PREVENCION Y MITIGACION DE IMPACTOS",
+            "nombre_comercial": "CONSULTORES EN PREVENCION Y MITIGACION DE IMPACTOS",
+            "rfc": "CPM000718R39",
+            "codigo_erp": "CPM000718R39"
+        },
+        {
+            "id": 88,
+            "razon_social": "VICTOR BUSTANI MOUKARZEL",
+            "nombre_comercial": "VICTOR BUSTANI MOUKARZEL",
+            "rfc": "BUMV731124DF4",
+            "codigo_erp": "BUMV731124DF4"
+        },
+        {
+            "id": 89,
+            "razon_social": "PAOLA SAUCEDO RODRIGUEZ",
+            "nombre_comercial": "PAOLA SAUCEDO RODRIGUEZ",
+            "rfc": "SARP8908201P9",
+            "codigo_erp": "SARP8908201P9"
+        },
+        {
+            "id": 90,
+            "razon_social": "DIEGO WALDEMAR TREJO GAMBOA",
+            "nombre_comercial": "DIEGO WALDEMAR TREJO GAMBOA",
+            "rfc": "TEGD851212IL7",
+            "codigo_erp": "TEGD851212IL7"
+        },
+        {
+            "id": 91,
+            "razon_social": "MARINA SILCER",
+            "nombre_comercial": "MARINA SILCER",
+            "rfc": "MSI0906164TA",
+            "codigo_erp": "MSI0906164TA"
+        },
+        {
+            "id": 92,
+            "razon_social": "AEROPUERTO DE MERIDA",
+            "nombre_comercial": "AEROPUERTO DE MERIDA",
+            "rfc": "AME980401BI7",
+            "codigo_erp": "AME980401BI7"
+        },
+        {
+            "id": 93,
+            "razon_social": "SERGIO ANTONIO MENDEZ CACERES",
+            "nombre_comercial": "SERGIO ANTONIO MENDEZ CACERES",
+            "rfc": "MECS811205TU8",
+            "codigo_erp": "MECS811205TU8"
+        },
+        {
+            "id": 94,
+            "razon_social": "MARIO HUMBERTO CAMARA SEBA",
+            "nombre_comercial": "MARIO HUMBERTO CAMARA SEBA",
+            "rfc": "CASM751109P94",
+            "codigo_erp": "CASM751109P94"
+        },
+        {
+            "id": 95,
+            "razon_social": "E.S.G.E.S",
+            "nombre_comercial": "E.S.G.E.S",
+            "rfc": "ESG000418CS4",
+            "codigo_erp": "ESG000418CS4"
+        },
+        {
+            "id": 96,
+            "razon_social": "EDWIN ALBERTO MIER MOO",
+            "nombre_comercial": "EDWIN ALBERTO MIER MOO",
+            "rfc": "MIME930112N44",
+            "codigo_erp": "MIME930112N44"
+        },
+        {
+            "id": 97,
+            "razon_social": "OPESUB",
+            "nombre_comercial": "OPESUB",
+            "rfc": "OPE1605044B9",
+            "codigo_erp": "OPE1605044B9"
+        },
+        {
+            "id": 98,
+            "razon_social": "MANUEL JESUS AZCORRA REJON",
+            "nombre_comercial": "MANUEL JESUS AZCORRA REJON",
+            "rfc": "AORM5509149F2",
+            "codigo_erp": "AORM5509149F2"
+        },
+        {
+            "id": 99,
+            "razon_social": "FULGENCIA DE JESUS VILLAMONTE DOMINGUEZ",
+            "nombre_comercial": "FULGENCIA DE JESUS VILLAMONTE DOMINGUEZ",
+            "rfc": "VIDF710727CMA",
+            "codigo_erp": "VIDF710727CMA"
+        },
+        {
+            "id": 100,
+            "razon_social": "2RO",
+            "nombre_comercial": "2RO",
+            "rfc": "ROX131220K40",
+            "codigo_erp": "ROX131220K40"
+        },
+        {
+            "id": 101,
+            "razon_social": "CADENA COMERCIAL OXXO",
+            "nombre_comercial": "CADENA COMERCIAL OXXO",
+            "rfc": "CCO8605231N4",
+            "codigo_erp": "CCO8605231N4"
+        },
+        {
+            "id": 102,
+            "razon_social": "DON SPAGHETTO DEL SURESTE",
+            "nombre_comercial": "DON SPAGHETTO DEL SURESTE",
+            "rfc": "DSS210309MV7",
+            "codigo_erp": "DSS210309MV7"
+        },
+        {
+            "id": 103,
+            "razon_social": "MARIA IRENE VASQUEZ GARCIA",
+            "nombre_comercial": "MARIA IRENE VASQUEZ GARCIA",
+            "rfc": "VAGI600121FD8",
+            "codigo_erp": "VAGI600121FD8"
+        },
+        {
+            "id": 104,
+            "razon_social": "GRUPO NACIONAL PROVINCIAL",
+            "nombre_comercial": "GRUPO NACIONAL PROVINCIAL",
+            "rfc": "GNP9211244P0",
+            "codigo_erp": "GNP9211244P0"
+        },
+        {
+            "id": 105,
+            "razon_social": "KARLA ESTEFANNY CISNEROS MARTINEZ",
+            "nombre_comercial": "KARLA ESTEFANNY CISNEROS MARTINEZ",
+            "rfc": "CIMK9307303R4",
+            "codigo_erp": "CIMK9307303R4"
+        },
+        {
+            "id": 106,
+            "razon_social": "SANEAMIENTO SANA",
+            "nombre_comercial": "SANEAMIENTO SANA",
+            "rfc": "SSA030409P68",
+            "codigo_erp": "SSA030409P68"
+        },
+        {
+            "id": 107,
+            "razon_social": "FERRETERA Y MAQUINARIA DEL BAZAR",
+            "nombre_comercial": "FERRETERA Y MAQUINARIA DEL BAZAR",
+            "rfc": "FMB841023UI1",
+            "codigo_erp": "FMB841023UI1"
+        },
+        {
+            "id": 108,
+            "razon_social": "INTERCAM BANCO S.A.",
+            "nombre_comercial": "INTERCAM BANCO S.A.",
+            "rfc": "IBI061030GD4",
+            "codigo_erp": "IBI061030GD4"
+        },
+        {
+            "id": 109,
+            "razon_social": "LUIS DANIEL FLORES HERNANDEZ",
+            "nombre_comercial": "LUIS DANIEL FLORES HERNANDEZ",
+            "rfc": "FOHL820827S29",
+            "codigo_erp": "FOHL820827S29"
+        },
+        {
+            "id": 110,
+            "razon_social": "SERVICIOS SIN PAPEL",
+            "nombre_comercial": "SERVICIOS SIN PAPEL",
+            "rfc": "SSP140421G72",
+            "codigo_erp": "SSP140421G72"
+        },
+        {
+            "id": 111,
+            "razon_social": "CONSTRUCCIONES Y MECANIZACIONES",
+            "nombre_comercial": "CONSTRUCCIONES Y MECANIZACIONES",
+            "rfc": "CME080915S14",
+            "codigo_erp": "CME080915S14"
+        },
+        {
+            "id": 112,
+            "razon_social": "VICTOR ANDRES MONTES DE OCA GAMBOA",
+            "nombre_comercial": "VICTOR ANDRES MONTES DE OCA GAMBOA",
+            "rfc": "MOGV930227K60",
+            "codigo_erp": "MOGV930227K60"
+        },
+        {
+            "id": 113,
+            "razon_social": "GDDS",
+            "nombre_comercial": "GDDS",
+            "rfc": "GDD170215GTA",
+            "codigo_erp": "GDD170215GTA"
+        },
+        {
+            "id": 114,
+            "razon_social": "EL NIPLITO DEL SURESTE",
+            "nombre_comercial": "EL NIPLITO DEL SURESTE",
+            "rfc": "NSU9102113Y9",
+            "codigo_erp": "NSU9102113Y9"
+        },
+        {
+            "id": 115,
+            "razon_social": "DIMASECO DEL MAYAB",
+            "nombre_comercial": "DIMASECO DEL MAYAB",
+            "rfc": "DMA1901313B6",
+            "codigo_erp": "DMA1901313B6"
+        },
+        {
+            "id": 116,
+            "razon_social": "IRVING ELIUD DE LA CRUZ REYES",
+            "nombre_comercial": "IRVING ELIUD DE LA CRUZ REYES",
+            "rfc": "CURI821119HD8",
+            "codigo_erp": "CURI821119HD8"
+        },
+        {
+            "id": 117,
+            "razon_social": "Genaro roberto Chale Can",
+            "nombre_comercial": "Genaro roberto Chale Can",
+            "rfc": "CACG940518KN4",
+            "codigo_erp": "CACG940518KN4"
+        },
+        {
+            "id": 118,
+            "razon_social": "EDWIN ALBERTO AZCORRA CASTAÑEDA",
+            "nombre_comercial": "EDWIN ALBERTO AZCORRA CASTAÑEDA",
+            "rfc": "AOCE770124KD7",
+            "codigo_erp": "AOCE770124KD7"
+        },
+        {
+            "id": 119,
+            "razon_social": "MIRZA ELIZABETH PEREZ MATOS",
+            "nombre_comercial": "MIRZA ELIZABETH PEREZ MATOS",
+            "rfc": "PEMM631103C63",
+            "codigo_erp": "PEMM631103C63"
+        },
+        {
+            "id": 120,
+            "razon_social": "FRANCISCO MASSIEU AVILA",
+            "nombre_comercial": "FRANCISCO MASSIEU AVILA",
+            "rfc": "MAAF650119DQ2",
+            "codigo_erp": "MAAF650119DQ2"
+        },
+        {
+            "id": 121,
+            "razon_social": "CHIKRI ABIMERHI BODIB",
+            "nombre_comercial": "CHIKRI ABIMERHI BODIB",
+            "rfc": "AIBC560528DB1",
+            "codigo_erp": "AIBC560528DB1"
+        },
+        {
+            "id": 122,
+            "razon_social": "RESTACARIBE",
+            "nombre_comercial": "RESTACARIBE",
+            "rfc": "RES140815M19",
+            "codigo_erp": "RES140815M19"
+        },
+        {
+            "id": 123,
+            "razon_social": "CONSORCIO DEL MAYAB",
+            "nombre_comercial": "CONSORCIO DEL MAYAB",
+            "rfc": "CMA901126H68",
+            "codigo_erp": "CMA901126H68"
+        },
+        {
+            "id": 124,
+            "razon_social": "NIETO PIPELINES",
+            "nombre_comercial": "NIETO PIPELINES",
+            "rfc": "NPI150820UW7",
+            "codigo_erp": "NPI150820UW7"
+        },
+        {
+            "id": 125,
+            "razon_social": "GASOLINERA DE MERIDA",
+            "nombre_comercial": "GASOLINERA DE MERIDA",
+            "rfc": "GME980817IX5",
+            "codigo_erp": "GME980817IX5"
+        },
+        {
+            "id": 126,
+            "razon_social": "TANIA STEFANY CECILIO REJON",
+            "nombre_comercial": "TANIA STEFANY CECILIO REJON",
+            "rfc": "CERT9308241K1",
+            "codigo_erp": "CERT9308241K1"
+        },
+        {
+            "id": 127,
+            "razon_social": "EG IMPRENTA DIGITAL",
+            "nombre_comercial": "EG IMPRENTA DIGITAL",
+            "rfc": "EID1807259Z0",
+            "codigo_erp": "EID1807259Z0"
+        },
+        {
+            "id": 128,
+            "razon_social": "OTOCH KAN CONSTRUCCIONES",
+            "nombre_comercial": "OTOCH KAN CONSTRUCCIONES",
+            "rfc": "OKC220727415",
+            "codigo_erp": "OKC220727415"
+        },
+        {
+            "id": 129,
+            "razon_social": "ANTONIO HERBERTO ARAUJO BURGOS",
+            "nombre_comercial": "ANTONIO HERBERTO ARAUJO BURGOS",
+            "rfc": "AABA790330FC7",
+            "codigo_erp": "AABA790330FC7"
+        },
+        {
+            "id": 130,
+            "razon_social": "OPERADORA OMX",
+            "nombre_comercial": "OPERADORA OMX",
+            "rfc": "OOM960429832",
+            "codigo_erp": "OOM960429832"
+        },
+        {
+            "id": 131,
+            "razon_social": "ELECTRONICA GONZALEZ",
+            "nombre_comercial": "ELECTRONICA GONZALEZ",
+            "rfc": "EGO811210BL0",
+            "codigo_erp": "EGO811210BL0"
+        },
+        {
+            "id": 132,
+            "razon_social": "JOSE VILLAMIL VERTIZ",
+            "nombre_comercial": "JOSE VILLAMIL VERTIZ",
+            "rfc": "VIVJ751208R90",
+            "codigo_erp": "VIVJ751208R90"
+        },
+        {
+            "id": 133,
+            "razon_social": "LEONARDO DE LA CRUZ CANUL MARTINEZ",
+            "nombre_comercial": "LEONARDO DE LA CRUZ CANUL MARTINEZ",
+            "rfc": "CAML710909IZ8",
+            "codigo_erp": "CAML710909IZ8"
+        },
+        {
+            "id": 134,
+            "razon_social": "ALONDRA RAMOS QUERO",
+            "nombre_comercial": "ALONDRA RAMOS QUERO",
+            "rfc": "RAQA001024GY2",
+            "codigo_erp": "RAQA001024GY2"
+        },
+        {
+            "id": 135,
+            "razon_social": "COPISISTEMAS DE YUCATAN",
+            "nombre_comercial": "COPISISTEMAS DE YUCATAN",
+            "rfc": "CYU0605187Y3",
+            "codigo_erp": "CYU0605187Y3"
+        },
+        {
+            "id": 136,
+            "razon_social": "NATALY ELIZABETH NARVAEZ CASTELLANOS",
+            "nombre_comercial": "NATALY ELIZABETH NARVAEZ CASTELLANOS",
+            "rfc": "NACN890322KR1",
+            "codigo_erp": "NACN890322KR1"
+        },
+        {
+            "id": 137,
+            "razon_social": "C Y C CONSULTORIA Y CAPACITACION ORGANIZACIONAL",
+            "nombre_comercial": "C Y C CONSULTORIA Y CAPACITACION ORGANIZACIONAL",
+            "rfc": "CAC1402196U5",
+            "codigo_erp": "CAC1402196U5"
+        },
+        {
+            "id": 138,
+            "razon_social": "ACOMPANIA",
+            "nombre_comercial": "ACOMPANIA",
+            "rfc": "ACO220614AQ8",
+            "codigo_erp": "ACO220614AQ8"
+        },
+        {
+            "id": 139,
+            "razon_social": "COMERCIALIZADORA CAZBRA",
+            "nombre_comercial": "COMERCIALIZADORA CAZBRA",
+            "rfc": "CCA010228PL6",
+            "codigo_erp": "CCA010228PL6"
+        },
+        {
+            "id": 140,
+            "razon_social": "OPERADORA EXE",
+            "nombre_comercial": "OPERADORA EXE",
+            "rfc": "OEX9602014B9",
+            "codigo_erp": "OEX9602014B9"
+        },
+        {
+            "id": 141,
+            "razon_social": "MARIA JOSE CHI PECH",
+            "nombre_comercial": "MARIA JOSE CHI PECH",
+            "rfc": "CIPJ841115DJ0",
+            "codigo_erp": "CIPJ841115DJ0"
+        },
+        {
+            "id": 142,
+            "razon_social": "SERVICIO GRAN CALAMAR",
+            "nombre_comercial": "SERVICIO GRAN CALAMAR",
+            "rfc": "SGC120627AS8",
+            "codigo_erp": "SGC120627AS8"
+        },
+        {
+            "id": 143,
+            "razon_social": "MATERIALES DE LA PENINSULA",
+            "nombre_comercial": "MATERIALES DE LA PENINSULA",
+            "rfc": "MPE9701225E0",
+            "codigo_erp": "MPE9701225E0"
+        },
+        {
+            "id": 144,
+            "razon_social": "DANIEL LUMBRERAS RIVERA",
+            "nombre_comercial": "DANIEL LUMBRERAS RIVERA",
+            "rfc": "LURD690526V22",
+            "codigo_erp": "LURD690526V22"
+        },
+        {
+            "id": 145,
+            "razon_social": "ARTICULOS Y MOTORES ELECTRICOS",
+            "nombre_comercial": "ARTICULOS Y MOTORES ELECTRICOS",
+            "rfc": "AME8409102M3",
+            "codigo_erp": "AME8409102M3"
+        },
+        {
+            "id": 146,
+            "razon_social": "UGA SOLUCIONES AMBIENTALES",
+            "nombre_comercial": "UGA SOLUCIONES AMBIENTALES",
+            "rfc": "USA090615PY9",
+            "codigo_erp": "USA090615PY9"
+        },
+        {
+            "id": 147,
+            "razon_social": "HEILER MANUEL MENA MATOS",
+            "nombre_comercial": "HEILER MANUEL MENA MATOS",
+            "rfc": "MEMH921027CU5",
+            "codigo_erp": "MEMH921027CU5"
+        },
+        {
+            "id": 148,
+            "razon_social": "TECNOMUNDO ACCESORIOS",
+            "nombre_comercial": "TECNOMUNDO ACCESORIOS",
+            "rfc": "TAC190206LG4",
+            "codigo_erp": "TAC190206LG4"
+        },
+        {
+            "id": 149,
+            "razon_social": "ALFREDO REYES MALDONADO",
+            "nombre_comercial": "ALFREDO REYES MALDONADO",
+            "rfc": "REMA671117IG6",
+            "codigo_erp": "REMA671117IG6"
+        },
+        {
+            "id": 150,
+            "razon_social": "EDUARDO LORENZO RIVERA ZAMUDIO",
+            "nombre_comercial": "EDUARDO LORENZO RIVERA ZAMUDIO",
+            "rfc": "RIZE6312115V8",
+            "codigo_erp": "RIZE6312115V8"
+        },
+        {
+            "id": 151,
+            "razon_social": "JUAN GABRIEL PECH RODRIGUEZ",
+            "nombre_comercial": "JUAN GABRIEL PECH RODRIGUEZ",
+            "rfc": "PERJ791101KN3",
+            "codigo_erp": "PERJ791101KN3"
+        },
+        {
+            "id": 152,
+            "razon_social": "JULIETA VALLEJOS SOTO",
+            "nombre_comercial": "JULIETA VALLEJOS SOTO",
+            "rfc": "VASJ850301TL9",
+            "codigo_erp": "VASJ850301TL9"
+        },
+        {
+            "id": 153,
+            "razon_social": "MAISON SALAMANCA",
+            "nombre_comercial": "MAISON SALAMANCA",
+            "rfc": "MSA200827Q47",
+            "codigo_erp": "MSA200827Q47"
+        },
+        {
+            "id": 154,
+            "razon_social": "IVAN LOPEZ VILLASEÑOR",
+            "nombre_comercial": "IVAN LOPEZ VILLASEÑOR",
+            "rfc": "LOVI831130SA6",
+            "codigo_erp": "LOVI831130SA6"
+        },
+        {
+            "id": 155,
+            "razon_social": "ADRIAN ALONSO JIMENEZ ORTEGON",
+            "nombre_comercial": "ADRIAN ALONSO JIMENEZ ORTEGON",
+            "rfc": "JIOA8605285F3",
+            "codigo_erp": "JIOA8605285F3"
+        },
+        {
+            "id": 156,
+            "razon_social": "DELIO ERNESTO FIGUEROA PAREDES",
+            "nombre_comercial": "DELIO ERNESTO FIGUEROA PAREDES",
+            "rfc": "FIPD520201AU5",
+            "codigo_erp": "FIPD520201AU5"
+        },
+        {
+            "id": 157,
+            "razon_social": "CHRISTOPHER ALBERTO ALMEIDA HERNANDEZ",
+            "nombre_comercial": "CHRISTOPHER ALBERTO ALMEIDA HERNANDEZ",
+            "rfc": "AEHC920710JB8",
+            "codigo_erp": "AEHC920710JB8"
+        },
+        {
+            "id": 158,
+            "razon_social": "AEROVIAS DE MEXICO",
+            "nombre_comercial": "AEROVIAS DE MEXICO",
+            "rfc": "AME880912I89",
+            "codigo_erp": "AME880912I89"
+        },
+        {
+            "id": 159,
+            "razon_social": "YRVIN MARTIN CARRILLO XOOL",
+            "nombre_comercial": "YRVIN MARTIN CARRILLO XOOL",
+            "rfc": "CAXY720305NN0",
+            "codigo_erp": "CAXY720305NN0"
+        },
+        {
+            "id": 160,
+            "razon_social": "ANGEL JESUS ALAMILLA MENA",
+            "nombre_comercial": "ANGEL JESUS ALAMILLA MENA",
+            "rfc": "AAMA800921PF7",
+            "codigo_erp": "AAMA800921PF7"
+        },
+        {
+            "id": 161,
+            "razon_social": "JULIO CESAR AYALA MEDINA",
+            "nombre_comercial": "JULIO CESAR AYALA MEDINA",
+            "rfc": "AAMJ850211328",
+            "codigo_erp": "AAMJ850211328"
+        },
+        {
+            "id": 162,
+            "razon_social": "GREGORIO EDUARDO REYES MISSETT",
+            "nombre_comercial": "GREGORIO EDUARDO REYES MISSETT",
+            "rfc": "REMG611231TGA",
+            "codigo_erp": "REMG611231TGA"
+        },
+        {
+            "id": 163,
+            "razon_social": "RAUL DE JESUS CAB SANTIAGO",
+            "nombre_comercial": "RAUL DE JESUS CAB SANTIAGO",
+            "rfc": "CASR961223UC4",
+            "codigo_erp": "CASR961223UC4"
+        },
+        {
+            "id": 164,
+            "razon_social": "ERNESTO DOMINGUEZ ROSAS",
+            "nombre_comercial": "ERNESTO DOMINGUEZ ROSAS",
+            "rfc": "DORE680521KP8",
+            "codigo_erp": "DORE680521KP8"
+        },
+        {
+            "id": 165,
+            "razon_social": "LUIS ANTONIO CAMPOS KUK",
+            "nombre_comercial": "LUIS ANTONIO CAMPOS KUK",
+            "rfc": "CAKL720510M99",
+            "codigo_erp": "CAKL720510M99"
+        },
+        {
+            "id": 166,
+            "razon_social": "SALVADOR ZAPATA COVARRUBIAS",
+            "nombre_comercial": "SALVADOR ZAPATA COVARRUBIAS",
+            "rfc": "ZACS610314EF5",
+            "codigo_erp": "ZACS610314EF5"
+        },
+        {
+            "id": 167,
+            "razon_social": "CARLOS ARTURO GOMEZ FARFAN",
+            "nombre_comercial": "CARLOS ARTURO GOMEZ FARFAN",
+            "rfc": "GOFC841103Q17",
+            "codigo_erp": "GOFC841103Q17"
+        },
+        {
+            "id": 168,
+            "razon_social": "JOSE RICARDO PACHECO UCAN",
+            "nombre_comercial": "JOSE RICARDO PACHECO UCAN",
+            "rfc": "PAUR630301A28",
+            "codigo_erp": "PAUR630301A28"
+        },
+        {
+            "id": 169,
+            "razon_social": "NELLY MARGARITA BARRAGAN CAMPOS",
+            "nombre_comercial": "NELLY MARGARITA BARRAGAN CAMPOS",
+            "rfc": "BACN570616TL1",
+            "codigo_erp": "BACN570616TL1"
+        },
+        {
+            "id": 170,
+            "razon_social": "GABRIELA VARGAZ CARRILLO",
+            "nombre_comercial": "GABRIELA VARGAZ CARRILLO",
+            "rfc": "VACG8608293B5",
+            "codigo_erp": "VACG8608293B5"
+        },
+        {
+            "id": 171,
+            "razon_social": "GILBERTO GUTIERREZ COLLINS",
+            "nombre_comercial": "GILBERTO GUTIERREZ COLLINS",
+            "rfc": "GUCG690716IU3",
+            "codigo_erp": "GUCG690716IU3"
+        },
+        {
+            "id": 172,
+            "razon_social": "CARLOS RAMON PEREZ MIRANDA",
+            "nombre_comercial": "CARLOS RAMON PEREZ MIRANDA",
+            "rfc": "PEMC861104J55",
+            "codigo_erp": "PEMC861104J55"
+        },
+        {
+            "id": 173,
+            "razon_social": "TRANSBORDADORES DE HOLBOX",
+            "nombre_comercial": "TRANSBORDADORES DE HOLBOX",
+            "rfc": "THO991013TR5",
+            "codigo_erp": "THO991013TR5"
+        },
+        {
+            "id": 174,
+            "razon_social": "DALMA YANINA HERNANDEZ ACOSTA",
+            "nombre_comercial": "DALMA YANINA HERNANDEZ ACOSTA",
+            "rfc": "HEAD9108127M3",
+            "codigo_erp": "HEAD9108127M3"
+        },
+        {
+            "id": 175,
+            "razon_social": "TEOFILA CORAL AVILA",
+            "nombre_comercial": "TEOFILA CORAL AVILA",
+            "rfc": "COAT790910MT2",
+            "codigo_erp": "COAT790910MT2"
+        },
+        {
+            "id": 176,
+            "razon_social": "BICIMOTOS",
+            "nombre_comercial": "BICIMOTOS",
+            "rfc": "BIC811223TIA",
+            "codigo_erp": "BIC811223TIA"
+        },
+        {
+            "id": 177,
+            "razon_social": "SERVICIOS CENTRALES DE COBRANZA HOTELERA",
+            "nombre_comercial": "SERVICIOS CENTRALES DE COBRANZA HOTELERA",
+            "rfc": "SCC171019SQ7",
+            "codigo_erp": "SCC171019SQ7"
+        },
+        {
+            "id": 178,
+            "razon_social": "OPERADORA VIPS",
+            "nombre_comercial": "OPERADORA VIPS",
+            "rfc": "OVI800131GQ6",
+            "codigo_erp": "OVI800131GQ6"
+        },
+        {
+            "id": 179,
+            "razon_social": "MARIA DEL CARMEN BALTAZAR ARCEO",
+            "nombre_comercial": "MARIA DEL CARMEN BALTAZAR ARCEO",
+            "rfc": "BAAC6507163X2",
+            "codigo_erp": "BAAC6507163X2"
+        },
+        {
+            "id": 180,
+            "razon_social": "ENOC ADONAI MOO CANUL",
+            "nombre_comercial": "ENOC ADONAI MOO CANUL",
+            "rfc": "MOCE880602NU8",
+            "codigo_erp": "MOCE880602NU8"
+        },
+        {
+            "id": 181,
+            "razon_social": "CAMARA NACIONAL DE LA INDUSTRIA DE DESARROLLO Y PR",
+            "nombre_comercial": "CAMARA NACIONAL DE LA INDUSTRIA DE DESARROLLO Y PR",
+            "rfc": "CNI020510K24",
+            "codigo_erp": "CNI020510K24"
+        },
+        {
+            "id": 182,
+            "razon_social": "ALFREDO MONTES TEPOX",
+            "nombre_comercial": "ALFREDO MONTES TEPOX",
+            "rfc": "MOTA931006HI4",
+            "codigo_erp": "MOTA931006HI4"
+        },
+        {
+            "id": 183,
+            "razon_social": "GASTRONOMICA CARAPOSTA",
+            "nombre_comercial": "GASTRONOMICA CARAPOSTA",
+            "rfc": "GCA0306259H0",
+            "codigo_erp": "GCA0306259H0"
+        },
+        {
+            "id": 184,
+            "razon_social": "CECUA OPERADORA HOTELERA",
+            "nombre_comercial": "CECUA OPERADORA HOTELERA",
+            "rfc": "COH200110192",
+            "codigo_erp": "COH200110192"
+        },
+        {
+            "id": 185,
+            "razon_social": "COLEGIO DE CONTADORES PUBLICOS DE YUCATAN",
+            "nombre_comercial": "COLEGIO DE CONTADORES PUBLICOS DE YUCATAN",
+            "rfc": "CCP6906132G9",
+            "codigo_erp": "CCP6906132G9"
+        },
+        {
+            "id": 186,
+            "razon_social": "IMPULSO HUMANO EMPRESARIAL",
+            "nombre_comercial": "IMPULSO HUMANO EMPRESARIAL",
+            "rfc": "IHE070402S19",
+            "codigo_erp": "IHE070402S19"
+        },
+        {
+            "id": 187,
+            "razon_social": "SERVICIOS INTEGRALES EN INFORMATICA",
+            "nombre_comercial": "SERVICIOS INTEGRALES EN INFORMATICA",
+            "rfc": "SII070309GC8",
+            "codigo_erp": "SII070309GC8"
+        },
+        {
+            "id": 188,
+            "razon_social": "DIGITAL URBAN OPTIMIZATION",
+            "nombre_comercial": "DIGITAL URBAN OPTIMIZATION",
+            "rfc": "DUO1811215WA",
+            "codigo_erp": "DUO1811215WA"
+        },
+        {
+            "id": 189,
+            "razon_social": "LUIS DAVID COANA BE",
+            "nombre_comercial": "LUIS DAVID COANA BE",
+            "rfc": "COBL850911391",
+            "codigo_erp": "COBL850911391"
+        },
+        {
+            "id": 190,
+            "razon_social": "VICTOR ALFONSO CHI CASTILLO",
+            "nombre_comercial": "VICTOR ALFONSO CHI CASTILLO",
+            "rfc": "CICV9504105G2",
+            "codigo_erp": "CICV9504105G2"
+        },
+        {
+            "id": 191,
+            "razon_social": "INGENIERIA Y DISEÑO ROCUM",
+            "nombre_comercial": "INGENIERIA Y DISEÑO ROCUM",
+            "rfc": "IDR211014KF1",
+            "codigo_erp": "IDR211014KF1"
+        },
+        {
+            "id": 192,
+            "razon_social": "BODEGA ELECTRÓNICA XAZE",
+            "nombre_comercial": "BODEGA ELECTRÓNICA XAZE",
+            "rfc": "BEX0303015P1",
+            "codigo_erp": "BEX0303015P1"
+        },
+        {
+            "id": 193,
+            "razon_social": "ARQUISERVICIOS DE CANCUN",
+            "nombre_comercial": "ARQUISERVICIOS DE CANCUN",
+            "rfc": "ACA9301187Z4",
+            "codigo_erp": "ACA9301187Z4"
+        },
+        {
+            "id": 194,
+            "razon_social": "INSTITUTO DE ESPECIALIZACIÓN PARA EJECUTIVOS",
+            "nombre_comercial": "INSTITUTO DE ESPECIALIZACIÓN PARA EJECUTIVOS",
+            "rfc": "IEE700410BC4",
+            "codigo_erp": "IEE700410BC4"
+        },
+        {
+            "id": 195,
+            "razon_social": "EXCITING BUSINESS MEXICO",
+            "nombre_comercial": "EXCITING BUSINESS MEXICO",
+            "rfc": "EBM140220FM2",
+            "codigo_erp": "EBM140220FM2"
+        },
+        {
+            "id": 196,
+            "razon_social": "PAULINO AGUSTIN CAMPOS ALVAREZ",
+            "nombre_comercial": "PAULINO AGUSTIN CAMPOS ALVAREZ",
+            "rfc": "CAAP660608645",
+            "codigo_erp": "CAAP660608645"
+        },
+        {
+            "id": 197,
+            "razon_social": "MARIO ANTONIO TUN CHALE",
+            "nombre_comercial": "MARIO ANTONIO TUN CHALE",
+            "rfc": "TUCM830427H40",
+            "codigo_erp": "TUCM830427H40"
+        },
+        {
+            "id": 198,
+            "razon_social": "FRANCISCO ABRAHAM ORTIZ CHI",
+            "nombre_comercial": "FRANCISCO ABRAHAM ORTIZ CHI",
+            "rfc": "OICF820216LC6",
+            "codigo_erp": "OICF820216LC6"
+        },
+        {
+            "id": 199,
+            "razon_social": "GEOEARTH MOBILE",
+            "nombre_comercial": "GEOEARTH MOBILE",
+            "rfc": "GMO190425GU9",
+            "codigo_erp": "GMO190425GU9"
+        },
+        {
+            "id": 200,
+            "razon_social": "UNIFORMES DE TAMPICO",
+            "nombre_comercial": "UNIFORMES DE TAMPICO SA DE CV",
+            "rfc": "UTA820628TV3",
+            "codigo_erp": "UTA820628TV3"
+        },
+        {
+            "id": 201,
+            "razon_social": "ARTICULOS ELECTRICOS INDUSTRIALES",
+            "nombre_comercial": "ARTICULOS ELECTRICOS INDUSTRIALES",
+            "rfc": "AEI861027P26",
+            "codigo_erp": "AEI861027P26"
+        },
+        {
+            "id": 202,
+            "razon_social": "FRANCISCA MAY CAUICH",
+            "nombre_comercial": "FRANCISCA MAY CAUICH",
+            "rfc": "MACF710731MR4",
+            "codigo_erp": "MACF710731MR4"
+        },
+        {
+            "id": 203,
+            "razon_social": "OFIX",
+            "nombre_comercial": "OFIX",
+            "rfc": "OFI920113KZ8",
+            "codigo_erp": "OFI920113KZ8"
+        },
+        {
+            "id": 204,
+            "razon_social": "GILDA VALERIA SIERRA TINTORE",
+            "nombre_comercial": "GILDA VALERIA SIERRA TINTORE",
+            "rfc": "SITG740428T24",
+            "codigo_erp": "SITG740428T24"
+        },
+        {
+            "id": 205,
+            "razon_social": "ELECTRONICA EMPRESARIAL CANCUN",
+            "nombre_comercial": "ELECTRONICA EMPRESARIAL CANCUN",
+            "rfc": "EEC980715DI0",
+            "codigo_erp": "EEC980715DI0"
+        },
+        {
+            "id": 206,
+            "razon_social": "ESTACION DE SERVICIO CAUCEL",
+            "nombre_comercial": "ESTACION DE SERVICIO CAUCEL",
+            "rfc": "ESC1411051M1",
+            "codigo_erp": "ESC1411051M1"
+        },
+        {
+            "id": 207,
+            "razon_social": "BANCO NACIONAL DE MEXICO",
+            "nombre_comercial": "BANCO NACIONAL DE MEXICO",
+            "rfc": "BNM840515VB1",
+            "codigo_erp": "BNM840515VB1"
+        },
+        {
+            "id": 208,
+            "razon_social": "MARICARMEN SANTANA ANCONA",
+            "nombre_comercial": "MARICARMEN SANTANA ANCONA",
+            "rfc": "SAAM920817AN8",
+            "codigo_erp": "SAAM920817AN8"
+        },
+        {
+            "id": 209,
+            "razon_social": "OFFICE DEPOT DE MEXICO",
+            "nombre_comercial": "OFFICE DEPOT DE MEXICO",
+            "rfc": "ODM950324V2A",
+            "codigo_erp": "ODM950324V2A"
+        },
+        {
+            "id": 210,
+            "razon_social": "GRUPO COMERCIAL SEAE",
+            "nombre_comercial": "GRUPO COMERCIAL SEAE",
+            "rfc": "GCS120804AD3",
+            "codigo_erp": "GCS120804AD3"
+        },
+        {
+            "id": 211,
+            "razon_social": "ANGEL ALEXIS DURAN LOPEZ",
+            "nombre_comercial": "ANGEL ALEXIS DURAN LOPEZ",
+            "rfc": "DULA9509132B8",
+            "codigo_erp": "DULA9509132B8"
+        },
+        {
+            "id": 212,
+            "razon_social": "HUGO ERNESTO GARCIA CORDERO",
+            "nombre_comercial": "HUGO ERNESTO GARCIA CORDERO",
+            "rfc": "GACH7011071C9",
+            "codigo_erp": "GACH7011071C9"
+        },
+        {
+            "id": 213,
+            "razon_social": "SERVICIOS COMERCIALES AMAZON MEXICO",
+            "nombre_comercial": "SERVICIOS COMERCIALES AMAZON MEXICO",
+            "rfc": "ANE140618P37",
+            "codigo_erp": "ANE140618P37"
+        },
+        {
+            "id": 214,
+            "razon_social": "JORGE ALBERTO OSORIO CERVERA",
+            "nombre_comercial": "JORGE ALBERTO OSORIO CERVERA",
+            "rfc": "OOCJ661130AI1",
+            "codigo_erp": "OOCJ661130AI1"
+        },
+        {
+            "id": 215,
+            "razon_social": "MIGUEL ANGEL MOLINA LUGO",
+            "nombre_comercial": "MIGUEL ANGEL MOLINA LUGO",
+            "rfc": "MOLM750703LB8",
+            "codigo_erp": "MOLM750703LB8"
+        },
+        {
+            "id": 216,
+            "razon_social": "JUAN JOSE DURAN ESCALANTE",
+            "nombre_comercial": "JUAN JOSE DURAN ESCALANTE",
+            "rfc": "DUEJ670221T51",
+            "codigo_erp": "DUEJ670221T51"
+        },
+        {
+            "id": 217,
+            "razon_social": "OPERADORA LT",
+            "nombre_comercial": "OPERADORA LT",
+            "rfc": "OLT1204245G7",
+            "codigo_erp": "OLT1204245G7"
+        },
+        {
+            "id": 218,
+            "razon_social": "CORPORATIVO GASTRONOMICO CAMPEL",
+            "nombre_comercial": "CORPORATIVO GASTRONOMICO CAMPEL",
+            "rfc": "CGC1403253F7",
+            "codigo_erp": "CGC1403253F7"
+        },
+        {
+            "id": 219,
+            "razon_social": "CRISTINA EUGENIA MORA NOVELO",
+            "nombre_comercial": "CRISTINA EUGENIA MORA NOVELO",
+            "rfc": "MONC840402277",
+            "codigo_erp": "MONC840402277"
+        },
+        {
+            "id": 220,
+            "razon_social": "OPERADORA DE TIENDAS VOLUNTARIAS",
+            "nombre_comercial": "OPERADORA DE TIENDAS VOLUNTARIAS",
+            "rfc": "OTV801119HU2",
+            "codigo_erp": "OTV801119HU2"
+        },
+        {
+            "id": 221,
+            "razon_social": "SONDER STAY MEXICO",
+            "nombre_comercial": "SONDER STAY MEXICO",
+            "rfc": "SSM190906UB8",
+            "codigo_erp": "SSM190906UB8"
+        },
+        {
+            "id": 222,
+            "razon_social": "AMERICAN AIRLINES INC",
+            "nombre_comercial": "AMERICAN AIRLINES INC",
+            "rfc": "AAI580414GA9",
+            "codigo_erp": "AAI580414GA9"
+        },
+        {
+            "id": 223,
+            "razon_social": "SISTEMAS EMPRESARIALES DABO",
+            "nombre_comercial": "SISTEMAS EMPRESARIALES DABO",
+            "rfc": "SED881215J89",
+            "codigo_erp": "SED881215J89"
+        },
+        {
+            "id": 225,
+            "razon_social": "NANCY GUTIERREZ ELIZONDO",
+            "nombre_comercial": "NANCY GUTIERREZ ELIZONDO",
+            "rfc": "GUEN720625CZ4",
+            "codigo_erp": "GUEN720625CZ4"
+        },
+        {
+            "id": 226,
+            "razon_social": "SISTEMAS DE PROTECCION, CAPACITACION Y VIGILANCIA",
+            "nombre_comercial": "SISTEMAS DE PROTECCION, CAPACITACION Y VIGILANCIA",
+            "rfc": "SPC160623IF7",
+            "codigo_erp": "SPC160623IF7"
+        },
+        {
+            "id": 227,
+            "razon_social": "SOCIEDAD DE AUTOTRANSPORTE TIPO TAXI",
+            "nombre_comercial": "SOCIEDAD DE AUTOTRANSPORTE TIPO TAXI",
+            "rfc": "ATT070511TK7",
+            "codigo_erp": "ATT070511TK7"
+        },
+        {
+            "id": 228,
+            "razon_social": "OPERADORA DE RESTAURANTES Y BANQUETES BUENAVISTA",
+            "nombre_comercial": "OPERADORA DE RESTAURANTES Y BANQUETES BUENAVISTA",
+            "rfc": "ORB110812QL8",
+            "codigo_erp": "ORB110812QL8"
+        },
+        {
+            "id": 229,
+            "razon_social": "CDA PENINSULA",
+            "nombre_comercial": "CDA PENINSULA",
+            "rfc": "CPE100608SI3",
+            "codigo_erp": "CPE100608SI3"
+        },
+        {
+            "id": 230,
+            "razon_social": "TECNOLOGIA VISUAL DE VANGUARDIA",
+            "nombre_comercial": "TECNOLOGIA VISUAL DE VANGUARDIA",
+            "rfc": "TVV120109L15",
+            "codigo_erp": "TVV120109L15"
+        },
+        {
+            "id": 231,
+            "razon_social": "MUNICIPIO DE PROGRESO",
+            "nombre_comercial": "MUNICIPIO DE PROGRESO",
+            "rfc": "MPY850101G86",
+            "codigo_erp": "MPY850101G86"
+        },
+        {
+            "id": 232,
+            "razon_social": "COLEGIO DE INGENIEROS CIVILES DE YUCATAN",
+            "nombre_comercial": "COLEGIO DE INGENIEROS CIVILES DE YUCATAN",
+            "rfc": "CIC750224MS2",
+            "codigo_erp": "CIC750224MS2"
+        },
+        {
+            "id": 233,
+            "razon_social": "WILBERTH DANIEL NOVELO ALZINA",
+            "nombre_comercial": "WILBERTH DANIEL NOVELO ALZINA",
+            "rfc": "NOAW9407042Q6",
+            "codigo_erp": "NOAW9407042Q6"
+        },
+        {
+            "id": 234,
+            "razon_social": "GASPAR MANUEL BARAHONA CABRERA",
+            "nombre_comercial": "GASPAR MANUEL BARAHONA CABRERA",
+            "rfc": "BACG88110538A",
+            "codigo_erp": "BACG88110538A"
+        },
+        {
+            "id": 235,
+            "razon_social": "IMPULSORA AGROQUIMICA DEL SURESTE",
+            "nombre_comercial": "IMPULSORA AGROQUIMICA DEL SURESTE",
+            "rfc": "IAS930720PMA",
+            "codigo_erp": "IAS930720PMA"
+        },
+        {
+            "id": 236,
+            "razon_social": "ROCIO GUADALUPE SALAZAR BASTARRACHEA",
+            "nombre_comercial": "ROCIO GUADALUPE SALAZAR BASTARRACHEA",
+            "rfc": "SABR8110119W2",
+            "codigo_erp": "SABR8110119W2"
+        },
+        {
+            "id": 237,
+            "razon_social": "LUCIA DEL ROSARIO MONTALVO GAMBOA",
+            "nombre_comercial": "LUCIA DEL ROSARIO MONTALVO GAMBOA",
+            "rfc": "MOGL680529V54",
+            "codigo_erp": "MOGL680529V54"
+        },
+        {
+            "id": 238,
+            "razon_social": "PABLO JOSE CASTRO ALCOCER",
+            "nombre_comercial": "PABLO JOSE CASTRO ALCOCER",
+            "rfc": "CAAP7502056C2",
+            "codigo_erp": "CAAP7502056C2"
+        },
+        {
+            "id": 239,
+            "razon_social": "LUIS ENRIQUE GONZALEZ PONCE",
+            "nombre_comercial": "LUIS ENRIQUE GONZALEZ PONCE",
+            "rfc": "GOPL830804JL2",
+            "codigo_erp": "GOPL830804JL2"
+        },
+        {
+            "id": 240,
+            "razon_social": "ASESORIA Y GESTION INTEGRAL URBANO AMBIENTAL",
+            "nombre_comercial": "ASESORIA Y GESTION INTEGRAL URBANO AMBIENTAL",
+            "rfc": "AGI150402UW2",
+            "codigo_erp": "AGI150402UW2"
+        },
+        {
+            "id": 241,
+            "razon_social": "LENOVO MEXICO",
+            "nombre_comercial": "LENOVO MEXICO",
+            "rfc": "LME050301NM8",
+            "codigo_erp": "LME050301NM8"
+        },
+        {
+            "id": 242,
+            "razon_social": "SOLUCIONES INTEGRALES TECNOLOGICAS SITE",
+            "nombre_comercial": "SOLUCIONES INTEGRALES TECNOLOGICAS SITE",
+            "rfc": "SIT210119F23",
+            "codigo_erp": "SIT210119F23"
+        },
+        {
+            "id": 243,
+            "razon_social": "EUGENIA DEL CARMEN LINARES UC",
+            "nombre_comercial": "EUGENIA DEL CARMEN LINARES UC",
+            "rfc": "LIUE7711204C7",
+            "codigo_erp": "LIUE7711204C7"
+        },
+        {
+            "id": 244,
+            "razon_social": "MERIMOTO",
+            "nombre_comercial": "MERIMOTO",
+            "rfc": "MER881110EM0",
+            "codigo_erp": "MER881110EM0"
+        },
+        {
+            "id": 245,
+            "razon_social": "GADIEL ISRAEL MARTIN ROJAS",
+            "nombre_comercial": "GADIEL ISRAEL MARTIN ROJAS",
+            "rfc": "MARG9303016Y0",
+            "codigo_erp": "MARG9303016Y0"
+        },
+        {
+            "id": 246,
+            "razon_social": "VERONICA DEL CARMEN MOGUEL ESPERON",
+            "nombre_comercial": "VERONICA DEL CARMEN MOGUEL ESPERON",
+            "rfc": "MOEV540723PB8",
+            "codigo_erp": "MOEV540723PB8"
+        },
+        {
+            "id": 247,
+            "razon_social": "REYNA DELFINA CRUZ LOPEZ",
+            "nombre_comercial": "REYNA DELFINA CRUZ LOPEZ",
+            "rfc": "CULR731224QT8",
+            "codigo_erp": "CULR731224QT8"
+        },
+        {
+            "id": 248,
+            "razon_social": "INSTITUTO MEXICANO DE EJECUTIVOS DE FINANZAS",
+            "nombre_comercial": "INSTITUTO MEXICANO DE EJECUTIVOS DE FINANZAS",
+            "rfc": "IME6109213M3",
+            "codigo_erp": "IME6109213M3"
+        },
+        {
+            "id": 249,
+            "razon_social": "COMERCIALIZADORA DE MARCAS JSB",
+            "nombre_comercial": "COMERCIALIZADORA DE MARCAS JSB",
+            "rfc": "CMJ190724934",
+            "codigo_erp": "CMJ190724934"
+        },
+        {
+            "id": 250,
+            "razon_social": "TIENDAS SORIANA",
+            "nombre_comercial": "TIENDAS SORIANA",
+            "rfc": "TSO991022PB6",
+            "codigo_erp": "TSO991022PB6"
+        },
+        {
+            "id": 251,
+            "razon_social": "POST ART DE MEXICO",
+            "nombre_comercial": "POST ART DE MEXICO",
+            "rfc": "PAM891201I33",
+            "codigo_erp": "PAM891201I33"
+        },
+        {
+            "id": 252,
+            "razon_social": "7-ELEVEN MEXICO",
+            "nombre_comercial": "7-ELEVEN MEXICO",
+            "rfc": "SEM980701STA",
+            "codigo_erp": "SEM980701STA"
+        },
+        {
+            "id": 253,
+            "razon_social": "ANA MARIA MAGAÑA ARCE",
+            "nombre_comercial": "ANA MARIA MAGAÑA ARCE",
+            "rfc": "MAAA590726TS0",
+            "codigo_erp": "MAAA590726TS0"
+        },
+        {
+            "id": 254,
+            "razon_social": "GRUPO BOSPATEX",
+            "nombre_comercial": "GRUPO BOSPATEX",
+            "rfc": "BME0203185LA",
+            "codigo_erp": "BME0203185LA"
+        },
+        {
+            "id": 255,
+            "razon_social": "GRUPO PARISINA",
+            "nombre_comercial": "GRUPO PARISINA",
+            "rfc": "GPA930101QI7",
+            "codigo_erp": "GPA930101QI7"
+        },
+        {
+            "id": 256,
+            "razon_social": "QUALITAS COMPAÑIA DE SEGUROS",
+            "nombre_comercial": "QUALITAS COMPAÑIA DE SEGUROS",
+            "rfc": "QCS931209G49",
+            "codigo_erp": "QCS931209G49"
+        },
+        {
+            "id": 257,
+            "razon_social": "INFOXPERT",
+            "nombre_comercial": "INFOXPERT",
+            "rfc": "INF090509I14",
+            "codigo_erp": "INF090509I14"
+        },
+        {
+            "id": 258,
+            "razon_social": "EVERIS JARDINES",
+            "nombre_comercial": "EVERIS JARDINES",
+            "rfc": "JEV160622R67",
+            "codigo_erp": "JEV160622R67"
+        },
+        {
+            "id": 259,
+            "razon_social": "FMG WATER",
+            "nombre_comercial": "FMG WATER",
+            "rfc": "FWA230419CA0",
+            "codigo_erp": "FWA230419CA0"
+        },
+        {
+            "id": 260,
+            "razon_social": "CONSTRUCTORA NAVANICIO",
+            "nombre_comercial": "CONSTRUCTORA NAVANICIO",
+            "rfc": "CNA2304254Z8",
+            "codigo_erp": "CNA2304254Z8"
+        },
+        {
+            "id": 261,
+            "razon_social": "SOCIEDAD PANAMERICANA DE ESTUDIOS EMPRESARIALES",
+            "nombre_comercial": "SOCIEDAD PANAMERICANA DE ESTUDIOS EMPRESARIALES",
+            "rfc": "SPE661112KJ4",
+            "codigo_erp": "SPE661112KJ4"
+        },
+        {
+            "id": 262,
+            "razon_social": "CD MER",
+            "nombre_comercial": "CD MER",
+            "rfc": "CME110715LU5",
+            "codigo_erp": "CME110715LU5"
+        },
+        {
+            "id": 263,
+            "razon_social": "REFRIMART DE MEXICO",
+            "nombre_comercial": "REFRIMART DE MEXICO",
+            "rfc": "RME070622J84",
+            "codigo_erp": "RME070622J84"
+        },
+        {
+            "id": 264,
+            "razon_social": "AEROENLACES NACIONALES",
+            "nombre_comercial": "AEROENLACES NACIONALES",
+            "rfc": "ANA050518RL1",
+            "codigo_erp": "ANA050518RL1"
+        },
+        {
+            "id": 265,
+            "razon_social": "CONCESIONARIA VUELA COMPAÑIA DE AVIACION",
+            "nombre_comercial": "CONCESIONARIA VUELA COMPAÑIA DE AVIACION",
+            "rfc": "CVA041027H80",
+            "codigo_erp": "CVA041027H80"
+        },
+        {
+            "id": 266,
+            "razon_social": "ISRAEL ARTURO DOMINGUEZ SARMIENTO",
+            "nombre_comercial": "ISRAEL ARTURO DOMINGUEZ SARMIENTO",
+            "rfc": "DOSI900123M79",
+            "codigo_erp": "DOSI900123M79"
+        },
+        {
+            "id": 267,
+            "razon_social": "DAVID CLAUDIO ROBERTSON PESADO",
+            "nombre_comercial": "DAVID CLAUDIO ROBERTSON PESADO",
+            "rfc": "ROPD560707NR7",
+            "codigo_erp": "ROPD560707NR7"
+        },
+        {
+            "id": 268,
+            "razon_social": "CORPORATIVO GONZALEZ DE SALCEDA",
+            "nombre_comercial": "CORPORATIVO GONZALEZ DE SALCEDA",
+            "rfc": "CGS181031HC0",
+            "codigo_erp": "CGS181031HC0"
+        },
+        {
+            "id": 269,
+            "razon_social": "JUAN GUILLERMO CHI SANCHEZ",
+            "nombre_comercial": "JUAN GUILLERMO CHI SANCHEZ",
+            "rfc": "CISJ8106254G7",
+            "codigo_erp": "CISJ8106254G7"
+        },
+        {
+            "id": 270,
+            "razon_social": "NIUTEC",
+            "nombre_comercial": "NIUTEC",
+            "rfc": "NIU031016P13",
+            "codigo_erp": "NIU031016P13"
+        },
+        {
+            "id": 271,
+            "razon_social": "ANDUM CONSULTORES",
+            "nombre_comercial": "ANDUM CONSULTORES",
+            "rfc": "ACO210111VA4",
+            "codigo_erp": "ACO210111VA4"
+        },
+        {
+            "id": 272,
+            "razon_social": "CARLOS CASTILLO SOLIS",
+            "nombre_comercial": "CARLOS CASTILLO SOLIS",
+            "rfc": "CASC4412148T6",
+            "codigo_erp": "CASC4412148T6"
+        },
+        {
+            "id": 273,
+            "razon_social": "ASOCIACION NACIONAL DE ABOGADOS DE EMPRESA, SECCIO",
+            "nombre_comercial": "ASOCIACION NACIONAL DE ABOGADOS DE EMPRESA, SECCIO",
+            "rfc": "ANA160830BK8",
+            "codigo_erp": "ANA160830BK8"
+        },
+        {
+            "id": 274,
+            "razon_social": "RSM MEXICO BOGARIN",
+            "nombre_comercial": "RSM MEXICO BOGARIN",
+            "rfc": "RBO020620NDA",
+            "codigo_erp": "RBO020620NDA"
+        },
+        {
+            "id": 275,
+            "razon_social": "LUIS SILVEIRA CUEVAS",
+            "nombre_comercial": "LUIS SILVEIRA CUEVAS",
+            "rfc": "SICL501225DY6",
+            "codigo_erp": "SICL501225DY6"
+        },
+        {
+            "id": 276,
+            "razon_social": "MALLASOL SISTEMA DE PROTECCION PERIMETRAL",
+            "nombre_comercial": "MALLASOL SISTEMA DE PROTECCION PERIMETRAL",
+            "rfc": "MSP150811K14",
+            "codigo_erp": "MSP150811K14"
+        },
+        {
+            "id": 277,
+            "razon_social": "ISI RECURSOS Y SOLUCIONES INTEGRALES",
+            "nombre_comercial": "ISI RECURSOS Y SOLUCIONES INTEGRALES",
+            "rfc": "IRS180903P14",
+            "codigo_erp": "IRS180903P14"
+        },
+        {
+            "id": 278,
+            "razon_social": "COMERCIALIZADORA FARMACEUTICA DE CHIAPAS",
+            "nombre_comercial": "COMERCIALIZADORA FARMACEUTICA DE CHIAPAS",
+            "rfc": "CFC110121742",
+            "codigo_erp": "CFC110121742"
+        },
+        {
+            "id": 279,
+            "razon_social": "DHL EXPRESS MEXICO",
+            "nombre_comercial": "DHL EXPRESS MEXICO",
+            "rfc": "DEM8801152E9",
+            "codigo_erp": "DEM8801152E9"
+        },
+        {
+            "id": 280,
+            "razon_social": "ROSA KAREN FLORES PRADO",
+            "nombre_comercial": "ROSA KAREN FLORES PRADO",
+            "rfc": "FOPR910722TP1",
+            "codigo_erp": "FOPR910722TP1"
+        },
+        {
+            "id": 281,
+            "razon_social": "CASA FERNANDEZ DEL SURESTE",
+            "nombre_comercial": "CASA FERNANDEZ DEL SURESTE",
+            "rfc": "CFS8606014IA",
+            "codigo_erp": "CFS8606014IA"
+        },
+        {
+            "id": 283,
+            "razon_social": "MINISO",
+            "nombre_comercial": "MINISO",
+            "rfc": "MME160812J15",
+            "codigo_erp": "MME160812J15"
+        },
+        {
+            "id": 284,
+            "razon_social": "JUAN PABLO NOVELO SALAZAR",
+            "nombre_comercial": "JUAN PABLO NOVELO SALAZAR",
+            "rfc": "NOSJ851016AT7",
+            "codigo_erp": "NOSJ851016AT7"
+        },
+        {
+            "id": 285,
+            "razon_social": "LUIS ENRIQUE LUNA SANCHEZ",
+            "nombre_comercial": "LUIS ENRIQUE LUNA SANCHEZ",
+            "rfc": "LUSL770510ES2",
+            "codigo_erp": "LUSL770510ES2"
+        },
+        {
+            "id": 286,
+            "razon_social": "ERIC HUBBE ZALDIVAR",
+            "nombre_comercial": "ERIC HUBBE ZALDIVAR",
+            "rfc": "HUZE8204037L4",
+            "codigo_erp": "HUZE8204037L4"
+        },
+        {
+            "id": 287,
+            "razon_social": "SALVADOR LOPEZ ALMANZA",
+            "nombre_comercial": "SALVADOR LOPEZ ALMANZA",
+            "rfc": "LOAS690814HN0",
+            "codigo_erp": "LOAS690814HN0"
+        },
+        {
+            "id": 288,
+            "razon_social": "MARCO ANTONIO BARBUDO CHAVEZ",
+            "nombre_comercial": "MARCO ANTONIO BARBUDO CHAVEZ",
+            "rfc": "BACM950707CK9",
+            "codigo_erp": "BACM950707CK9"
+        },
+        {
+            "id": 289,
+            "razon_social": "ANGEL ALBERTO MADERA DIAZ",
+            "nombre_comercial": "ANGEL ALBERTO MADERA DIAZ",
+            "rfc": "MADA590802DQ9",
+            "codigo_erp": "MADA590802DQ9"
+        },
+        {
+            "id": 290,
+            "razon_social": "JOSE LUIS CIME COLLI",
+            "nombre_comercial": "JOSE LUIS CIME COLLI",
+            "rfc": "CICL691217QT1",
+            "codigo_erp": "CICL691217QT1"
+        },
+        {
+            "id": 291,
+            "razon_social": "RAFAEL MARTIN CHAN CASTRO",
+            "nombre_comercial": "RAFAEL MARTIN CHAN CASTRO",
+            "rfc": "CACR731017IT6",
+            "codigo_erp": "CACR731017IT6"
+        },
+        {
+            "id": 292,
+            "razon_social": "BRO A SIS",
+            "nombre_comercial": "BRO A SIS",
+            "rfc": "BSI2002209J4",
+            "codigo_erp": "BSI2002209J4"
+        },
+        {
+            "id": 293,
+            "razon_social": "HERIBERTO TORRES CASTILLO",
+            "nombre_comercial": "HERIBERTO TORRES CASTILLO",
+            "rfc": "TOCH730312PU4",
+            "codigo_erp": "TOCH730312PU4"
+        },
+        {
+            "id": 294,
+            "razon_social": "CESAR VAZQUEZ SOTO",
+            "nombre_comercial": "CESAR VAZQUEZ SOTO",
+            "rfc": "VASC740104GD0",
+            "codigo_erp": "VASC740104GD0"
+        },
+        {
+            "id": 295,
+            "razon_social": "EDUARDO FORTUNY LOYO",
+            "nombre_comercial": "EDUARDO FORTUNY LOYO",
+            "rfc": "FOLE681224AK1",
+            "codigo_erp": "FOLE681224AK1"
+        },
+        {
+            "id": 296,
+            "razon_social": "JAPAY",
+            "nombre_comercial": "JAPAY",
+            "rfc": "JAP8201083PA",
+            "codigo_erp": "JAP8201083PA"
+        },
+        {
+            "id": 297,
+            "razon_social": "EFEPRIMACE",
+            "nombre_comercial": "EFEPRIMACE",
+            "rfc": "EFE121109PR4",
+            "codigo_erp": "EFE121109PR4"
+        },
+        {
+            "id": 298,
+            "razon_social": "TOPOSERVIS",
+            "nombre_comercial": "TOPOSERVIS",
+            "rfc": "TOP160404KU0",
+            "codigo_erp": "TOP160404KU0"
+        },
+        {
+            "id": 299,
+            "razon_social": "JEA INMOBILIARIA",
+            "nombre_comercial": "JEA INMOBILIARIA",
+            "rfc": "JIN100108HZ2",
+            "codigo_erp": "JIN100108HZ2"
+        },
+        {
+            "id": 300,
+            "razon_social": "ASOCIACION DE EJECUTIVOS EN DESARROLLO HUMANO",
+            "nombre_comercial": "ASOCIACION DE EJECUTIVOS EN DESARROLLO HUMANO",
+            "rfc": "AED1008028Q6",
+            "codigo_erp": "AED1008028Q6"
+        },
+        {
+            "id": 301,
+            "razon_social": "EDGAR IVAN CANTO ORTIZ",
+            "nombre_comercial": "EDGAR IVAN CANTO ORTIZ",
+            "rfc": "CAOE6408031C5",
+            "codigo_erp": "CAOE6408031C5"
+        },
+        {
+            "id": 302,
+            "razon_social": "TERRASUR",
+            "nombre_comercial": "TERRASUR",
+            "rfc": "TER960112BX5",
+            "codigo_erp": "TER960112BX5"
+        },
+        {
+            "id": 303,
+            "razon_social": "IVAN DEL JESUS SEGOVIA EHUAN",
+            "nombre_comercial": "IVAN DEL JESUS SEGOVIA EHUAN",
+            "rfc": "SEEI8608163X2",
+            "codigo_erp": "SEEI8608163X2"
+        },
+        {
+            "id": 304,
+            "razon_social": "MARIA CAROLINA UICAB ACOSTA",
+            "nombre_comercial": "MARIA CAROLINA UICAB ACOSTA",
+            "rfc": "UIAC830527I6A",
+            "codigo_erp": "UIAC830527I6A"
+        },
+        {
+            "id": 305,
+            "razon_social": "ALDEA EXPRESS SOLUCIONES",
+            "nombre_comercial": "ALDEA EXPRESS SOLUCIONES",
+            "rfc": "AES1307162C9",
+            "codigo_erp": "AES1307162C9"
+        },
+        {
+            "id": 306,
+            "razon_social": "GIA SERVICIOS CONSTRUCTIVOS",
+            "nombre_comercial": "GIA SERVICIOS CONSTRUCTIVOS",
+            "rfc": "GSC170327L7A",
+            "codigo_erp": "GSC170327L7A"
+        },
+        {
+            "id": 307,
+            "razon_social": "SERVICIOS ECOLOGICOS ISLA AGUADA",
+            "nombre_comercial": "SERVICIOS ECOLOGICOS ISLA AGUADA",
+            "rfc": "SEI1410319R7",
+            "codigo_erp": "SEI1410319R7"
+        },
+        {
+            "id": 308,
+            "razon_social": "MEX BURGER",
+            "nombre_comercial": "MEX BURGER",
+            "rfc": "MBU090105TD7",
+            "codigo_erp": "MBU090105TD7"
+        },
+        {
+            "id": 309,
+            "razon_social": "VALENTE RAMON ARGUELLES OVANDO",
+            "nombre_comercial": "VALENTE RAMON ARGUELLES OVANDO",
+            "rfc": "AUOV850226LV4",
+            "codigo_erp": "AUOV850226LV4"
+        },
+        {
+            "id": 310,
+            "razon_social": "EBAC EDUCACION",
+            "nombre_comercial": "EBAC EDUCACION",
+            "rfc": "EED210506JY4",
+            "codigo_erp": "EED210506JY4"
+        },
+        {
+            "id": 311,
+            "razon_social": "JOSE CARLOS SALAZAR SANDOVAL",
+            "nombre_comercial": "JOSE CARLOS SALAZAR SANDOVAL",
+            "rfc": "SASC841118P33",
+            "codigo_erp": "SASC841118P33"
+        },
+        {
+            "id": 312,
+            "razon_social": "EDWIN ARAEL POOT EK",
+            "nombre_comercial": "EDWIN ARAEL POOT EK",
+            "rfc": "POEE9005151D3",
+            "codigo_erp": "POEE9005151D3"
+        },
+        {
+            "id": 313,
+            "razon_social": "BRITISH ROYAL MOTORS",
+            "nombre_comercial": "BRITISH ROYAL MOTORS",
+            "rfc": "BRM150304GV6",
+            "codigo_erp": "BRM150304GV6"
+        },
+        {
+            "id": 314,
+            "razon_social": "AUTOMAYA",
+            "nombre_comercial": "AUTOMAYA",
+            "rfc": "AUT810524NEA",
+            "codigo_erp": "AUT810524NEA"
+        },
+        {
+            "id": 315,
+            "razon_social": "CORTE EXACTO",
+            "nombre_comercial": "CORTE EXACTO",
+            "rfc": "CEX040430DH2",
+            "codigo_erp": "CEX040430DH2"
+        },
+        {
+            "id": 316,
+            "razon_social": "OSTAL",
+            "nombre_comercial": "OSTAL",
+            "rfc": "OST040220A36",
+            "codigo_erp": "OST040220A36"
+        },
+        {
+            "id": 317,
+            "razon_social": "PROVEEDORA DE RINES Y LLANTAS MONTERREY",
+            "nombre_comercial": "PROVEEDORA DE RINES Y LLANTAS MONTERREY",
+            "rfc": "PRL1103158E7",
+            "codigo_erp": "PRL1103158E7"
+        },
+        {
+            "id": 318,
+            "razon_social": "ADN DIFERENTE",
+            "nombre_comercial": "ADN DIFERENTE",
+            "rfc": "ADI141027150",
+            "codigo_erp": "ADI141027150"
+        },
+        {
+            "id": 319,
+            "razon_social": "FELIPE DE JESUS DE LOS SANTOS VAZQUEZ",
+            "nombre_comercial": "FELIPE DE JESUS DE LOS SANTOS VAZQUEZ",
+            "rfc": "SAVF720205PA2",
+            "codigo_erp": "SAVF720205PA2"
+        },
+        {
+            "id": 320,
+            "razon_social": "FRANCISCO JAVIER RECHY PALOMINO",
+            "nombre_comercial": "FRANCISCO JAVIER RECHY PALOMINO",
+            "rfc": "REPF770531FQ8",
+            "codigo_erp": "REPF770531FQ8"
+        },
+        {
+            "id": 321,
+            "razon_social": "AKKY ONLINE SOLUTIONS",
+            "nombre_comercial": "AKKY ONLINE SOLUTIONS",
+            "rfc": "AOS210205LP3",
+            "codigo_erp": "AOS210205LP3"
+        },
+        {
+            "id": 322,
+            "razon_social": "CFE DISTRIBUCION",
+            "nombre_comercial": "CFE DISTRIBUCION",
+            "rfc": "CDI160330RC9",
+            "codigo_erp": "CDI160330RC9"
+        },
+        {
+            "id": 323,
+            "razon_social": "PROMOCION DE MARCA EN MEDIOS PMM",
+            "nombre_comercial": "PROMOCION DE MARCA EN MEDIOS PMM",
+            "rfc": "PMM1511194G6",
+            "codigo_erp": "PMM1511194G6"
+        },
+        {
+            "id": 324,
+            "razon_social": "STROMEN",
+            "nombre_comercial": "STROMEN",
+            "rfc": "STR151120EV0",
+            "codigo_erp": "STR151120EV0"
+        },
+        {
+            "id": 325,
+            "razon_social": "ALHER SEM",
+            "nombre_comercial": "ALHER SEM",
+            "rfc": "ASE18031661A",
+            "codigo_erp": "ASE18031661A"
+        },
+        {
+            "id": 326,
+            "razon_social": "ILEANA EVELYN PEREZ PEREZ",
+            "nombre_comercial": "ILEANA EVELYN PEREZ PEREZ",
+            "rfc": "PEPI910522UE2",
+            "codigo_erp": "PEPI910522UE2"
+        },
+        {
+            "id": 327,
+            "razon_social": "SERVICIOS NACIONALES DE ASISTENCIA",
+            "nombre_comercial": "SERVICIOS NACIONALES DE ASISTENCIA",
+            "rfc": "SNA040701UC9",
+            "codigo_erp": "SNA040701UC9"
+        },
+        {
+            "id": 328,
+            "razon_social": "MAYA MOTRIZ",
+            "nombre_comercial": "MAYA MOTRIZ",
+            "rfc": "ACA830901ML5",
+            "codigo_erp": "ACA830901ML5"
+        },
+        {
+            "id": 329,
+            "razon_social": "RUDI MARICELA MANZANERO CHI",
+            "nombre_comercial": "RUDI MARICELA MANZANERO CHI",
+            "rfc": "MACR741014FP7",
+            "codigo_erp": "MACR741014FP7"
+        },
+        {
+            "id": 330,
+            "razon_social": "MARIA JOSEFA DEL SOCORRO POLANCO AYALA",
+            "nombre_comercial": "MARIA JOSEFA DEL SOCORRO POLANCO AYALA",
+            "rfc": "POAJ640120EB7",
+            "codigo_erp": "POAJ640120EB7"
+        },
+        {
+            "id": 331,
+            "razon_social": "MIGUEL ANTONIO BAEZA PAM",
+            "nombre_comercial": "MIGUEL ANTONIO BAEZA PAM",
+            "rfc": "BAPM750916NJ5",
+            "codigo_erp": "BAPM750916NJ5"
+        },
+        {
+            "id": 332,
+            "razon_social": "RICARDO ALAN OLIVARES RUIZ",
+            "nombre_comercial": "RICARDO ALAN OLIVARES RUIZ",
+            "rfc": "OIRR940203TH7",
+            "codigo_erp": "OIRR940203TH7"
+        },
+        {
+            "id": 333,
+            "razon_social": "GUANTES Y EQUIPO INDUSTRIAL",
+            "nombre_comercial": "GUANTES Y EQUIPO INDUSTRIAL",
+            "rfc": "GEI970813QN6",
+            "codigo_erp": "GEI970813QN6"
+        },
+        {
+            "id": 334,
+            "razon_social": "CONSULTORES EN NEGOCIOS DE MEXICO",
+            "nombre_comercial": "CONSULTORES EN NEGOCIOS DE MEXICO",
+            "rfc": "CNM100923IUA",
+            "codigo_erp": "CNM100923IUA"
+        },
+        {
+            "id": 335,
+            "razon_social": "SESCOM TI",
+            "nombre_comercial": "SESCOM TI",
+            "rfc": "STI2207216Y1",
+            "codigo_erp": "STI2207216Y1"
+        },
+        {
+            "id": 336,
+            "razon_social": "JAVIER ESCALANTE MARTINEZ",
+            "nombre_comercial": "JAVIER ESCALANTE MARTINEZ",
+            "rfc": "EAMJ8012151R4",
+            "codigo_erp": "EAMJ8012151R4"
+        },
+        {
+            "id": 337,
+            "razon_social": "ALFONSO NOE ROSADO RODRIGUEZ",
+            "nombre_comercial": "ALFONSO NOE ROSADO RODRIGUEZ",
+            "rfc": "RORA750714DJ5",
+            "codigo_erp": "RORA750714DJ5"
+        },
+        {
+            "id": 338,
+            "razon_social": "CASA SANTOS LUGO",
+            "nombre_comercial": "CASA SANTOS LUGO",
+            "rfc": "CSL000915HJ9",
+            "codigo_erp": "CSL000915HJ9"
+        },
+        {
+            "id": 339,
+            "razon_social": "MARIA GUADALUPE OSUNA CORONADO",
+            "nombre_comercial": "MARIA GUADALUPE OSUNA CORONADO",
+            "rfc": "OUCG531222L75",
+            "codigo_erp": "OUCG531222L75"
+        },
+        {
+            "id": 340,
+            "razon_social": "EUROELECTRICA",
+            "nombre_comercial": "EUROELECTRICA",
+            "rfc": "EUR930324493",
+            "codigo_erp": "EUR930324493"
+        },
+        {
+            "id": 341,
+            "razon_social": "OPERADORA DE SERVICIOS PAQUETEXPRESS",
+            "nombre_comercial": "OPERADORA DE SERVICIOS PAQUETEXPRESS",
+            "rfc": "PEC1411282LA",
+            "codigo_erp": "PEC1411282LA"
+        },
+        {
+            "id": 342,
+            "razon_social": "PATRICIA DEL PILAR QUERO GOMEZ",
+            "nombre_comercial": "PATRICIA DEL PILAR QUERO GOMEZ",
+            "rfc": "QUGP760414FK8",
+            "codigo_erp": "QUGP760414FK8"
+        },
+        {
+            "id": 343,
+            "razon_social": "GABRIEL REYES QUIÑONES",
+            "nombre_comercial": "GABRIEL REYES QUIÑONES",
+            "rfc": "REQG6808093N8",
+            "codigo_erp": "REQG6808093N8"
+        },
+        {
+            "id": 362,
+            "razon_social": "ADMINISTRACION Y PROMOCION Y PUBLICIDAD AMPU",
+            "nombre_comercial": "ADMINISTRACION Y PROMOCION Y PUBLICIDAD AMPU",
+            "rfc": "APP180131KP7",
+            "codigo_erp": "APP180131KP7"
+        },
+        {
+            "id": 363,
+            "razon_social": "ASESORIA Y DEFENSA IMPERIUM",
+            "nombre_comercial": "ASESORIA Y DEFENSA IMPERIUM",
+            "rfc": "ADI170906MG1",
+            "codigo_erp": "ADI170906MG1"
+        },
+        {
+            "id": 364,
+            "razon_social": "AUTOMOTRIZ TOY DEL SURESTE SA DE CV",
+            "nombre_comercial": "AUTOMOTRIZ TOY DEL SURESTE SA DE CV",
+            "rfc": "ATS020806JZ3",
+            "codigo_erp": "ATS020806JZ3"
+        },
+        {
+            "id": 365,
+            "razon_social": "AVENTY SOLUCIONES CREATIVAS Y PUBLICITARIAS",
+            "nombre_comercial": "AVENTY SOLUCIONES CREATIVAS Y PUBLICITARIAS",
+            "rfc": "ASC170619EJ3",
+            "codigo_erp": "ASC170619EJ3"
+        },
+        {
+            "id": 366,
+            "razon_social": "BBVA BANCOMER",
+            "nombre_comercial": "BBVA BANCOMER",
+            "rfc": "BBA830831LJ2",
+            "codigo_erp": "BBA830831LJ2"
+        },
+        {
+            "id": 367,
+            "razon_social": "BUMBERHUNT CONSULTORES INTEGRADOS",
+            "nombre_comercial": "BUMBERHUNT CONSULTORES INTEGRADOS",
+            "rfc": "BCI150807CE8",
+            "codigo_erp": "BCI150807CE8"
+        },
+        {
+            "id": 368,
+            "razon_social": "CERMAX ASESORES EMPRESARIALES",
+            "nombre_comercial": "CERMAX ASESORES EMPRESARIALES",
+            "rfc": "CAE171221VA0",
+            "codigo_erp": "CAE171221VA0"
+        },
+        {
+            "id": 369,
+            "razon_social": "COMERCIALIZADORA DE MATERIALES DE CONSTRUCCION CAL",
+            "nombre_comercial": "COMERCIALIZADORA DE MATERIALES DE CONSTRUCCION CAL",
+            "rfc": "CMC170606UD1",
+            "codigo_erp": "CMC170606UD1"
+        },
+        {
+            "id": 370,
+            "razon_social": "CONSTRUCCIONES Y CIMENTACIONES ZIDOM",
+            "nombre_comercial": "CONSTRUCCIONES Y CIMENTACIONES ZIDOM",
+            "rfc": "CCZ140924QE6",
+            "codigo_erp": "CCZ140924QE6"
+        },
+        {
+            "id": 371,
+            "razon_social": "CONSTRUCTORA INMODEMA",
+            "nombre_comercial": "CONSTRUCTORA INMODEMA",
+            "rfc": "CIN1804301X7",
+            "codigo_erp": "CIN1804301X7"
+        },
+        {
+            "id": 372,
+            "razon_social": "CONSTRUEQUIPO DE LA RIVERA",
+            "nombre_comercial": "CONSTRUEQUIPO DE LA RIVERA",
+            "rfc": "CRI1712277D5",
+            "codigo_erp": "CRI1712277D5"
+        },
+        {
+            "id": 374,
+            "razon_social": "EMPRESA CONSTRUCTORA DEIMEXA",
+            "nombre_comercial": "EMPRESA CONSTRUCTORA DEIMEXA",
+            "rfc": "ECD1709219K0",
+            "codigo_erp": "ECD1709219K0"
+        },
+        {
+            "id": 375,
+            "razon_social": "GRUPO YOFIBARI",
+            "nombre_comercial": "GRUPO YOFIBARI",
+            "rfc": "GYO1506107RA",
+            "codigo_erp": "GYO1506107RA"
+        },
+        {
+            "id": 376,
+            "razon_social": "INAXCO CONSTRUCCIONES CIVILES",
+            "nombre_comercial": "INAXCO CONSTRUCCIONES CIVILES",
+            "rfc": "ICC180124IP6",
+            "codigo_erp": "ICC180124IP6"
+        },
+        {
+            "id": 377,
+            "razon_social": "INGENIERIA Y SISTEMAS TOSOFT",
+            "nombre_comercial": "INGENIERIA Y SISTEMAS TOSOFT",
+            "rfc": "IST160426T24",
+            "codigo_erp": "IST160426T24"
+        },
+        {
+            "id": 378,
+            "razon_social": "KARLA EUGENIA GAMBOA BURGOS",
+            "nombre_comercial": "KARLA EUGENIA GAMBOA BURGOS",
+            "rfc": "GABK760201S49",
+            "codigo_erp": "GABK760201S49"
+        },
+        {
+            "id": 379,
+            "razon_social": "MYBER SERVICIOS CORPORATIVOS",
+            "nombre_comercial": "MYBER SERVICIOS CORPORATIVOS",
+            "rfc": "MSC180111B71",
+            "codigo_erp": "MSC180111B71"
+        },
+        {
+            "id": 380,
+            "razon_social": "REMA ESTUDIOS Y PROYECTOS",
+            "nombre_comercial": "REMA ESTUDIOS Y PROYECTOS",
+            "rfc": "REP061116TW8",
+            "codigo_erp": "REP061116TW8"
+        },
+        {
+            "id": 381,
+            "razon_social": "RODRIGO EMMANUEL GUTIERREZ ARANDA",
+            "nombre_comercial": "RODRIGO EMMANUEL GUTIERREZ ARANDA",
+            "rfc": "GUAR920805B5A",
+            "codigo_erp": "GUAR920805B5A"
+        },
+        {
+            "id": 382,
+            "razon_social": "SERVICIOS JURIDICOS MCC",
+            "nombre_comercial": "SERVICIOS JURIDICOS MCC",
+            "rfc": "SJM2110195J1",
+            "codigo_erp": "SJM2110195J1"
+        },
+        {
+            "id": 383,
+            "razon_social": "SURTECH",
+            "nombre_comercial": "SURTECH",
+            "rfc": "SUR160808BY4",
+            "codigo_erp": "SUR160808BY4"
+        },
+        {
+            "id": 384,
+            "razon_social": "WALWIK CONSULTORES INTERPATRIMONIALES",
+            "nombre_comercial": "WALWIK CONSULTORES INTERPATRIMONIALES",
+            "rfc": "WCI131230BD5",
+            "codigo_erp": "WCI131230BD5"
+        },
+        {
+            "id": 385,
+            "razon_social": "ANTONIO MENA PINEIRO",
+            "nombre_comercial": "ANTONIO MENA PINEIRO",
+            "rfc": "MEPA670708EZ6",
+            "codigo_erp": null
+        },
+        {
+            "id": 386,
+            "razon_social": "CIMAZDEX CONSTRUCTORA",
+            "nombre_comercial": "CIMAZDEX CONSTRUCTORA",
+            "rfc": "CCO1712208Y4",
+            "codigo_erp": null
+        },
+        {
+            "id": 387,
+            "razon_social": "CIRCLE GERENCIA",
+            "nombre_comercial": "CIRCLE GERENCIA",
+            "rfc": "CGE140303F18",
+            "codigo_erp": null
+        },
+        {
+            "id": 389,
+            "razon_social": "GRUPO 4S NACIONAL",
+            "nombre_comercial": "GRUPO 4S NACIONAL",
+            "rfc": "GSN170823SR7",
+            "codigo_erp": null
+        },
+        {
+            "id": 390,
+            "razon_social": "IDANIA TERRONES AVALOS",
+            "nombre_comercial": "IDANIA TERRONES AVALOS",
+            "rfc": "TEAI771213KF7",
+            "codigo_erp": null
+        },
+        {
+            "id": 391,
+            "razon_social": "LASALLE PARTNERS",
+            "nombre_comercial": "LASALLE PARTNERS",
+            "rfc": "LPA920529PD1",
+            "codigo_erp": null
+        },
+        {
+            "id": 393,
+            "razon_social": "RODRIGO JOSE RODRIGUEZ RIVAS",
+            "nombre_comercial": "RODRIGO JOSE RODRIGUEZ RIVAS",
+            "rfc": "RORR8011262R8",
+            "codigo_erp": null
+        },
+        {
+            "id": 394,
+            "razon_social": "SERVICIOS DE CONSTRUCCIÓN DUPROVAX",
+            "nombre_comercial": "SERVICIOS DE CONSTRUCCIÓN DUPROVAX",
+            "rfc": "SCD171027U20",
+            "codigo_erp": null
+        },
+        {
+            "id": 395,
+            "razon_social": "SKY PROYECTOS, OBRAS Y CONSTRUCCIÓN",
+            "nombre_comercial": "SKY PROYECTOS, OBRAS Y CONSTRUCCIÓN",
+            "rfc": "SPO220715GM4",
+            "codigo_erp": null
+        },
+        {
+            "id": 396,
+            "razon_social": "SOMOS TU AREA COMERCIAL",
+            "nombre_comercial": "SOMOS TU AREA COMERCIAL",
+            "rfc": "STA201130B39",
+            "codigo_erp": null
+        },
+        {
+            "id": 397,
+            "razon_social": "Telefonos de México S.A.B de CV",
+            "nombre_comercial": "Telefonos de México S.A.B de CV",
+            "rfc": "TME840315KT6",
+            "codigo_erp": "TME840315KT6"
+        },
+        {
+            "id": 399,
+            "razon_social": "EDUARDO CISNEROS Y ASOCIADOS SCP",
+            "nombre_comercial": "EDUARDO CISNEROS Y ASOCIADOS SCP",
+            "rfc": "ECA030120V30",
+            "codigo_erp": "ECA030120V30"
+        },
+        {
+            "id": 400,
+            "razon_social": "ASESORES JURIDICOS IUSTUS",
+            "nombre_comercial": "ASESORES JURIDICOS IUSTUS",
+            "rfc": "AJI170908HA9",
+            "codigo_erp": "AJI170908HA9"
+        },
+        {
+            "id": 401,
+            "razon_social": "BCI ASESORES INMOBILIARIOS",
+            "nombre_comercial": "BCI ASESORES INMOBILIARIOS",
+            "rfc": "BAI080319ID5",
+            "codigo_erp": "BAI080319ID5"
+        },
+        {
+            "id": 403,
+            "razon_social": "EDIFICACIONES E INSTALACIONES DE YUCATAN",
+            "nombre_comercial": "EDIFICACIONES E INSTALACIONES DE YUCATAN",
+            "rfc": "EIY041228CX3",
+            "codigo_erp": "EIY041228CX3"
+        },
+        {
+            "id": 404,
+            "razon_social": "GEQCO",
+            "nombre_comercial": "GEQCO",
+            "rfc": "GEQ190121TH9",
+            "codigo_erp": "GEQ190121TH9"
+        },
+        {
+            "id": 405,
+            "razon_social": "GOBIERNO DEL ESTADO LIBRE Y SOBERANO DE QUINTANA R",
+            "nombre_comercial": "GOBIERNO DEL ESTADO LIBRE Y SOBERANO DE QUINTANA R",
+            "rfc": "GEL741008GY9",
+            "codigo_erp": "GEL741008GY9"
+        },
+        {
+            "id": 406,
+            "razon_social": "RAUL ALBERTO PINO NAVARRETE",
+            "nombre_comercial": "RAUL ALBERTO PINO NAVARRETE",
+            "rfc": "PINR640524JZ6",
+            "codigo_erp": "PINR640524JZ6"
+        },
+        {
+            "id": 407,
+            "razon_social": "ZEECAN COMERCIALIZADORA DE PRODUCTOS",
+            "nombre_comercial": "ZEECAN COMERCIALIZADORA DE PRODUCTOS",
+            "rfc": "ZCP180808CK6",
+            "codigo_erp": "ZCP180808CK6"
+        },
+        {
+            "id": 408,
+            "razon_social": "LEANDRO MARTÍN PUERTO",
+            "nombre_comercial": "LEANDRO AGUSTIN MARTIN PUERTO",
+            "rfc": "MAPL890311FU8",
+            "codigo_erp": null
+        },
+        {
+            "id": 409,
+            "razon_social": "OPERADORA TIERRA DEL SUR S.A. DE C.V.",
+            "nombre_comercial": "OPERADORA TIERRA DEL SUR S.A. DE C.V.",
+            "rfc": "OTS1402067Z2",
+            "codigo_erp": null
+        },
+        {
+            "id": 410,
+            "razon_social": "FELIPE ANTONIO LÓPEZ CORDERO",
+            "nombre_comercial": "FELIPE ANTONIO LÓPEZ CORDERO",
+            "rfc": "LOCF950103EB9",
+            "codigo_erp": null
+        },
+        {
+            "id": 411,
+            "razon_social": "NBD GROUP CORP",
+            "nombre_comercial": "META",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101018"
+        },
+        {
+            "id": 412,
+            "razon_social": "MAILCHIMP",
+            "nombre_comercial": "MAILCHIMP",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101001"
+        },
+        {
+            "id": 413,
+            "razon_social": "QSOFT LLC",
+            "nombre_comercial": "QSOFT LLC",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101002"
+        },
+        {
+            "id": 414,
+            "razon_social": "KOMMO",
+            "nombre_comercial": "KOMMO",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101003"
+        },
+        {
+            "id": 415,
+            "razon_social": "ENVATO ELEMENTS",
+            "nombre_comercial": "ENVATO ELEMENTS",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101004"
+        },
+        {
+            "id": 416,
+            "razon_social": "HUBSPOT",
+            "nombre_comercial": "HUBSPOT",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101005"
+        },
+        {
+            "id": 417,
+            "razon_social": "METRICOOL",
+            "nombre_comercial": "METRICOOL",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101006"
+        },
+        {
+            "id": 418,
+            "razon_social": "NIIKIIS",
+            "nombre_comercial": "NIIKIIS",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101007"
+        },
+        {
+            "id": 419,
+            "razon_social": "DGNET LTD COMPUTRABA DG",
+            "nombre_comercial": "DGNET LTD COMPUTRABA DG",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101008"
+        },
+        {
+            "id": 420,
+            "razon_social": "WP ENGINE",
+            "nombre_comercial": "WP ENGINE",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101009"
+        },
+        {
+            "id": 421,
+            "razon_social": "NETPAY ADOBE",
+            "nombre_comercial": "NETPAY ADOBE",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101010"
+        },
+        {
+            "id": 422,
+            "razon_social": "NEWFOLD DIGITAL INC (HOSTGATOR)",
+            "nombre_comercial": "NEWFOLD DIGITAL INC (HOSTGATOR)",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101011"
+        },
+        {
+            "id": 423,
+            "razon_social": "MAKE",
+            "nombre_comercial": "MAKE",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101012"
+        },
+        {
+            "id": 424,
+            "razon_social": "LEMSQZY",
+            "nombre_comercial": "LEMSQZY",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101013"
+        },
+        {
+            "id": 425,
+            "razon_social": "AKKY",
+            "nombre_comercial": "AKKY",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101014"
+        },
+        {
+            "id": 426,
+            "razon_social": "PMPRO AGENCY",
+            "nombre_comercial": "PMPRO AGENCY",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101015"
+        },
+        {
+            "id": 427,
+            "razon_social": "ZOOM",
+            "nombre_comercial": "ZOOM",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101016"
+        },
+        {
+            "id": 428,
+            "razon_social": "CLICKUP",
+            "nombre_comercial": "CLICKUP",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101017"
+        },
+        {
+            "id": 430,
+            "razon_social": "DESARROLLOS RESIDENCIALES ALI",
+            "nombre_comercial": "DESARROLLOS RESIDENCIALES ALI",
+            "rfc": "DRA050104BB4",
+            "codigo_erp": "DRA050104BB4"
+        },
+        {
+            "id": 431,
+            "razon_social": "ASOCIACION NACIONAL DE ESPECIALISTAS FISCALES DELEGACION YUC",
+            "nombre_comercial": "ASOCIACION NACIONAL DE ESPECIALISTAS FISCALES DELEGACION YUC",
+            "rfc": "ANE100528QI7",
+            "codigo_erp": "ANE100528QI7"
+        },
+        {
+            "id": 432,
+            "razon_social": "JHOAN ISRAEL PECH HU",
+            "nombre_comercial": "JHOAN ISRAEL PECH HU",
+            "rfc": "PEHJ870823237",
+            "codigo_erp": "PEHJ870823237"
+        },
+        {
+            "id": 433,
+            "razon_social": "ESTAFETA MEXICANA",
+            "nombre_comercial": "ESTAFETA MEXICANA",
+            "rfc": "EME880309SK5",
+            "codigo_erp": "EME880309SK5"
+        },
+        {
+            "id": 434,
+            "razon_social": "FLORANGELY GUZMAN MENDOZA",
+            "nombre_comercial": "FLORANGELY GUZMAN MENDOZA",
+            "rfc": "GUMF790112SQ9",
+            "codigo_erp": "GUMF790112SQ9"
+        },
+        {
+            "id": 435,
+            "razon_social": "PROVEEDOR NO DEDUCIBLE",
+            "nombre_comercial": "PROVEEDOR NO DEDUCIBLE",
+            "rfc": "XAXX010101000",
+            "codigo_erp": "XAXX010101000"
+        },
+        {
+            "id": 436,
+            "razon_social": "PROCURADURIA FEDERAL DEL CONSUMIDOR",
+            "nombre_comercial": "PROCURADURIA FEDERAL DEL CONSUMIDOR",
+            "rfc": "PFC7512226Y3",
+            "codigo_erp": "PFC7512226Y3"
+        },
+        {
+            "id": 437,
+            "razon_social": "LA HERENCIA TENTAZIONI",
+            "nombre_comercial": "LA HERENCIA TENTAZIONI",
+            "rfc": "HTE210601NU1",
+            "codigo_erp": "HTE210601NU1"
+        },
+        {
+            "id": 438,
+            "razon_social": "IMPULSORA AGROPECUARIA E INDUSTRIAL",
+            "nombre_comercial": "IMPULSORA AGROPECUARIA E INDUSTRIAL",
+            "rfc": "IAI9101154I0",
+            "codigo_erp": "IAI9101154I0"
+        },
+        {
+            "id": 440,
+            "razon_social": "DISTRIBUIDORA LIVERPOOL",
+            "nombre_comercial": "DISTRIBUIDORA LIVERPOOL",
+            "rfc": "DLI931201MI9",
+            "codigo_erp": "DLI931201MI9"
+        },
+        {
+            "id": 441,
+            "razon_social": "ALBERTO MONTAÑEZ UITZ",
+            "nombre_comercial": "ALBERTO MONTAÑEZ UITZ",
+            "rfc": "MOUA790505TI4",
+            "codigo_erp": "MOUA790505TI4"
+        },
+        {
+            "id": 442,
+            "razon_social": "MIRIAN BEATRIZ CAUICH PECH",
+            "nombre_comercial": "MIRIAN BEATRIZ CAUICH PECH",
+            "rfc": "CAPM8504076H3",
+            "codigo_erp": "CAPM8504076H3"
+        },
+        {
+            "id": 443,
+            "razon_social": "MIGUEL ANGEL CANUL COELLO",
+            "nombre_comercial": "MIGUEL ANGEL CANUL COELLO",
+            "rfc": "CACM911216DA1",
+            "codigo_erp": "CACM911216DA1"
+        },
+        {
+            "id": 444,
+            "razon_social": "JOSE GUADALUPE DE JESUS CASTILLOBRICEÑO",
+            "nombre_comercial": "JOSE GUADALUPE DE JESUS CASTILLOBRICEÑO",
+            "rfc": "CABG8012127E5",
+            "codigo_erp": "CABG8012127E5"
+        },
+        {
+            "id": 446,
+            "razon_social": "CHRISTIAN JAVIER CORTES CATALAN",
+            "nombre_comercial": "CHRISTIAN JAVIER CORTES CATALAN",
+            "rfc": "COCC850225NW4",
+            "codigo_erp": "COCC850225NW4"
+        },
+        {
+            "id": 447,
+            "razon_social": "ARTICULOS DEPORTIVOS EL CAMPEON",
+            "nombre_comercial": "ARTICULOS DEPORTIVOS EL CAMPEON",
+            "rfc": "ADC020423GT0",
+            "codigo_erp": "ADC020423GT0"
+        },
+        {
+            "id": 448,
+            "razon_social": "EVELYN ALEJANDRA MORALES VAZQUEZ",
+            "nombre_comercial": "EVELYN ALEJANDRA MORALES VAZQUEZ",
+            "rfc": "MOVE910507NJA",
+            "codigo_erp": "MOVE910507NJA"
+        },
+        {
+            "id": 449,
+            "razon_social": "ANTONIO MANUEL PALMA SUAREZ",
+            "nombre_comercial": "ANTONIO MANUEL PALMA SUAREZ",
+            "rfc": "PASA641018730",
+            "codigo_erp": "PASA641018730"
+        },
+        {
+            "id": 450,
+            "razon_social": "SERSA DEL SURESTE",
+            "nombre_comercial": "SERSA DEL SURESTE",
+            "rfc": "SSU171103GX8",
+            "codigo_erp": "SSU171103GX8"
+        },
+        {
+            "id": 451,
+            "razon_social": "LUCIO ANDRES SANTOS MIJANGOS",
+            "nombre_comercial": "LUCIO ANDRES SANTOS MIJANGOS",
+            "rfc": "SAML810818AN9",
+            "codigo_erp": "SAML810818AN9"
+        },
+        {
+            "id": 452,
+            "razon_social": "JUAN HUMBERTO ALCOCER GONZALEZ",
+            "nombre_comercial": "JUAN HUMBERTO ALCOCER GONZALEZ",
+            "rfc": "AOGJ8304086M2",
+            "codigo_erp": "AOGJ8304086M2"
+        },
+        {
+            "id": 453,
+            "razon_social": "CONSTANCIAS DIGITALES S DE RL DE CV",
+            "nombre_comercial": "CONSTANCIAS DIGITALES S DE RL DE CV",
+            "rfc": "CDI2204075G8",
+            "codigo_erp": "CDI2204075G8"
+        },
+        {
+            "id": 455,
+            "razon_social": "MAURICIO SANCHEZ ROJANO",
+            "nombre_comercial": "EXTINSUR",
+            "rfc": "SARM920522UL4",
+            "codigo_erp": "SARM920522UL4"
+        },
+        {
+            "id": 456,
+            "razon_social": "MUELLE OCHO",
+            "nombre_comercial": "MUELLE OCHO",
+            "rfc": "MOC140827K39",
+            "codigo_erp": "MOC140827K39"
+        },
+        {
+            "id": 457,
+            "razon_social": "MILDRET ALEJANDRINA CASTRO POOL",
+            "nombre_comercial": "MILDRET ALEJANDRINA CASTRO POOL",
+            "rfc": "CAPM720717VC0",
+            "codigo_erp": "CAPM720717VC0"
+        },
+        {
+            "id": 458,
+            "razon_social": "PROYECTOS Y SERVICIOS PENINSULARES JAC",
+            "nombre_comercial": "PROYECTOS Y SERVICIOS PENINSULARES JAC",
+            "rfc": "PSP2404299I7",
+            "codigo_erp": "PSP2404299I7"
+        },
+        {
+            "id": 459,
+            "razon_social": "MAGNOLIA CECILIA LOPEZ CASTRO",
+            "nombre_comercial": "MAGNOLIA CECILIA LOPEZ CASTRO",
+            "rfc": "LOCM760511I63",
+            "codigo_erp": "LOCM760511I63"
+        },
+        {
+            "id": 460,
+            "razon_social": "BOCK WEAR",
+            "nombre_comercial": "BOCK WEAR",
+            "rfc": "BWE140915562",
+            "codigo_erp": "BWE140915562"
+        },
+        {
+            "id": 461,
+            "razon_social": "RECUPLAST, RECICLADOS CUERDAS Y PLASTICOS",
+            "nombre_comercial": "RECUPLAST, RECICLADOS CUERDAS Y PLASTICOS",
+            "rfc": "RRC111201258",
+            "codigo_erp": "RRC111201258"
+        },
+        {
+            "id": 462,
+            "razon_social": "GRUPO INMOBILIARIO GOLDENTIMES RIO GRANDE",
+            "nombre_comercial": "GRUPO INMOBILIARIO GOLDENTIMES RIO GRANDE",
+            "rfc": "GIG2112205A1",
+            "codigo_erp": "GIG2112205A1"
+        },
+        {
+            "id": 463,
+            "razon_social": "ROSA MARGARITA CEPEDA TZAB",
+            "nombre_comercial": "ROSA MARGARITA CEPEDA TZAB",
+            "rfc": "CETR8111041R9",
+            "codigo_erp": "CETR8111041R9"
+        },
+        {
+            "id": 464,
+            "razon_social": "COMPUFAX",
+            "nombre_comercial": "COMPUFAX",
+            "rfc": "COM910508749",
+            "codigo_erp": "COM910508749"
+        },
+        {
+            "id": 465,
+            "razon_social": "BEBIDAS RECA",
+            "nombre_comercial": "BEBIDAS RECA",
+            "rfc": "BRE1312138G2",
+            "codigo_erp": "BRE1312138G2"
+        },
+        {
+            "id": 466,
+            "razon_social": "KRYSTLEBSY DEL CARMEN CARREÑO PUENTE",
+            "nombre_comercial": "KRYSTLEBSY DEL CARMEN CARREÑO PUENTE",
+            "rfc": "CAPK9307296H5",
+            "codigo_erp": "CAPK9307296H5"
+        },
+        {
+            "id": 467,
+            "razon_social": "ARMANDO EMIR FLORES RIO",
+            "nombre_comercial": "ARMANDO EMIR FLORES RIO",
+            "rfc": "FORA99100476A",
+            "codigo_erp": "FORA99100476A"
+        },
+        {
+            "id": 468,
+            "razon_social": "CAPI SOLUCIONES",
+            "nombre_comercial": "CAPI SOLUCIONES",
+            "rfc": "CSO160317EH8",
+            "codigo_erp": "CSO160317EH8"
+        },
+        {
+            "id": 469,
+            "razon_social": "GAMO CAPITAL",
+            "nombre_comercial": "GAMO CAPITAL",
+            "rfc": "GCA110310J18",
+            "codigo_erp": "GCA110310J18"
+        },
+        {
+            "id": 470,
+            "razon_social": "OPERADORA INTERNACIONAL DE NEGOCIOS HUZKY",
+            "nombre_comercial": "OPERADORA INTERNACIONAL DE NEGOCIOS HUZKY",
+            "rfc": "OIN200408RC6",
+            "codigo_erp": "OIN200408RC6"
+        },
+        {
+            "id": 471,
+            "razon_social": "COPPEL",
+            "nombre_comercial": "COPPEL",
+            "rfc": "COP920428Q20",
+            "codigo_erp": "COP920428Q20"
+        },
+        {
+            "id": 472,
+            "razon_social": "JOSE ALBERTO MANRIQUE SOSA",
+            "nombre_comercial": "JOSE ALBERTO MANRIQUE SOSA",
+            "rfc": "MASA6808145Y3",
+            "codigo_erp": "MASA6808145Y3"
+        },
+        {
+            "id": 473,
+            "razon_social": "FABIOLA MARGARITA LOPEZ PASTRANA",
+            "nombre_comercial": "FABIOLA MARGARITA LOPEZ PASTRANA",
+            "rfc": "LOPF820417MYN",
+            "codigo_erp": "LOPF820417MYNPS"
+        },
+        {
+            "id": 474,
+            "razon_social": "OPENAI",
+            "nombre_comercial": "OPENAI",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101001"
+        },
+        {
+            "id": 475,
+            "razon_social": "ESTUDIOS Y SUPERVISION DEL SURESTE",
+            "nombre_comercial": "ESTUDIOS Y SUPERVISION DEL SURESTE",
+            "rfc": "ESS860508QF0",
+            "codigo_erp": "ESS860508QF0"
+        },
+        {
+            "id": 476,
+            "razon_social": "LIGHTSTYLE",
+            "nombre_comercial": "LIGHTSTYLE",
+            "rfc": "LIG1908204K5",
+            "codigo_erp": "LIG1908204K5"
+        },
+        {
+            "id": 477,
+            "razon_social": "ANCHEVIDA",
+            "nombre_comercial": "ANCHEVIDA",
+            "rfc": "ANC140415AX4",
+            "codigo_erp": "ANC140415AX4"
+        },
+        {
+            "id": 478,
+            "razon_social": "IDALIA PEREZ ESTRADA",
+            "nombre_comercial": "IDALIA PEREZ ESTRADA",
+            "rfc": "PEEI8406135RA",
+            "codigo_erp": "PEEI8406135RA"
+        },
+        {
+            "id": 479,
+            "razon_social": "BLS Capacitacion",
+            "nombre_comercial": "BLS Capacitacion",
+            "rfc": "BCA1805096MA",
+            "codigo_erp": "BCA1805096MA"
+        },
+        {
+            "id": 480,
+            "razon_social": "JUAN CARLOS NOVAL MORENO",
+            "nombre_comercial": "JUAN CARLOS NOVAL MORENO",
+            "rfc": "NOMJ661017P11",
+            "codigo_erp": "NOMJ661017P11"
+        },
+        {
+            "id": 481,
+            "razon_social": "CEREBA",
+            "nombre_comercial": "CEREBA",
+            "rfc": "CER9004118U6",
+            "codigo_erp": "CER9004118U6"
+        },
+        {
+            "id": 482,
+            "razon_social": "OPERADORA DE ALIMENTOS EN ESTACIONES",
+            "nombre_comercial": "OPERADORA DE ALIMENTOS EN ESTACIONES",
+            "rfc": "OAE121015M79",
+            "codigo_erp": "OAE121015M79"
+        },
+        {
+            "id": 483,
+            "razon_social": "FELIPE ANDRES VILLAFAÑA MARTINEZ",
+            "nombre_comercial": "FELIPE ANDRES VILLAFAÑA MARTINEZ",
+            "rfc": "VIMF770612635",
+            "codigo_erp": "VIMF770612635"
+        },
+        {
+            "id": 484,
+            "razon_social": "PRANA INGENIERIA Y PROYECTOS",
+            "nombre_comercial": "PRANA INGENIERIA Y PROYECTOS",
+            "rfc": "PIP230826M27",
+            "codigo_erp": "PIP230826M27"
+        },
+        {
+            "id": 485,
+            "razon_social": "GIBRAN ALBERTO AGUAYO TZUC",
+            "nombre_comercial": "GIBRAN ALBERTO AGUAYO TZUC",
+            "rfc": "TUAG970523G82",
+            "codigo_erp": "TUAG970523G82"
+        },
+        {
+            "id": 486,
+            "razon_social": "GRUPO PUBLIGRAFIK DEL SURESTE",
+            "nombre_comercial": "GRUPO PUBLIGRAFIK DEL SURESTE",
+            "rfc": "GPS040420TX1",
+            "codigo_erp": "GPS040420TX1"
+        },
+        {
+            "id": 487,
+            "razon_social": "SW SAPIEN",
+            "nombre_comercial": "SW SAPIEN",
+            "rfc": "SSA211020A85",
+            "codigo_erp": "SSA211020A85"
+        },
+        {
+            "id": 488,
+            "razon_social": "METRICOOL SOFTWARE, S. L.",
+            "nombre_comercial": "METRICOOL SOFTWARE, S. L.",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101019"
+        },
+        {
+            "id": 489,
+            "razon_social": "Meta Platforms, Inc",
+            "nombre_comercial": "Meta Platforms, Inc",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101020"
+        },
+        {
+            "id": 490,
+            "razon_social": "MAYRA CRISTINA SANCHEZ GRAVE",
+            "nombre_comercial": "MAYRA CRISTINA SANCHEZ GRAVE",
+            "rfc": "SAGM811209SE1",
+            "codigo_erp": "SAGM811209SE1"
+        },
+        {
+            "id": 491,
+            "razon_social": "CAFE SIRENA",
+            "nombre_comercial": "CAFE SIRENA",
+            "rfc": "CSI020226MV4",
+            "codigo_erp": "CSI020226MV4"
+        },
+        {
+            "id": 492,
+            "razon_social": "COMERCIAL CAMEVO",
+            "nombre_comercial": "COMERCIAL CAMEVO",
+            "rfc": "CCA010830V77",
+            "codigo_erp": "CCA010830V77"
+        },
+        {
+            "id": 493,
+            "razon_social": "FANTASIAS MIGUEL",
+            "nombre_comercial": "FANTASIAS MIGUEL",
+            "rfc": "FMI650208CG9",
+            "codigo_erp": "FMI650208CG9"
+        },
+        {
+            "id": 494,
+            "razon_social": "INGENIERIA HIDRAULICA DEL CARIBE",
+            "nombre_comercial": "INGENIERIA HIDRAULICA DEL CARIBE",
+            "rfc": "IHC990512J32",
+            "codigo_erp": "IHC990512J32"
+        },
+        {
+            "id": 495,
+            "razon_social": "MARIA LUISA SEGURA POOT",
+            "nombre_comercial": "MARIA LUISA SEGURA POOT",
+            "rfc": "SEPL660518SF4",
+            "codigo_erp": "SEPL660518SF4"
+        },
+        {
+            "id": 496,
+            "razon_social": "PROVISION NOMINAS POR PAGAR",
+            "nombre_comercial": "PROVISION NOMINAS POR PAGAR",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101021"
+        },
+        {
+            "id": 497,
+            "razon_social": "ENERKOM CONSULTORIA EN ADMINISTRACION",
+            "nombre_comercial": "ENERKOM CONSULTORIA EN ADMINISTRACION",
+            "rfc": "SMP040315FH0",
+            "codigo_erp": "SMP040315FH0"
+        },
+        {
+            "id": 498,
+            "razon_social": "ESTACION DE SERVICIO CARIBE REAL",
+            "nombre_comercial": "ESTACION DE SERVICIO CARIBE REAL",
+            "rfc": "ESC001019DG3",
+            "codigo_erp": "ESC001019DG3"
+        },
+        {
+            "id": 499,
+            "razon_social": "DINAMETRA PERFORMANCE MARKETING",
+            "nombre_comercial": "DINAMETRA PERFORMANCE MARKETING",
+            "rfc": "DPM220221FJ1",
+            "codigo_erp": "DPM220221FJ1"
+        },
+        {
+            "id": 500,
+            "razon_social": "GRUPO URBAMEX",
+            "nombre_comercial": "GRUPO URBAMEX",
+            "rfc": "GUR040628CNA",
+            "codigo_erp": "GUR040628CNA"
+        },
+        {
+            "id": 501,
+            "razon_social": "Adobe Inc.",
+            "nombre_comercial": "Adobe Inc.",
+            "rfc": "ASI980914J25",
+            "codigo_erp": "ASI980914J25"
+        },
+        {
+            "id": 502,
+            "razon_social": "Clare.AI Limited",
+            "nombre_comercial": "Clare.AI Limited",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101022"
+        },
+        {
+            "id": 503,
+            "razon_social": "Canva US",
+            "nombre_comercial": "Canva US",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101023"
+        },
+        {
+            "id": 504,
+            "razon_social": "Calendly",
+            "nombre_comercial": "Calendly",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101002"
+        },
+        {
+            "id": 505,
+            "razon_social": "OFELIA CAMARA Y ASOCIADOS AUDITORES Y CONSULTORES SCP",
+            "nombre_comercial": "OFELIA CAMARA Y ASOCIADOS AUDITORES Y CONSULTORES",
+            "rfc": "OCA9901261D8",
+            "codigo_erp": "OCA9901261D8"
+        },
+        {
+            "id": 506,
+            "razon_social": "CONTADORES Y ABOGADOS ORGO",
+            "nombre_comercial": "CONTADORES Y ABOGADOS ORGO",
+            "rfc": "CAO191031AM0",
+            "codigo_erp": "CAO191031AM0"
+        },
+        {
+            "id": 507,
+            "razon_social": "INMOBILIARIA DEL SUDESTE",
+            "nombre_comercial": "INMOBILIARIA DEL SUDESTE",
+            "rfc": "ISU071120MQ4",
+            "codigo_erp": "ISU071120MQ4"
+        },
+        {
+            "id": 508,
+            "razon_social": "DIEGO ALEJANDRO PEREZ LOPEZ",
+            "nombre_comercial": "DIEGO ALEJANDRO PEREZ LOPEZ",
+            "rfc": "PELD760928QW0",
+            "codigo_erp": "PELD760928QW0"
+        },
+        {
+            "id": 509,
+            "razon_social": "65 GRADOS",
+            "nombre_comercial": "65 GRADOS",
+            "rfc": "SCG1711018B5",
+            "codigo_erp": "SCG1711018B5"
+        },
+        {
+            "id": 510,
+            "razon_social": "JOSE CARLOS PIMENTEL HERRERA",
+            "nombre_comercial": "JOSE CARLOS PIMENTEL HERRERA",
+            "rfc": "PIHC920806V31",
+            "codigo_erp": "PIHC920806V31"
+        },
+        {
+            "id": 511,
+            "razon_social": "NATALIA REYES PUERTO",
+            "nombre_comercial": "NATALIA REYES PUERTO",
+            "rfc": "REPN820817KN8",
+            "codigo_erp": "REPN820817KN8"
+        },
+        {
+            "id": 512,
+            "razon_social": "SUEMI LETICIA CATZIN KOYOC",
+            "nombre_comercial": "SUEMI LETICIA CATZIN KOYOC",
+            "rfc": "CAKS0507249A5",
+            "codigo_erp": "CAKS0507249A5"
+        },
+        {
+            "id": 513,
+            "razon_social": "CARLOS FERNANDO CARDENAS PINELO",
+            "nombre_comercial": "CARLOS FERNANDO CARDENAS PINELO",
+            "rfc": "CAPC720101QV8",
+            "codigo_erp": "CAPC720101QV8"
+        },
+        {
+            "id": 514,
+            "razon_social": "WEBFLOW",
+            "nombre_comercial": "WEBFLOW",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101024"
+        },
+        {
+            "id": 515,
+            "razon_social": "RD-REPRESENTACION DELDISEÑO",
+            "nombre_comercial": "RD-REPRESENTACION DELDISEÑO",
+            "rfc": "RDI111021SN9",
+            "codigo_erp": "RDI111021SN9"
+        },
+        {
+            "id": 516,
+            "razon_social": "GRUPO LAVALLE PENICHE",
+            "nombre_comercial": "GRUPO LAVALLE PENICHE",
+            "rfc": "GLP180423FC1",
+            "codigo_erp": "GLP180423FC1"
+        },
+        {
+            "id": 517,
+            "razon_social": "SAVC CONTROL",
+            "nombre_comercial": "SAVC CONTROL",
+            "rfc": "SCO14032021A",
+            "codigo_erp": "SCO14032021A"
+        },
+        {
+            "id": 518,
+            "razon_social": "RODRIGO ALATORRE DE LA LLATA",
+            "nombre_comercial": "RODRIGO ALATORRE DE LA LLATA",
+            "rfc": "AALR8103312N5",
+            "codigo_erp": "AALR8103312N5"
+        },
+        {
+            "id": 519,
+            "razon_social": "FRANCISCO BALTAZAR MAY BALAM",
+            "nombre_comercial": "FRANCISCO BALTAZAR MAY BALAM",
+            "rfc": "MABF920104JB5",
+            "codigo_erp": "MABF920104JB5"
+        },
+        {
+            "id": 520,
+            "razon_social": "ANDREA MANCERA SOLIS",
+            "nombre_comercial": "ANDREA MANCERA SOLIS",
+            "rfc": "MASA980406Q1A",
+            "codigo_erp": "MASA980406Q1A"
+        },
+        {
+            "id": 521,
+            "razon_social": "NANCY ELIZABETH DE LUNA AGUILAR",
+            "nombre_comercial": "NANCY ELIZABETH DE LUNA AGUILAR",
+            "rfc": "LUAN980426JA0",
+            "codigo_erp": "LUAN980426JA0"
+        },
+        {
+            "id": 522,
+            "razon_social": "PERLA MENDOZA CORTES",
+            "nombre_comercial": "PERLA MENDOZA CORTES",
+            "rfc": "MECP960725P40",
+            "codigo_erp": "MECP960725P40"
+        },
+        {
+            "id": 523,
+            "razon_social": "ANA CRISTINA ARCE TORREBLANCA",
+            "nombre_comercial": "ANA CRISTINA ARCE TORREBLANCA",
+            "rfc": "AETA8103139WA",
+            "codigo_erp": "AETA8103139WA"
+        },
+        {
+            "id": 524,
+            "razon_social": "COMISION FEDERAL DE ELECTRICIDAD",
+            "nombre_comercial": "COMISION FEDERAL DE ELECTRICIDAD",
+            "rfc": "CFE370814QI0",
+            "codigo_erp": null
+        },
+        {
+            "id": 525,
+            "razon_social": "Comercializadora Infinicom s. de r.l.de c.v.",
+            "nombre_comercial": "Infinicom",
+            "rfc": "CIN090306689",
+            "codigo_erp": "CIN090306689"
+        },
+        {
+            "id": 526,
+            "razon_social": "ARMANDO RENE SOLIS",
+            "nombre_comercial": "RENE SOLIS",
+            "rfc": "XEXX010101300",
+            "codigo_erp": null
+        },
+        {
+            "id": 527,
+            "razon_social": "PROV. COM. ALVARO SERGIO GARCIA RODRIGUEZ",
+            "nombre_comercial": "PROV. COM. ALVARO SERGIO GARCIA RODRIGUEZ",
+            "rfc": "XEXX010101301",
+            "codigo_erp": null
+        },
+        {
+            "id": 528,
+            "razon_social": "PROV. COM. ESTHER ABIGAIL VIERA SOLIS",
+            "nombre_comercial": "PROV. COM. ESTHER ABIGAIL VIERA SOLIS",
+            "rfc": "XEXX010101302",
+            "codigo_erp": null
+        },
+        {
+            "id": 529,
+            "razon_social": "PROV. COM. HECTOR JAIMES GONZALEZ",
+            "nombre_comercial": "PROV. COM. HECTOR JAIMES GONZALEZ",
+            "rfc": "XEXX010101303",
+            "codigo_erp": null
+        },
+        {
+            "id": 530,
+            "razon_social": "PROV. COM. JACOB JOSE RODRIGUEZ CALDERON",
+            "nombre_comercial": "PROV. COM. JACOB JOSE RODRIGUEZ CALDERON",
+            "rfc": "XEXX010101304",
+            "codigo_erp": null
+        },
+        {
+            "id": 531,
+            "razon_social": "PROV. COM. JUNIOR ANTONIO VADILLO MARIN",
+            "nombre_comercial": "PROV. COM. JUNIOR ANTONIO VADILLO MARIN",
+            "rfc": "XEXX010101305",
+            "codigo_erp": null
+        },
+        {
+            "id": 532,
+            "razon_social": "PROV. COM. MAURICIO RUBIO GONGORA",
+            "nombre_comercial": "PROV. COM. MAURICIO RUBIO GONGORA",
+            "rfc": "XEXX010101306",
+            "codigo_erp": null
+        },
+        {
+            "id": 533,
+            "razon_social": "PROV. COM. RENE ADRIAN PUC CRUZ",
+            "nombre_comercial": "PROV. COM. RENE ADRIAN PUC CRUZ",
+            "rfc": "XEXX010101307",
+            "codigo_erp": null
+        },
+        {
+            "id": 534,
+            "razon_social": "PROV. COM. ROGER ARMANDO LARA PEREZ",
+            "nombre_comercial": "PROV. COM. ROGER ARMANDO LARA PEREZ",
+            "rfc": "XEXX010101308",
+            "codigo_erp": null
+        },
+        {
+            "id": 535,
+            "razon_social": "PROV. COM. ROSA MARIA MACIAS SOTRES",
+            "nombre_comercial": "PROV. COM. ROSA MARIA MACIAS SOTRES",
+            "rfc": "XEXX010101309",
+            "codigo_erp": null
+        },
+        {
+            "id": 536,
+            "razon_social": "PROV. COM. JUAN CARLOS NOVAL",
+            "nombre_comercial": "PROV. COM. JUAN CARLOS NOVAL",
+            "rfc": "XEXX010101310",
+            "codigo_erp": null
+        },
+        {
+            "id": 537,
+            "razon_social": "PROV. COM. EDUARDO DENIS QUIÑONES",
+            "nombre_comercial": "PROV. COM. EDUARDO DENIS QUIÑONES",
+            "rfc": "XEXX010101311",
+            "codigo_erp": null
+        },
+        {
+            "id": 538,
+            "razon_social": "DISTRIBUIDORA NAUTA",
+            "nombre_comercial": "DISTRIBUIDORA NAUTA",
+            "rfc": "DNA111025D22",
+            "codigo_erp": "DNA111025D22"
+        },
+        {
+            "id": 539,
+            "razon_social": "MONICA DALILA DULCE MARIAPACHECO CAB",
+            "nombre_comercial": "MONICA DALILA DULCE MARIAPACHECO CAB",
+            "rfc": "PACM6812157E2",
+            "codigo_erp": "PACM6812157E2"
+        },
+        {
+            "id": 540,
+            "razon_social": "EXHIBIDORA MEXICANA CINEPOLIS",
+            "nombre_comercial": "EXHIBIDORA MEXICANA CINEPOLIS",
+            "rfc": "TCI121023F10",
+            "codigo_erp": "TCI121023F10"
+        },
+        {
+            "id": 541,
+            "razon_social": "PATRICIA CANTO PINELO",
+            "nombre_comercial": "PATRICIA CANTO PINELO",
+            "rfc": "CAPP981123CY3",
+            "codigo_erp": "CAPP981123CY3"
+        },
+        {
+            "id": 542,
+            "razon_social": "AUTOSUR",
+            "nombre_comercial": "AUTOSUR",
+            "rfc": "AUT9606011W5",
+            "codigo_erp": "AUT9606011W5"
+        },
+        {
+            "id": 543,
+            "razon_social": "CLTRV CONSULTORES",
+            "nombre_comercial": "CLTRV CONSULTORES",
+            "rfc": "CCO180705DQ8",
+            "codigo_erp": "CCO180705DQ8"
+        },
+        {
+            "id": 544,
+            "razon_social": "COREA MOTORS DEL GOLFO",
+            "nombre_comercial": "COREA MOTORS DEL GOLFO",
+            "rfc": "CMG150115PZ8",
+            "codigo_erp": "CMG150115PZ8"
+        },
+        {
+            "id": 545,
+            "razon_social": "LUIS ARTURO MARTINEZ CHAVEZ MARTINEZ",
+            "nombre_comercial": "LUIS ARTURO MARTINEZ CHAVEZ MARTINEZ",
+            "rfc": "MAML760831GV7",
+            "codigo_erp": "MAML760831GV7"
+        },
+        {
+            "id": 546,
+            "razon_social": "DIANA RAMOS MONTIEL",
+            "nombre_comercial": "DIANA RAMOS MONTIEL",
+            "rfc": "RAMD860828TY6",
+            "codigo_erp": "RAMD860828TY6"
+        },
+        {
+            "id": 547,
+            "razon_social": "GRUPO TORNILLOS PARA TODOS",
+            "nombre_comercial": "GRUPO TORNILLOS PARA TODOS",
+            "rfc": "GTT1507077D5",
+            "codigo_erp": "GTT1507077D5"
+        },
+        {
+            "id": 548,
+            "razon_social": "GOOGLE OPERACIONES DE MEXICO",
+            "nombre_comercial": "GOOGLE OPERACIONES DE MEXICO",
+            "rfc": "GOM0809114P5",
+            "codigo_erp": "GOM0809114P5"
+        },
+        {
+            "id": 549,
+            "razon_social": "Meta Platforms Ireland Limted",
+            "nombre_comercial": "Meta Platforms Ireland Limted",
+            "rfc": "FTI141010SU2",
+            "codigo_erp": "FTI141010SU2"
+        },
+        {
+            "id": 550,
+            "razon_social": "TikTok Mexico Tecnología S. de R.L. de C.V",
+            "nombre_comercial": "TikTok Mexico Tecnología S. de R.L. de C.V",
+            "rfc": "TMT2011241B9",
+            "codigo_erp": "TMT2011241B9"
+        },
+        {
+            "id": 551,
+            "razon_social": "JONNY FRANCISCO CABRERA ALVAREZ",
+            "nombre_comercial": "JONNY FRANCISCO CABRERA ALVAREZ",
+            "rfc": "CAAJ8301288E9",
+            "codigo_erp": "CAAJ8301288E9"
+        },
+        {
+            "id": 552,
+            "razon_social": "AARON ULISES POOT HOIL",
+            "nombre_comercial": "AARON ULISES POOT HOIL",
+            "rfc": "POHA9806123EA",
+            "codigo_erp": "POHA9806123EA"
+        },
+        {
+            "id": 553,
+            "razon_social": "Martha Gabriela Quijano Chi",
+            "nombre_comercial": "Martha Gabriela Quijano Chi",
+            "rfc": "QUCM9504016R0",
+            "codigo_erp": "QUCM9504016R0"
+        },
+        {
+            "id": 554,
+            "razon_social": "Beatriz Arely Uitzil Alvarez",
+            "nombre_comercial": "Beatriz Arely Uitzil Alvarez",
+            "rfc": "UIAB850418KZ0",
+            "codigo_erp": "UIAB850418KZ0"
+        },
+        {
+            "id": 555,
+            "razon_social": "MARIO RENE PISTE EK",
+            "nombre_comercial": "MARIO RENE PISTE EK",
+            "rfc": "PIEM9204073Z8",
+            "codigo_erp": "PIEM9204073Z8"
+        },
+        {
+            "id": 556,
+            "razon_social": "MIRIAM ROCIO GARCIA RANGEL",
+            "nombre_comercial": "MIRIAM ROCIO GARCIA RANGEL",
+            "rfc": "GARM771108D75",
+            "codigo_erp": "GARM771108D75"
+        },
+        {
+            "id": 557,
+            "razon_social": "Celonis Inc.",
+            "nombre_comercial": "Celonis Inc.",
+            "rfc": "XEXX010101000",
+            "codigo_erp": "XEXX010101025"
+        },
+        {
+            "id": 558,
+            "razon_social": "CARLOS IVAN DURAN QUINTAL",
+            "nombre_comercial": "CARLOS IVAN DURAN QUINTAL",
+            "rfc": "DUQC800829C22",
+            "codigo_erp": "DUQC800829C22"
+        },
+        {
+            "id": 559,
+            "razon_social": "LW TALLER DE PROYECTOS",
+            "nombre_comercial": "LW TALLER DE PROYECTOS",
+            "rfc": "LTP200626N99",
+            "codigo_erp": "LTP200626N99"
+        }
+    ]
+}

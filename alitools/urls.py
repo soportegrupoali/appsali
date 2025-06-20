@@ -19,6 +19,8 @@ from django.urls import path, include
 from users import views as users_views
 from menu import views as menu_views
 from alitools.workorder import views as workorder_views
+from empresas import views as empresas_views
+from proveedores import views as proveedores_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +29,6 @@ urlpatterns = [
     path('menu/', include('menu.urls')),
     path('workorder/', workorder_views.dashboard, name='workorder_dashboard'),
     path('workorder/create/', workorder_views.workorder_create, name='workorder_create'),
+    path('empresas/', include('empresas.urls')),
+    path('proveedores/', include('proveedores.urls')),
 ]

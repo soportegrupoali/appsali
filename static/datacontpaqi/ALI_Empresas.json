@@ -1,0 +1,37 @@
+{
+    "error": false,
+    "cuentas_pagadoras": [
+        {
+            "id": 2,
+            "razon_social": "ALI HOME",
+            "nombre_comercial": "ALI HOME",
+            "rfc": "AHO221205477",
+            "erp_id": 7,
+            "direccion": "51 #642 COL. Real Montejo, C.P. 97302, Mérida, Yucatán, México"
+        },
+        {
+            "id": 3,
+            "razon_social": "DESARROLLOS RESIDENCIALES ALI",
+            "nombre_comercial": "DESARROLLOS RESIDENCIALES ALI",
+            "rfc": "DRA050104BB4",
+            "erp_id": 2,
+            "direccion": "CALLE 51 ENTRE 72 A #642 COL. Real Montejo, C.P. 97302, , Yucatán, México"
+        },
+        {
+            "id": 4,
+            "razon_social": "DESARROLLADORA E INMOBILIARIA MERIDA SIGLO XXI",
+            "nombre_comercial": "DESARROLLADORA E INMOBILIARIA MERIDA SIGLO XXI",
+            "rfc": "DIM030109KQ8",
+            "erp_id": 4,
+            "direccion": "KM 10.2 CARRETERA MERIDA PROGRESO TAB 16438 #. COL. Real Montejo, C.P. 97302, Merida, Yucatán, México"
+        },
+        {
+            "id": 5,
+            "razon_social": "ELSY LILY ACOSTA BAEZA",
+            "nombre_comercial": "ELSY LILY ACOSTA BAEZA",
+            "rfc": "AOBE5903027DA",
+            "erp_id": 5,
+            "direccion": "51 ENTRE CALLE 72 A #TAB. CAT. 16438 COL. Real Montejo, C.P. 97302, , Yucatán, México"
+        }
+    ]
+}
