@@ -1,11 +1,14 @@
 from django.db import models
+from empresas.models import Empresa
+from proveedores.models import Proveedor
 
 # Create your models here.
 class Project(models.Model):
-    name = models.CharField(max_length=200)
-    description = models.TextField()
-    provider = models.CharField(max_length=200)
-    cost = models.DecimalField(max_digits=10, decimal_places=2)
+    name = models.CharField(max_length=200, verbose_name="Nombre del Proyecto")
+    description = models.TextField(verbose_name="Descripción")
+    empresa = models.ForeignKey(Empresa, on_delete=models.SET_NULL, null=True, verbose_name="Empresa")
+    proveedor = models.ForeignKey(Proveedor, on_delete=models.SET_NULL, null=True, verbose_name="Proveedor")
+    cost = models.DecimalField(max_digits=10, decimal_places=2, verbose_name="Costo del Proyecto")
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     

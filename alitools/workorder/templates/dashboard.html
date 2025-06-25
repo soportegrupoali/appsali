@@ -99,7 +99,7 @@
                 </h5>
             </div>
             <div class="card-body">
-                <form id="projectForm" method="POST" action="{% url 'workorder_dashboard' %}" novalidate>
+                <form id="projectForm" method="POST" action="{% url 'workorder:dashboard' %}" novalidate>
                     {% csrf_token %}
                     <div class="mb-3">
                         <label for="project_name" class="form-label fw-semibold">Nombre del Proyecto</label>
@@ -119,14 +119,28 @@
                         </div>
                     </div>
                     
+                    <!-- Empresa Contratante Dropdown -->
                     <div class="mb-3">
-                        <label for="project_provider" class="form-label fw-semibold">Proveedor</label>
-                        <select class="form-select" id="project_provider" name="project_provider" required>
-                            <option value="">Seleccione un proveedor...</option>
-                            <option value="TechSolutions SA">TechSolutions SA</option>
-                            <option value="InfraCorp Ltd">InfraCorp Ltd</option>
-                            <option value="SysAdmin Pro">SysAdmin Pro</option>
-                            <option value="DataCenter Solutions">DataCenter Solutions</option>
+                        <label for="empresa" class="form-label">Empresa Contratante</label>
+                        <select class="form-select" id="empresa" name="empresa" required>
+                            <option value="" disabled selected>Seleccione una Empresa Contratante...</option>
+                            {% for empresa in empresas %}
+                                <option value="{{ empresa.id }}">{{ empresa.nombre_comercial }}</option>
+                            {% endfor %}
+                        </select>
+                        <div class="invalid-feedback">
+                            Por favor seleccione una empresa.
+                        </div>
+                    </div>
+                    
+                    <!-- Contratista Dropdown -->
+                    <div class="mb-3">
+                        <label for="proveedor" class="form-label">Contratista</label>
+                        <select class="form-select" id="proveedor" name="proveedor" required>
+                            <option value="" disabled selected>Seleccione un Contratista...</option>
+                            {% for proveedor in proveedores %}
+                                <option value="{{ proveedor.id }}">{{ proveedor.nombre_comercial }}</option>
+                            {% endfor %}
                         </select>
                         <div class="invalid-feedback">
                             Por favor seleccione un proveedor.
@@ -424,7 +438,8 @@
 
         const cost = parseFloat(document.getElementById('project_cost').value);
         const projectName = document.getElementById('project_name').value.trim();
-        const provider = document.getElementById('project_provider').value;
+        const empresa = document.getElementById('empresa').value;
+        const proveedor = document.getElementById('proveedor').value;
         const description = document.getElementById('project_description').value.trim();
         
         if (isNaN(cost) || cost <= 0) {
@@ -459,7 +474,7 @@
                         </div>
                         <div class="col-md-6">
                             <strong class="text-muted small">PROVEEDOR:</strong>
-                            <p class="mb-1">${provider}</p>
+                            <p class="mb-1">${proveedor}</p>
                         </div>
                         <div class="col-md-6">
                             <strong class="text-muted small">LÍMITE:</strong>
@@ -509,7 +524,7 @@
                         </div>
                         <div class="col-md-6">
                             <strong class="text-muted small">PROVEEDOR:</strong>
-                            <p class="mb-1">${provider}</p>
+                            <p class="mb-1">${proveedor}</p>
                         </div>
                         <div class="col-md-6">
                             <strong class="text-muted small">TIPO:</strong>
@@ -525,8 +540,8 @@
                     </div>
                     
                     <div class="d-flex gap-2 flex-wrap">
-                        <a href="{% url 'workorder_create' %}" class="btn btn-primary">
-                            <i class="fas fa-clipboard-list me-1"></i>Crear Orden
+                        <a href="{% url 'workorder:create' %}" class="btn btn-primary">
+                            <i class="fas fa-clipboard-list me-2"></i>Crear Orden
                         </a>
                         <button class="btn btn-outline-success" onclick="editProject()">
                             <i class="fas fa-edit me-1"></i>Editar Proyecto
@@ -559,6 +574,10 @@
             showToast('Complete todos los campos antes de guardar', 'warning');
             return;
         }
+        
+        // Mostrar mensaje de procesamiento
+        showToast('Guardando proyecto y redirigiendo...', 'info');
+        
         // Enviar el formulario directamente
         document.getElementById('projectForm').submit();
     }
@@ -620,6 +639,19 @@
                     Montos ≥ ${formatCurrency(CONFIG.LIMITE_CONTRATO)} requieren contrato formal
                 `;
             }
+        });
+
+        // Inicializar Select2 en los dropdowns
+        $('#empresa').select2({
+            theme: 'bootstrap-5',
+            placeholder: 'Buscar y seleccionar una Empresa Contratante',
+            width: '100%'
+        });
+
+        $('#proveedor').select2({
+            theme: 'bootstrap-5',
+            placeholder: 'Buscar y seleccionar un Contratista',
+            width: '100%'
         });
     });
 </script>

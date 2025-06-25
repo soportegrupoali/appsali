@@ -28,8 +28,8 @@
                                 </div>
                             </div>
                             <div class="col-md-8">
-                                <h2 class="mb-1">ELSY LILY ACOSTA BAEZA</h2>
-                                <p class="mb-2 fs-5">AOBE-590302-7DA</p>
+                                <h2 class="mb-1">{% if project_data %}{{ project_data.empresa }}{% else %}EMPRESA{% endif %}</h2>
+                                <p class="mb-2 fs-5">{% if project_data %}{{ project_data.empresa }}{% else %}EMPRESA CONTRATANTE{% endif %}</p>
                                 <h4 class="mb-0"><i class="fas fa-clipboard-list me-2"></i>ORDEN DE TRABAJO</h4>
                             </div>
                             <div class="col-md-2 text-center">
@@ -43,6 +43,11 @@
                         <div class="alert alert-success mb-4">
                             <h5 class="alert-heading"><i class="fas fa-info-circle me-2"></i>Datos del Proyecto Importados</h5>
                             <p class="mb-0">Se han cargado automáticamente los datos del proyecto: <strong>{{ project_data.name }}</strong></p>
+                        </div>
+                        {% else %}
+                        <div class="alert alert-warning mb-4">
+                            <h5 class="alert-heading"><i class="fas fa-exclamation-triangle me-2"></i>No hay datos del proyecto</h5>
+                            <p class="mb-0">No se encontraron datos del proyecto en la sesión. Por favor, crea un proyecto primero.</p>
                         </div>
                         {% endif %}
                         
@@ -77,9 +82,17 @@
                                 </h5>
                             </div>
 
-                            <div class="mb-3">
-                                <label for="companyName" class="form-label">Razón Social del Contratista</label>
-                                <input type="text" class="form-control" id="companyName" name="companyName">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="empresa" class="form-label fw-semibold">Empresa Contratante</label>
+                                    <input type="text" class="form-control bg-light" id="empresa" name="empresa" value="{{ project_data.empresa }}" readonly>
+                                    <small class="text-muted">Empresa que solicita el trabajo</small>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="companyName" class="form-label fw-semibold">Contratista (Proveedor)</label>
+                                    <input type="text" class="form-control bg-light" id="companyName" name="companyName" value="{{ project_data.proveedor }}" readonly>
+                                    <small class="text-muted">Empresa que ejecutará el trabajo</small>
+                                </div>
                             </div>
 
                             <div class="bg-light p-3 rounded mb-3 border-start border-5 border-primary">
@@ -127,7 +140,8 @@
                             </div>
 
                             <div class="mb-4">
-                                <textarea class="form-control" id="workDetails" name="workDetails" rows="6" placeholder="Detalle completo de los trabajos a realizar..."></textarea>
+                                <label for="workDetails" class="form-label fw-semibold">Descripción del Proyecto</label>
+                                <textarea class="form-control" id="workDetails" name="workDetails" rows="6" readonly>{{ project_data.description }}</textarea>
                             </div>
 
                             <!-- Cost Information -->
@@ -140,10 +154,10 @@
                             <div class="bg-info bg-opacity-10 p-4 rounded mb-4 border border-info border-opacity-25">
                                 <div class="row">
                                     <div class="col-md-8 mb-3">
-                                        <label for="workAmount" class="form-label fw-semibold">Importe de los Trabajos</label>
+                                        <label for="workAmount" class="form-label fw-semibold">Importe de los Trabajos (Costo del Proyecto)</label>
                                         <div class="input-group">
                                             <span class="input-group-text bg-primary text-white">$</span>
-                                            <input type="number" class="form-control" id="workAmount" name="workAmount" step="0.01" oninput="calculateTotals()">
+                                            <input type="number" class="form-control" id="workAmount" name="workAmount" value="{{ project_data.cost }}" step="0.01" readonly>
                                         </div>
                                     </div>
                                     <div class="col-md-4 mb-3 d-flex align-items-end">
@@ -248,34 +262,22 @@
                                     </div>
                                     <div class="col-md-3 mb-3">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="photos" name="annexes[]" value="fotos">
-                                            <label class="form-check-label" for="photos">
-                                                <i class="fas fa-camera me-2 text-danger"></i>Fotos
+                                            <input class="form-check-input" type="checkbox" id="others" name="annexes[]" value="otros">
+                                            <label class="form-check-label" for="others">
+                                                <i class="fas fa-plus-square me-2 text-muted"></i>Otros
                                             </label>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="row mt-3">
-                                    <div class="col-12">
-                                        <label for="otherAnnexes" class="form-label">Otros (Especificar):</label>
-                                        <input type="text" class="form-control" id="otherAnnexes" name="otherAnnexes">
-                                    </div>
-                                </div>
                             </div>
-
-                            <!-- Observations -->
-                            <div class="mb-4">
-                                <label for="observations" class="form-label fw-semibold">
-                                    <i class="fas fa-sticky-note me-2 text-info"></i>OBSERVACIONES
-                                </label>
-                                <textarea class="form-control" id="observations" name="observations" rows="4"></textarea>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-dark btn-lg px-5">
-                                    <i class="fas fa-save me-2"></i>Generar Orden de Trabajo
+                            
+                            <!-- Submission -->
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-check-circle me-2"></i>Crear Orden de Trabajo
+                                </button>
+                                <button type="button" class="btn btn-secondary btn-lg">
+                                    <i class="fas fa-print me-2"></i>Imprimir
                                 </button>
                             </div>
                         </form>
@@ -284,68 +286,23 @@
             </div>
         </div>
     </div>
-{% endblock %}
 
-{% block extra_js %}
-<script>
+    <script>
     function calculateTotals() {
         const workAmount = parseFloat(document.getElementById('workAmount').value) || 0;
-        const iva = workAmount * 0.16;
+        const ivaRate = 0.16;
+        const iva = workAmount * ivaRate;
         const total = workAmount + iva;
-        
+
         document.getElementById('iva').value = iva.toFixed(2);
         document.getElementById('total').value = total.toFixed(2);
     }
-
-    // Form submission handler
-    document.getElementById('workOrderForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Basic validation
-        const requiredFields = ['orderNumber', 'orderDate', 'workDescription', 'companyName', 'manager', 'contractor'];
-        let isValid = true;
-        
-        requiredFields.forEach(field => {
-            const element = document.getElementById(field);
-            if (!element.value.trim()) {
-                element.classList.add('is-invalid');
-                isValid = false;
-            } else {
-                element.classList.remove('is-invalid');
-            }
-        });
-        
-        if (isValid) {
-            alert('Orden de trabajo generada exitosamente. En un sistema real, esta información se enviaría al servidor.');
-            console.log('Form data:', new FormData(this));
-        } else {
-            alert('Por favor, complete todos los campos obligatorios.');
-        }
-    });
-
-    // Set current date as default
-    document.getElementById('orderDate').value = new Date().toISOString().split('T')[0];
     
-    // Auto-generate order number
-    document.getElementById('orderNumber').value = 'OT-' + new Date().getFullYear() + '-' + 
-                                                String(Date.now()).slice(-6);
-
-    // Update footer timestamp
-    document.getElementById('lastUpdate').textContent = new Date().toLocaleString('es-ES');
-    
-    // Pre-cargar datos del proyecto si están disponibles
-    {% if project_data %}
-        // Cargar datos del proyecto en el formulario
-        document.getElementById('workDescription').value = "{{ project_data.description|escapejs }}";
-        document.getElementById('companyName').value = "{{ project_data.provider|escapejs }}";
-        document.getElementById('workAmount').value = "{{ project_data.cost }}";
-        
-        // Calcular totales automáticamente
+    document.addEventListener('DOMContentLoaded', function () {
+        {% if project_data %}
         calculateTotals();
-        
-        // Agregar nombre del proyecto en detalles del trabajo
-        const workDetails = document.getElementById('workDetails');
-        workDetails.value = `PROYECTO: {{ project_data.name|escapejs }}\n\n${workDetails.value || ''}`;
-    {% endif %})
-</script>
-{% endblock %}
+        {% endif %}
+    });
+    </script>
+
+{% endblock %} 
