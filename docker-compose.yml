@@ -7,34 +7,45 @@ services:
     image: postgres:17.3
     container_name: appsali_db
     environment:
-      POSTGRES_DB: alitools
-      POSTGRES_USER: ali_user
-      POSTGRES_PASSWORD: ali_password
+      POSTGRES_DB: ${DB_NAME:-alitools}
+      POSTGRES_USER: ${DB_USER:-ali_user}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-ali_password}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
       - "5432:5432"
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-ali_user} -d ${DB_NAME:-alitools}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   # Aplicación Django
   web:
     build: .
     container_name: appsali_web
-    command: python manage.py runserver 0.0.0.0:8000
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py collectstatic --noinput &&
+             python manage.py runserver 0.0.0.0:8000"
     volumes:
       - .:/app
       - pdf_storage:/app/media/pdfs
+      - static_volume:/app/staticfiles
     ports:
       - "8000:8000"
     environment:
-      - DEBUG=True
-      - DB_NAME=alitools
-      - DB_USER=ali_user
-      - DB_PASSWORD=ali_password
+      - DEBUG=${DEBUG:-True}
+      - DB_NAME=${DB_NAME:-alitools}
+      - DB_USER=${DB_USER:-ali_user}
+      - DB_PASSWORD=${DB_PASSWORD:-ali_password}
       - DB_HOST=db
-      - DB_PORT=5432
+      - DB_PORT=${DB_PORT:-5432}
+      - SECRET_KEY=${SECRET_KEY:-django-insecure-jcz8$%l!0kia55t&n=ag=#_2prc(zsfr8h&tlwv!&acedsb$xa}
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     restart: unless-stopped
 
   # pgAdmin - Interface web para PostgreSQL
@@ -42,8 +53,8 @@ services:
     image: dpage/pgadmin4:latest
     container_name: appsali_pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@appsali.com
-      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-admin@appsali.com}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin123}
     volumes:
       - pgadmin_data:/var/lib/pgadmin
     ports:
@@ -56,3 +67,4 @@ volumes:
   postgres_data:
   pdf_storage:
   pgadmin_data:
+  static_volume:

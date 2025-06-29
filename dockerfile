@@ -15,15 +15,25 @@ RUN apt-get update && apt-get install -y \
     gcc \
     && rm -rf /var/lib/apt/lists/*
 
+# Crear usuario no-root
+RUN groupadd -r django && useradd -r -g django django
+
 # Copiar e instalar dependencias de Python
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Crear directorio para PDFs
-RUN mkdir -p /app/media/pdfs
+# Crear directorios necesarios
+RUN mkdir -p /app/media/pdfs /app/staticfiles
+RUN chown -R django:django /app
 
 # Copiar el proyecto
 COPY . .
+
+# Cambiar permisos
+RUN chown -R django:django /app
+
+# Cambiar al usuario django
+USER django
 
 # Exponer puerto
 EXPOSE 8000
